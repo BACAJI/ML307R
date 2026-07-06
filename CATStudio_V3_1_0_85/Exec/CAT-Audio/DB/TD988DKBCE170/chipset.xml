@@ -1,0 +1,1021 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Chipset version="1.0">  
+	<Chip identifier="CE170" version="00" bus="I2C0" desc="Audio Codec" regwidth="8"> 
+		  <Component identifier="GELATO" background="gelato.jpg" desc="Audio Codec"> 
+		   <RegisterInfo address="0x01" name="System_Reference_Clock1">
+      <Bits range="4:0" field="MCLK1_FREQ_SEL" default="10000" desc="mclk1_freq_sel.this is MCLK associated with Audio I2S interface ‐I2S1">
+       <Capbility value="0x1" desc="9.6 MHz UART" />
+       <Capbility value="0x2" desc="9.8304 MHz CDMA" />
+       <Capbility value="0x3" desc="10 MHz Common" />
+       <Capbility value="0x4" desc="11.2896 MHz CDROM" />
+       <Capbility value="0x5" desc="12 MHz USB" />
+       <Capbility value="0x6" desc="12.288 MHz SoundCard" />
+       <Capbility value="0x7" desc="13 MHz GSM/UMTS" />
+       <Capbility value="0x8" desc="13.5 MHz DVD" />
+       <Capbility value="0x9" desc="16.9344 MHz CDROM" />
+       <Capbility value="0xA" desc="18.432 MHz UART" />
+       <Capbility value="0xB" desc="19.2 MHz UART" />
+       <Capbility value="0xC" desc="19.6608 MHz CDMA" />
+       <Capbility value="0xD" desc="20 MHz Ethernet" />
+       <Capbility value="0xE" desc="22.5792 MHz CDROM" />
+       <Capbility value="0xF" desc="24 MHz USB" />
+       <Capbility value="0x10" desc="24.576 MHz SoundCard" />
+       <Capbility value="0x11" desc="26 MHz GSM,UMTS" />
+       <Capbility value="0x12" desc="27 MHz DVD" />
+       <Capbility value="0x13" desc="33.8688 MHz CDROM" />
+       <Capbility value="0x14" desc="36.864 MHz UART" />
+       <Capbility value="0x15" desc="38.4 MHz UART" />
+       <Capbility value="0x16" desc="39 MHz GSM,UMTS" />
+       <Capbility value="0x17" desc="40 MHz WiFi,OFDM" />
+       <Capbility value="0x18" desc="45.1584 MHz CDROM" />
+       <Capbility value="0x19" desc="48 MHz USB" />
+       <Capbility value="0x1A" desc="49.152 MHz SoundCard" />
+       <Capbility value="0x1B" desc="50 MHz Fast Ethernet" />
+       <Capbility value="0x1C" desc="56.448 MHz Modems" />
+      </Bits>
+    </RegisterInfo>
+    <RegisterInfo address="0x02" name="PLL1_Program_Register">
+      <Bits range="7:6" field="PLL1_CTUNE" default="01" desc="pll1_ctune" />
+      <Bits range="5:4" field="PLL1_INTPI" default="10" desc="pll1_intpi" />
+      <Bits range="3:0" field="PLL1_ICP" default="0110" desc="pll1_ICP" />
+    </RegisterInfo>
+    <RegisterInfo address="0x03" name="System_Reference_Clock2">
+      <Bits range="4:0" field="MCLK2_FREQ_SEL" default="10000" desc="mclk2_freq_sel,this is MCLK associated with Voice I2S interface ‐I2S2">
+        <Capbility value="0x1" desc="9.6 MHz UART" />
+       	<Capbility value="0x2" desc="9.8304 MHz CDMA" />
+       	<Capbility value="0x3" desc="10 MHz Common" />
+       	<Capbility value="0x4" desc="11.2896 MHz CDROM" />
+       	<Capbility value="0x5" desc="12 MHz USB" />
+       	<Capbility value="0x6" desc="12.288 MHz SoundCard" />
+       	<Capbility value="0x7" desc="13 MHz GSM/UMTS" />
+       	<Capbility value="0x8" desc="13.5 MHz DVD" />
+       	<Capbility value="0x9" desc="16.9344 MHz CDROM" />
+       	<Capbility value="0xA" desc="18.432 MHz UART" />
+       	<Capbility value="0xB" desc="19.2 MHz UART" />
+       	<Capbility value="0xC" desc="19.6608 MHz CDMA" />
+       	<Capbility value="0xD" desc="20 MHz Ethernet" />
+       	<Capbility value="0xE" desc="22.5792 MHz CDROM" />
+       	<Capbility value="0xF" desc="24 MHz USB" />
+       	<Capbility value="0x10" desc="24.576 MHz SoundCard" />
+       	<Capbility value="0x11" desc="26 MHz GSM,UMTS" />
+       	<Capbility value="0x12" desc="27 MHz DVD" />
+       	<Capbility value="0x13" desc="33.8688 MHz CDROM" />
+       	<Capbility value="0x14" desc="36.864 MHz UART" />
+       	<Capbility value="0x15" desc="38.4 MHz UART" />
+       	<Capbility value="0x16" desc="39 MHz GSM,UMTS" />
+       	<Capbility value="0x17" desc="40 MHz WiFi,OFDM" />
+       	<Capbility value="0x18" desc="45.1584 MHz CDROM" />
+       	<Capbility value="0x19" desc="48 MHz USB" />
+       	<Capbility value="0x1A" desc="49.152 MHz SoundCard" />
+       	<Capbility value="0x1B" desc="50 MHz Fast Ethernet" />
+       	<Capbility value="0x1C" desc="56.448 MHz Modems" />
+       </Bits>
+    </RegisterInfo>
+    <RegisterInfo address="0x04" name="PLL1_override_register1">
+      <Bits range="7:0" field="PLL1_REFDIV[7:0]" default="00000110" desc="pll1_refdiv" />
+    </RegisterInfo>
+    <RegisterInfo address="0x05" name="PLL1_override_register2">
+      <Bits range="7:0" field="PLL1_FBDIV[7:0]" default="00100100" desc="pll1_fbdiv" />
+    </RegisterInfo>
+    <RegisterInfo address="0x06" name="PLL1_override_register3">
+      <Bits range="7:0" field="PLL1_FREQ_OFFSET[15:8]" default="00000000" desc="pll1_freq_offset[15:8]" />
+    </RegisterInfo>
+    <RegisterInfo address="0x07" name="PLL1_override_register4">
+      <Bits range="7:0" field="PLL1_FREQ_OFFSET[7:0]" default="00000000" desc="pll1_freq_offset[7:0]" />
+    </RegisterInfo>
+    <RegisterInfo address="0x08" name="PLL1_override_register5">
+      <Bits range="7" field="PLL1_PLL_MODE_SEL" default="0" desc="Select PI in the PLL loop or not" />
+      <Bits range="6" field="PLL1_PI_BYPASS" default="1" desc="Bypass PI inside PLL IP" />
+      <Bits range="5" field="PLL1_ANA_PLL_BYPASS" default="0" desc="digital core clock is generated from pll" />
+      <Bits range="4" field="PLL1_DIG_PLL_BYPASS" default="0" desc="Select digital core clock from pll or from mclk" >
+      	<Capbility value="0x0" desc="digital core clock is generated from pll" />
+      	<Capbility value="0x1" desc="digital clock clock is mclk, divided by refdiv. Min refdiv is 1" /> 
+      </Bits>
+      <Bits range="3" field="PLL1_REFDIV[8]" default="0" desc="pll1_refdiv[8]" />
+      <Bits range="2" field="PLL1_FBDIV[8]" default="0" desc="pll1_fbdiv[8]" />
+      <Bits range="1" field="PLL1_FREQ_OFFSET_VALID" default="0" desc="pll1_freq_offset_valid" />
+      <Bits range="0" field="PLL1_PI_ENABLE" default="0" desc="pll1_PI_enable" />
+    </RegisterInfo>
+    <RegisterInfo address="0x09" name="PLL1_override_register6">
+      <Bits range="7:1" field="PLL1_POSTDIV_AUDIO[6:0]" default="0000011" desc="pll1_postdiv_audio[6:0]" />
+      <Bits range="0" field="PLL1_POSTDIV_AUDIO_EN" default="1" desc="pll1_postdiv_audio_en" />
+    </RegisterInfo>
+    <RegisterInfo address="0x0D" name="PLL1_Control_Register2">
+      <Bits range="7" field="PLL1_ROM_TABLE_EN" default="0" desc="Enable PLL1 rom table" />
+      <Bits range="6" field="PLL1_FRAC_ADJ_EN" default="0" desc="Enable fractional PLL1 adjust" />
+      <Bits range="5" field="PLL1_RESET_OFFSET_EXT" default="0" desc="To PLL1 reset_offset_ext" />
+      <Bits range="4" field="PLL1_RESET_INTP_EXT" default="0" desc="To PLL1 reset_intp_ext" />
+      <Bits range="3" field="PLL1_RESET" default="0" desc="To PLL1 reset" />
+    </RegisterInfo>
+    <RegisterInfo address="0xEB" name="PLL2_Program_Register">
+      <Bits range="7:6" field="PLL2_CTUNE" default="01" desc="pll2_ctune" />
+      <Bits range="5:4" field="PLL2_INTPI" default="10" desc="pll2_intpi" />
+      <Bits range="3:0" field="PLL2_ICP" default="0110" desc="pll2_ICP" />
+    </RegisterInfo>
+    <RegisterInfo address="0xEC" name="pll2_override_register1">
+      <Bits range="7:0" field="PLL2_REFDIV[7:0]" default="00000110" desc="pll2_refdiv" />
+    </RegisterInfo>
+    <RegisterInfo address="0xED" name="pll2_override_register2">
+      <Bits range="7:0" field="PLL2_FBDIV[7:0]" default="00100100" desc="pll2_fbdiv" />
+    </RegisterInfo>
+    <RegisterInfo address="0xEE" name="pll2_override_register3">
+      <Bits range="7:0" field="PLL2_FREQ_OFFSET[15:8]" default="00000000" desc="pll2_freq_offset[15:8]" />
+    </RegisterInfo>
+    <RegisterInfo address="0xEF" name="pll2_override_register4">
+      <Bits range="7:0" field="PLL2_FREQ_OFFSET[7:0]" default="00000000" desc="pll2_freq_offset[7:0]" />
+    </RegisterInfo>
+    <RegisterInfo address="0xF0" name="pll2_override_register5">
+      <Bits range="7" field="PLL2_PLL_MODE_SEL" default="0" desc="Select PI in the PLL loop or not" />
+      <Bits range="6" field="PLL2_PI_BYPASS" default="1" desc="Bypass PI inside PLL IP" />
+      <Bits range="5" field="PLL2_ANA_PLL_BYPASS" default="0" desc="pll_bypass inside PLL IP" />
+      <Bits range="4" field="PLL2_DIG_PLL_BYPASS" default="0" desc="pll_bypass inside digital core" />
+      <Bits range="3" field="PLL2_REFDIV[8]" default="0" desc="pll2_refdiv[8]" />
+      <Bits range="2" field="PLL2_FBDIV[8]" default="0" desc="pll2_fbdiv[8]" />
+      <Bits range="1" field="PLL2_FREQ_OFFSET_VALID" default="0" desc="pll2_freq_offset_valid" />
+      <Bits range="0" field="PLL2_PI_ENABLE" default="0" desc="pll2_PI_enable" />
+    </RegisterInfo>
+    <RegisterInfo address="0xF1" name="pll2_override_register6">
+      <Bits range="7:1" field="PLL2_POSTDIV_AUDIO[6:0]" default="0000011" desc="pll2_postdiv_audio[6:0]" />
+      <Bits range="0" field="PLL2_POSTDIV_AUDIO_EN" default="1" desc="pll2_postdiv_audio_en" />
+    </RegisterInfo>
+    <RegisterInfo address="0x0A" name="LRCLK_rate_register">
+      <Bits range="7:4" field="RATE_I2S1_PCM" default="0101" desc="I2S Data rate for both I2S Interface 1 Audio">
+       <Capbility value="0x0" desc="8k" />
+       <Capbility value="0x1" desc="12k" />
+       <Capbility value="0x2" desc="16k" />
+       <Capbility value="0x3" desc="24k" />
+       <Capbility value="0x4" desc="32k" />
+       <Capbility value="0x5" desc="48k" />
+       <Capbility value="0x6" desc="96k" />
+       <Capbility value="0x7" desc="192k" />
+       <Capbility value="0x8" desc="11.025k" />
+       <Capbility value="0x9" desc="22.05k" />
+       <Capbility value="0xA" desc="44.1k" />
+       <Capbility value="0xB" desc="88.2k" />
+       <Capbility value="0xC" desc="176.4k" />
+      </Bits>
+      <Bits range="3:0" field="RATE_I2S2_PCM" default="0101" desc="I2S Data rate for both I2S Interface 2 Voice">
+       <Capbility value="0x0" desc="8k" />
+       <Capbility value="0x1" desc="12k" />
+       <Capbility value="0x2" desc="16k" />
+       <Capbility value="0x3" desc="24k" />
+       <Capbility value="0x4" desc="32k" />
+       <Capbility value="0x5" desc="48k" />
+       <Capbility value="0x6" desc="96k" />
+       <Capbility value="0x7" desc="192k" />
+       <Capbility value="0x8" desc="11.025k" />
+       <Capbility value="0x9" desc="22.05k" />
+       <Capbility value="0xA" desc="44.1k" />
+       <Capbility value="0xB" desc="88.2k" />
+       <Capbility value="0xC" desc="176.4k" />
+      </Bits>
+    </RegisterInfo>
+    <RegisterInfo address="0x0B" name="I2S1_Control_Register1">
+      <Bits range="7:6" field="I2S1_MODE" default="00" desc="Audio interface mode selection" >
+				<Capbility value="0x0" desc="I2S format" />
+      	<Capbility value="0x1" desc="right justified" /> 
+      	<Capbility value="0x2" desc="left justified" /> 
+      	<Capbility value="0x3" desc="PCM format" /> 
+      </Bits> 
+      <Bits range="5:4" field="I2S1_DATA_LEN" default="10" desc="Data length selection per channel" >
+  			<Capbility value="0x0" desc="16bit" />
+      	<Capbility value="0x1" desc="20bit" /> 
+      	<Capbility value="0x2" desc="24bit" /> 
+      </Bits>
+      <Bits range="3" field="LRCLK1_POL" default="0" desc="ADC DAC data left right swap" >
+  			<Capbility value="0x0" desc="left data appears at 1 of LRCLK." />
+      	<Capbility value="0x1" desc="left data appears at 0 of LRCLK." /> 
+  		</Bits>
+      <Bits range="2" field="BCLK1_POL" default="0" desc="I2S PCM bclk polarity control" >
+  			<Capbility value="0x0" desc="normal" />
+      	<Capbility value="0x1" desc="invert" /> 
+  		</Bits>
+      <Bits range="1" field="PCM1_MODE_SEL" default="0" desc="PCM Mode Select" >
+  			<Capbility value="0x0" desc="Mode A" />
+      	<Capbility value="0x1" desc="Mode B" /> 
+  		</Bits>
+	    <Bits range="0" field="I2S1_MASTER_SLAVE_SEL" default="0" desc="Main serial data port mode selection I2S or PCM" >
+ 				<Capbility value="0x0" desc="slave" />
+      	<Capbility value="0x1" desc="master" /> 
+  		</Bits>    
+  	</RegisterInfo>
+    <RegisterInfo address="0x0C" name="I2S_Aud_Control_Register2">
+      <Bits range="6" field="INVERT_LRCLK_I2S1" default="0" desc="invert_lrclk_i2s1" >
+  			<Capbility value="0x0" desc="LRCLK is same with input" />
+      	<Capbility value="0x1" desc="LRCLK is the invert of input" /> 
+  		</Bits>
+      <Bits range="5" field="HIZ_I2S1_DOUT" default="0" desc="I2S_DOUT pin behavior" >
+       	<Capbility value="0x0" desc="normal" />
+      	<Capbility value="0x1" desc="don't drive I2S_DOUT (HiZ)" /> 
+  		</Bits>
+      <Bits range="4" field="I2S1_MSB_LSB" default="0" desc="Selects if MSB appears first or LSB appears first in I2S and PCM interface" >
+       	<Capbility value="0x0" desc="MSB first" />
+      	<Capbility value="0x1" desc="LSB first" /> 
+  		</Bits>
+      <Bits range="3" field="I2C_SW" default="1" desc="i2c interface mode selection between sycn and async i2c" >
+       	<Capbility value="0x0" desc="sync i2c interface" />
+      	<Capbility value="0x1" desc="async i2c interface" /> 
+  		</Bits>     
+  		<Bits range="2:0" field="MCLK_DIV_SEL" default="010" desc="MCLK divider setting for PLL rom table and sycn i2c operation" >
+   		 	<Capbility value="0x0" desc="MCLK" />
+      	<Capbility value="0x1" desc="MCLK/2" /> 
+      	<Capbility value="0x2" desc="MCLK/4" />
+      	<Capbility value="0x3" desc="MCLK/8" />  
+      	<Capbility value="0x4" desc="MCLK/16" />  
+   		</Bits>     
+     </RegisterInfo> 
+    <RegisterInfo address="0x1C" name="I2S2_Control_Register1">
+      <Bits range="7:6" field="I2S2_MODE" default="00" desc="Audio interface mode selection" >
+  			<Capbility value="0x0" desc="I2S format" />
+      	<Capbility value="0x1" desc="right justified" /> 
+      	<Capbility value="0x2" desc="left justified" />
+      	<Capbility value="0x3" desc="PCM format" />  
+   		</Bits> 
+      <Bits range="5:4" field="I2S2_DATA_LEN" default="10" desc="Data length selection per channel" >
+  			<Capbility value="0x0" desc="16bit" />
+      	<Capbility value="0x1" desc="20bit" /> 
+      	<Capbility value="0x2" desc="24bit" /> 
+      </Bits>
+      <Bits range="3" field="LRCLK2_POL" default="0" desc="ADC DAC data left right swap" >
+ 				<Capbility value="0x0" desc="left data appears at 1 of LRCLK." />
+      	<Capbility value="0x1" desc="left data appears at 0 of LRCLK." /> 
+      </Bits>      
+      <Bits range="2" field="BCLK2_POL" default="0" desc="I2S PCM bclk polarity control" >
+  			<Capbility value="0x0" desc="normal" />
+      	<Capbility value="0x1" desc="invert" /> 
+      </Bits> 
+      <Bits range="1" field="PCM2_MODE_SEL" default="0" desc="PCM Mode Select" >
+  			<Capbility value="0x0" desc="Mode A" />
+      	<Capbility value="0x1" desc="Mode B" /> 
+      </Bits> 
+      <Bits range="0" field="I2S2_MASTER_SLAVE_SEL" default="0" desc="Main serial data port mode selection I2S or PCM" >
+        <Capbility value="0x0" desc="slave" />
+      	<Capbility value="0x1" desc="mater" /> 
+      </Bits> 
+    </RegisterInfo>
+    <RegisterInfo address="0x1D" name="I2S2_Control_Register2">
+      <Bits range="6" field="INVERT_LRCLK2" default="0" desc="invert_lrclk2" >
+  			<Capbility value="0x0" desc="LRCLK is same with input" />
+      	<Capbility value="0x1" desc="LRCLK is the invert of input" /> 
+      </Bits> 
+      <Bits range="5" field="HIZ_I2S2_DOUT" default="0" desc="I2S_DOUT pin behavior" >
+ 				<Capbility value="0x0" desc="normal" />
+      	<Capbility value="0x1" desc="don't drive I2S_DOUT (HiZ)" /> 
+      </Bits>       
+      <Bits range="4" field="I2S2_MSB_LSB" default="0" desc="Selects if MSB appears first or LSB appears first in I2S/PCM interface" >
+  			<Capbility value="0x0" desc="MSB first" />
+      	<Capbility value="0x1" desc="LSB first" /> 
+      </Bits> 
+      <Bits range="3" field="I2S1_GEN_EN" default="0" desc="Enabled I2S Audio Generator ADC side" >
+ 				<Capbility value="0x0" desc="Disable" />
+      	<Capbility value="0x1" desc="Enable" /> 
+      </Bits> 
+      <Bits range="2" field="I2S1_REC_EN" default="0" desc="Enabled I2S Audio Receiver DAC side" >
+  			<Capbility value="0x0" desc="Disable" />
+      	<Capbility value="0x1" desc="Enable" /> 
+      </Bits> 
+      <Bits range="1" field="I2S2_GEN_EN" default="0" desc="Enabled I2S Voice Generator ADC side" >
+  			<Capbility value="0x0" desc="Disable" />
+      	<Capbility value="0x1" desc="Enable" /> 
+      </Bits> 
+      <Bits range="0" field="I2S2_REC_EN" default="0" desc="Enabled I2S Voice Receiver DAC side" >
+  			<Capbility value="0x0" desc="Disable" />
+      	<Capbility value="0x1" desc="Enable" /> 
+      </Bits> 
+    </RegisterInfo>
+    <RegisterInfo address="0x1E" name="DMIC_Control_Register">
+      <Bits range="7:6" field="DIG_MIC2_DLY" default="0" desc="Used to adjust the delay of mic data and clock to meet timing" />
+      <Bits range="5:4" field="DIG_MIC1_DLY" default="0" desc="Used to adjust the delay of mic data and clock to meet timing" />
+      <Bits range="3" field="DIG_MIC_SR" default="0" desc="dig_mic_sr" >
+  			<Capbility value="0x0" desc="high sample rate" />
+      	<Capbility value="0x1" desc="low sample rate" /> 
+      </Bits> 
+      <Bits range="2" field="MIC2_IS_DIGITAL" default="0" desc="mic2_is_digital" >
+  			<Capbility value="0x0" desc="MIC2 is not digital" />
+      	<Capbility value="0x1" desc="MIC2 is digital" /> 
+      </Bits> 
+      <Bits range="1" field="MIC1_IS_DIGITAL" default="0" desc="mic1_is_digital" >
+  			<Capbility value="0x0" desc="MIC1 is not digital" />
+      	<Capbility value="0x1" desc="MIC1 is digital" /> 
+      </Bits> 
+      <Bits range="0" field="DIG_MIC_EN" default="0" desc="dig_mic_en" >
+  			<Capbility value="0x0" desc="digital mic (LR) is disable" />
+      	<Capbility value="0x1" desc="digital mic (LR) is enable" /> 
+      </Bits> 
+    </RegisterInfo>
+    <RegisterInfo address="0xA3" name="I2S FIFO read counter limit">
+      <Bits range="7:1" field="LRCLK_CNT_LIMIT" default="0000000" desc="i2c fifo read counter limit" />
+      <Bits range="0" field="OVERRIDE_LRCLK_CNT" default="0" desc="use user define override value rather than default" />
+    </RegisterInfo>
+    <RegisterInfo address="0xA4" name="Input delay buffer length">
+      <Bits range="7:0" field="DELAY_BUFFER_LEN[7:0]" default="00000000" desc="delay buffer length" />
+    </RegisterInfo>
+    <RegisterInfo address="0xA5" name="Input delay buffer select">
+      <Bits range="7" field="BYP_PLL_LOCK" default="0" desc="Bypass PLL lock detect. Unless pll locked, digital core is in reset state" />
+      <Bits range="6" field="BYPASS_NS" default="0" desc="Write 1 to force both NS output from I2S" />
+      <Bits range="5:3" field="LDELAY_BUF_SEL" default="111" desc="Source signal for left delay buffer" >
+  			<Capbility value="0x0" desc="i2s receiver (Audio) left output 24 bit" />
+      	<Capbility value="0x1" desc="i2s receiver (Voice) left output 24 bit" /> 
+      	<Capbility value="0x2" desc="DSP1 left channel output. 24 bit" />
+      	<Capbility value="0x3" desc="DSP1A left channel output. 24 bit" />  
+      	<Capbility value="0x4" desc="DSP DN2 left channel output. 24 bit" />  
+      	<Capbility value="0x5" desc="DSP DN left channel output. 24 bit" />   
+      	<Capbility value="0x6" desc="Global control (CNTLREG‐L) 24 bit" />  
+   		</Bits> 
+      <Bits range="2:0" field="RDELAY_BUF_SEL" default="111" desc="Source signal for right delay buffer" >
+  			<Capbility value="0x0" desc="i2s receiver (Audio) right output 24 bit" />
+      	<Capbility value="0x1" desc="i2s receiver (Voice) right output 24 bit" /> 
+      	<Capbility value="0x2" desc="DSP1 right channel output. 24 bit" />
+      	<Capbility value="0x3" desc="DSP1A right channel output. 24 bit" />  
+      	<Capbility value="0x4" desc="DSP DN2 right channel output. 24 bit" />  
+      	<Capbility value="0x5" desc="DSP DN right channel output. 24 bit" />   
+      	<Capbility value="0x6" desc="Global control (CNTLREG‐R) 24 bit" />  
+   		</Bits> 
+    </RegisterInfo>
+    <RegisterInfo address="0x0E" name="Status_Register_1">
+      <Bits range="6" field="DSPDN2_MAC_OFLAG" default="0" desc="Overflow flag from ADC Path DSPDN2" />
+      <Bits range="5" field="DSP1_MAC_OFLAG" default="0" desc="Overflow flag from DAC Path DSP1" />
+      <Bits range="4" field="DSP2_MAC_OFLAG" default="0" desc="Overflow flag from DAC Path DSP2" />
+      <Bits range="3" field="DSP1A_MAC_OFLAG" default="0" desc="Overflow flag from ADC Path DSP1A" />
+      <Bits range="2" field="DSPDN1_MAC_OFLAG" default="0" desc="Overflow flag from ADC Path DSPDN1" />
+      <Bits range="1" field="DSP1_ALU_OFLAG" default="0" desc="Overflow flag from DAC Path ALU1" />
+      <Bits range="0" field="DSP1A_ALU_OFLAG" default="0" desc="Overflow flag from ADC Path ALU1A" />
+    </RegisterInfo>
+    <RegisterInfo address="0x0F" name="Status_Register_2">
+      <Bits range="7" field="ADC_FIFO_STATUS_CLR" default="0" desc="Use to clear latching high register in ADC FIFO" />
+      <Bits range="6" field="ADC_FIFO_OFLAG" default="0" desc="ADC I2S FIFO overflor flag" />
+      <Bits range="5" field="ADC_FIFO_EMPTY" default="0" desc="ADC I2S FIFO empty status bit" />
+      <Bits range="4" field="ADC_FIFO_FULL" default="0" desc="ADC I2S FIFO full status bit" />
+      <Bits range="3" field="DAC_FIFO_STATUS_CLR" default="0" desc="Use to clear latching high register in DAC FIFO" />
+      <Bits range="2" field="DAC_FIFO_EMPTY" default="0" desc="DAC I2S FIFO empty status bit" />
+      <Bits range="1" field="DAC_FIFO_FULL" default="0" desc="DAC I2S FIFO full status bit" />
+      <Bits range="0" field="DAC_FIFO_OFLAG" default="0" desc="DAC I2S FIFO overflor flag" />
+    </RegisterInfo>
+    <RegisterInfo address="0x10" name="Status_Register_3">
+      <Bits range="7:6" field="RSVD" default="00" desc="Reserved" />
+      <Bits range="5" field="PLL1_LOCK" default="0" desc="PLL1 lock is complete" />
+      <Bits range="4" field="PLL2_LOCK" default="0" desc="PLL2 lock is complete" />
+      <Bits range="3:0" field="SPK_SUPPLY_VOLTAGE" default="0000" desc="Speaker voltage level. Provide details here" />
+    </RegisterInfo>
+    <RegisterInfo address="0x18" name="Interrupt Control Register1">
+      <Bits range="5" field="GPADC_IREF" default="0" desc="Reference current value for GPADC" >
+ 				<Capbility value="0x0" desc="GPADC IREF is iref_3p" />
+      	<Capbility value="0x1" desc="GPADC IREF is iref_4p" /> 
+   		</Bits>      
+   		<Bits range="4" field="GPADC_EN" default="0" desc="Enable control for GPADC" >
+ 			 <Capbility value="0x0" desc="Disable GPADC" />
+      	<Capbility value="0x1" desc="Enable GPADC" /> 
+   		</Bits> 
+      <Bits range="3" field="AUTO_RECOVERY_EN" default="0" desc="auto_recovery_en" />
+      <Bits range="2" field="IRQ_OUT_CONFIG" default="0" desc="irq_out_config" >
+  			<Capbility value="0x0" desc="IRQ output is CMOS" />
+      	<Capbility value="0x1" desc="IRQ output is open‐drain" /> 
+   		</Bits> 
+      <Bits range="1" field="IRQ_OUT_POLARITY" default="0" desc="irq_out_polarity" >
+  			<Capbility value="0x0" desc="IRQ polarity is active low. With open‐drain IRQ polarity must be low" />
+      	<Capbility value="0x1" desc="IRQ polarity is active high" /> 
+   		</Bits> 
+      <Bits range="0" field="CLR_IRQ_STATUS_REG" default="0" desc="clr_irq_status_reg">
+  			<Capbility value="0x0" desc="Keep IRQ status reg1(0x1A) and reg2(0x1B)" />
+      	<Capbility value="0x1" desc="Clear IRQ status reg1(0x1A) and reg2(0x1B)" /> 
+   		</Bits> 
+     </RegisterInfo>
+    <RegisterInfo address="0x19" name="Interrupt Control Register2">
+      <Bits range="7" field="BATTER_MONITOR_MASK" default="1" desc="Batter_monitor_mask">
+  			<Capbility value="0x0" desc="Spekaer supply monitor does not generate an interrupt" />
+      	<Capbility value="0x1" desc="Speaker supply monitor generates an interrupt" /> 
+   		</Bits> 
+      <Bits range="6" field="TE_MASK" default="1" desc="TE_mask" >
+  			<Capbility value="0x0" desc="Thermal event does not generate an interrupt" />
+      	<Capbility value="0x1" desc="Thermal event generates an interrupt" /> 
+   		</Bits> 
+      <Bits range="5" field="HS_DET_MASK" default="1" desc="HS_DET_mask" >
+ 				<Capbility value="0x0" desc="Headset insertion or removal does not generate an interrupt" />
+      	<Capbility value="0x1" desc="Headset insertion or removal generates an interrupt" /> 
+   		</Bits> 
+      <Bits range="4" field="HS_SC_MASK" default="1" desc="HS_SC_mask">
+  			<Capbility value="0x0" desc="Headset short‐circuit does not generate an interrupt" />
+      	<Capbility value="0x1" desc="Headset short‐circuit generates an interrupt" /> 
+   		</Bits> 
+      <Bits range="3" field="MIC_DET_MASK" default="1" desc="MIC_DET_mask" >
+  			<Capbility value="0x0" desc="MIC (only ext‐mic) insertion or removal does not generate an interrupt" />
+      	<Capbility value="0x1" desc="MIC (only ext‐mic) insertion or removal generates an interrupt" /> 
+   		</Bits>
+      <Bits range="2" field="MIC_SC_MASK" default="1" desc="MIC_SC_mask" >
+ 				<Capbility value="0x0" desc="MIC (only ext‐mic) short‐circuit does not generate an interrupt" />
+      	<Capbility value="0x1" desc="MIC (only ext‐mic) short‐circuit generates an interrupt" /> 
+   		</Bits>
+      <Bits range="1" field="SPK_SC_MASK" default="1" desc="SPK_SC_mask" >
+  			<Capbility value="0x0" desc="SPK short‐circuit does not generate an interrupt" />
+      	<Capbility value="0x1" desc="SPK short‐circuit generates an interrupt" /> 
+   		</Bits>
+      <Bits range="0" field="EP_SC_MASK" default="1" desc="EP_SC_mask" >
+  			<Capbility value="0x0" desc="EP short‐circuit does not generate an interrupt" />
+      	<Capbility value="0x1" desc="EP short‐circuit generates an interrupt" /> 
+   		</Bits>	
+     </RegisterInfo>
+    <RegisterInfo address="0x1A" name="Interrupt Status Register 1">
+      <Bits range="7" field="SPKLP_SC_SPKLN_ALARM" default="0" desc="SPKLP_SC_SPKLN_alarm">
+  			<Capbility value="0x0" desc="No short is detected between SPKL+ and SPKL‐" />
+      	<Capbility value="0x1" desc="short is detected between SPKL+ and SPKL‐" /> 
+   		</Bits>	
+      <Bits range="6" field="SPKLPN_SC_PG_ALARM" default="0" desc="SPKLPN_SC_PG_alarm" >
+ 				<Capbility value="0x0" desc="No short is detected between SPKL+‐ and power/ground" />
+      	<Capbility value="0x1" desc="short is detected between SPKL+‐ and power/ground" /> 
+   		</Bits>	
+      <Bits range="5" field="SPKRP_SC_SPKRN_ALARM" default="0" desc="SPKRP_SC_SPKRN_alarm" >
+ 				<Capbility value="0x0" desc="No short is detected between SPKR+ and SPKR‐" />
+      	<Capbility value="0x1" desc="short is detected between SPKR+ and SPKR‐" /> 
+   		</Bits>	
+      <Bits range="4" field="SPKRPN_SC_PG_ALARM" default="0" desc="SPKRPN_SC_PG_alarm" >
+  			<Capbility value="0x0" desc="No short is detected between SPKR+‐ and power or ground" />
+      	<Capbility value="0x1" desc="short is detected between SPKR+‐ and power orground" /> 
+   		</Bits>
+      <Bits range="3" field="EPP_SC_EPN_ALARM" default="0" desc="EPP_SC_EPN_alarm" >
+  			<Capbility value="0x0" desc="No short is detected between EP+ and EP‐" />
+      	<Capbility value="0x1" desc="short is detected between EP+ and EP‐" /> 
+   		</Bits>
+      <Bits range="2" field="EPP_SC_PG_ALARM" default="0" desc="EPP_SC_PG_alarm" >
+  			<Capbility value="0x0" desc="No short is detected between EP+‐ and power ground" />
+      	<Capbility value="0x1" desc="short is detected between EP+‐ and power ground" /> 
+   		</Bits>
+      <Bits range="1" field="HSL_SC_GND_ALARM" default="0" desc="HSL_SC_GND_alarm" >
+ 				<Capbility value="0x0" desc="No short is detected between HPL and ground" />
+      	<Capbility value="0x1" desc="short is detected between HPL and ground" /> 
+   		</Bits>
+      <Bits range="0" field="HSR_SC_GND_ALARM" default="0" desc="HSR_SC_GND_alarm" >
+  			<Capbility value="0x0" desc="No short is detected between HPR and ground" />
+      	<Capbility value="0x1" desc="short is detected between HPR and ground" /> 
+   		</Bits>
+     </RegisterInfo>
+    <RegisterInfo address="0x1B" name="Interrupt Status Register 2">
+      <Bits range="6" field="HSREMOVE_ALARM" default="0" desc="HSremove_alarm">
+  			<Capbility value="0x0" desc="A headset was present earlier and is now present" />
+      	<Capbility value="0x1" desc="A headset was present earlier and is now removed" /> 
+   		</Bits>
+      <Bits range="5" field="ONBOARDMIC_SC_GND_ALARM" default="0" desc="onboardMIC_SC_GND_alarm">
+  			<Capbility value="0x0" desc="No short is detected between onboard MIC(Micbias2) and ground" />
+      	<Capbility value="0x1" desc="short is detected between onboard MIC(Micbias2) and ground" /> 
+   		</Bits>
+      <Bits range="4" field="ONBOARDMIC_DET_ALARM" default="0" desc="onboardMIC_DET_alarm">
+ 				<Capbility value="0x0" desc="An onboard microhone (Micbias2) is not present" />
+      	<Capbility value="0x1" desc="An onboard microhone (Micbias2) is present" /> 
+   		</Bits>
+      <Bits range="3" field="TE_ALARM" default="0" desc="TE_alarm" >
+        <Capbility value="0x0" desc="No thermal event is detected" />
+      	<Capbility value="0x1" desc="A thermal event is detected" /> 
+   		</Bits>
+      <Bits range="2" field="EXTMIC_SC_GND_ALARM" default="0" desc="EXTMIC_SC_GND_alarm">
+  			<Capbility value="0x0" desc="No short is detected between external MIC(Micbias2) and ground" />
+      	<Capbility value="0x1" desc="short is detected between external MIC(Micbias2) and ground" /> 
+   		</Bits>
+      <Bits range="1" field="EXTMIC_ALARM" default="0" desc="EXTMIC_alarm" >
+ 				<Capbility value="0x0" desc="there is no activity on the external MIC" />
+      	<Capbility value="0x1" desc="there is some activbity on the external MIC" /> 
+   		</Bits>
+      <Bits range="0" field="HSINSERT_ALARM" default="0" desc="HSinsert_alarm" >
+  			<Capbility value="0x0" desc="A headset was not present earlier and is still not inserted" />
+      	<Capbility value="0x1" desc="A headset was not present earlier and is now inserted" /> 
+   		</Bits>
+     </RegisterInfo>
+    <RegisterInfo address="0x20" name="DAC Processing Register1">
+      <Bits range="7" field="UPDATE_CLASSG_LIMITS" default="0" desc="Write 1 to update classG threshold limits inside DSP engine" />
+      <Bits range="6" field="DAC_AMUTE_ENABLE" default="0" desc="Write 1 to enable auto mute" />
+      <Bits range="5" field="DAC_MUTE_UNMUTE" default="0" desc="Write 0 to mute and 1 to unmute the DAC side" />
+      <Bits range="4" field="DAC_VOLUME_UPDATE" default="0" desc="volume command" />
+      <Bits range="3" field="DAC_DRC_ENABLE" default="0" desc="Write 1 to enable DRC. Look at register for DRC parameters" />
+      <Bits range="2" field="DAC_EQ_UPDATE" default="0" desc="After updating EQ coefs, write 1 to send the eq update command" />
+      <Bits range="1" field="DAC_EQ_ENABLE" default="0" desc="Write 1 to enable EQ" />
+      <Bits range="0" field="DAC_ANC_ENABLE" default="0" desc="Write 1 to enable ambient noise cancellation" />
+    </RegisterInfo>
+    <RegisterInfo address="0x21" name="DAC Processing Register2">
+      <Bits range="7:5" field="RSVD" default="000" desc="Reserved" />
+      <Bits range="4" field="CLASSG_EN_CLKREG" default="0" desc="This is same as en_clkreg in classG documentation" />
+      <Bits range="3" field="CLASSG_EN" default="0" desc="Enable classG mode" />
+      <Bits range="2" field="DSP_CLASSG_ENABLE" default="0" desc="Write 1 to enable DSP controlled CP modulation" />
+      <Bits range="1" field="DAC_TXRX_MIX_ENABLE" default="0" desc="Write 1 to enable DAC path data mixing at input" />
+      <Bits range="0" field="DAC_OUT_MIX_ENABLE" default="0" desc="Write 1 to enable DAC path data mixing at output" />
+    </RegisterInfo>
+    <RegisterInfo address="0x22" name="DAC Control Register">
+      <Bits range="7" field="DAC_DITHER_EN" default="0" desc="Enable dither for DAC modulator" >
+  			<Capbility value="0x0" desc="Dither is disabled" />
+      	<Capbility value="0x1" desc="Dither is enabled" /> 
+   		</Bits>
+      <Bits range="6" field="DAC_EN_DSM" default="0" desc="Write 1 to enable both left and right noise shaper" />
+      <Bits range="5" field="DAC_SOFT_RAMP_ENABLE" default="0" desc="Write 1 to enable soft volume ramp and soft mute unmute ramp" />
+      <Bits range="4" field="DAC_MONOMODE_EN" default="0" desc="Write 1 to enable DAC mode mode" />
+      <Bits range="3" field="DAC_RIGHT_MUXSEL" default="0" desc="Select source data for DAC right channel" />
+      <Bits range="2" field="DAC_LEFT_MUXSEL" default="0" desc="Select source data for DAC left channel" />
+      <Bits range="1" field="EN_DAC_RIGHT" default="0" desc="Write 1 to enable right channel in DAC path" />
+      <Bits range="0" field="EN_DAC_LEFT" default="0" desc="Write 1 to enable left channel in DAC path" />
+    </RegisterInfo>
+    <RegisterInfo address="0x23" name="DAC Left volume">
+      <Bits range="7:0" field="DAC_LEFT_VOL[7:0]" default="11101011" desc="dB volume setting for left channel in DAC path in 0.5dB step">
+        <Capbility range="0x00~0xff" valrange="-127.5~0.0" step="0.5" />
+      </Bits>
+    </RegisterInfo>
+    <RegisterInfo address="0x24" name="DAC Right volume">
+      <Bits range="7:0" field="DAC_RIGHT_VOL[7:0]" default="11101011" desc="dB volume setting for right channel in DAC path in 0.5dB step">
+         <Capbility range="0x00~0xff" valrange="-127.5~0.0" step="0.5" />
+      </Bits>
+    </RegisterInfo>
+    <RegisterInfo address="0x25" name="DAC Volume update time">
+      <Bits range="7:2" field="RSVD" default="000000" desc="Reserved" />
+      <Bits range="1:0" field="DAC_VOL_CHG_TIME" default="01" desc="During volume soft ramp amount of time allowed for ramp to complete" >
+  			<Capbility value="0x0" desc="50ms" />
+      	<Capbility value="0x1" desc="100ms" /> 
+      	<Capbility value="0x1" desc="200ms" />  
+      	<Capbility value="0x1" desc="400ms" /> 
+   		</Bits>
+    </RegisterInfo>
+    <RegisterInfo address="0x26" name="ANC Parameter u register2">
+      <Bits range="7:0" field="ANC_MU2[7:0]" default="00000100" desc="MSB field of parameter u" />
+    </RegisterInfo>
+    <RegisterInfo address="0x27" name="ANC Parameter u register1">
+      <Bits range="7:0" field="ANC_MU1[7:0]" default="00000000" desc="LSB field of parameter u" />
+    </RegisterInfo>
+    <RegisterInfo address="0x28" name="ANC Parameter lamba register2">
+      <Bits range="7:0" field="ANC_LAM2[7:0]" default="00000000" desc="MSB field of parameter lamba" />
+    </RegisterInfo>
+    <RegisterInfo address="0x29" name="ANC Parameter lamba register1">
+      <Bits range="7:0" field="ANC_LAM1[7:0]" default="10000000" desc="LSB field of parameter lamba" />
+    </RegisterInfo>
+    <RegisterInfo address="0x2A" name="ANC Parameter beta register2">
+      <Bits range="7:0" field="ANC_BETA2[7:0]" default="00111111" desc="MSB field of parameter beta" />
+    </RegisterInfo>
+    <RegisterInfo address="0x2B" name="ANC Parameter beta register1">
+      <Bits range="7:0" field="ANC_BETA1[7:0]" default="00000000" desc="LSB field of parameter beta" />
+    </RegisterInfo>
+    <RegisterInfo address="0x2C" name="ANC Parameter err_th register2">
+      <Bits range="7:0" field="ANC_ERR_TH2[7:0]" default="00000000" desc="MSB field of parameter err_th" />
+    </RegisterInfo>
+    <RegisterInfo address="0x2D" name="ANC Parameter err_th register1">
+      <Bits range="7:0" field="ANC_ERR_TH1[7:0]" default="00100001" desc="LSB field of parameter err_th" />
+    </RegisterInfo>
+    <RegisterInfo address="0x2E" name="EQ Band1 Gain">
+      <Bits range="4:0" field="K_EQ1" default="01100" desc="dB Gain setting for EQ band1 filter" />
+    </RegisterInfo>
+    <RegisterInfo address="0x2F" name="EQ Band1 center frequency2">
+      <Bits range="7:0" field="WC_HI_EQ1[7:0]" default="00000000" desc="MSB field of normalized center frequency for EQ band1" />
+    </RegisterInfo>
+    <RegisterInfo address="0x30" name="EQ Band1 center frequency1">
+      <Bits range="7:0" field="WC_LO_EQ1[7:0]" default="00000000" desc="LSB field of normalized center frequency for EQ band1" />
+    </RegisterInfo>
+    <RegisterInfo address="0x31" name="EQ Band2 Gain">
+      <Bits range="7:5" field="RSVD" default="000" desc="Reserved" />
+      <Bits range="4:0" field="K_EQ2" default="01100" desc="dB Gain setting for EQ band2 filter" />
+    </RegisterInfo>
+    <RegisterInfo address="0x32" name="EQ Band2 center frequency2">
+      <Bits range="7:0" field="WC_HI_EQ2[7:0]" default="00000000" desc="MSB field of normalized center frequency for EQ band2" />
+    </RegisterInfo>
+    <RegisterInfo address="0x33" name="EQ Band2 center frequency1">
+      <Bits range="7:0" field="WC_LO_EQ2[7:0]" default="00000000" desc="LSB field of normalized center frequency for EQ band2" />
+    </RegisterInfo>
+    <RegisterInfo address="0x34" name="EQ Band2 bandwidth2">
+      <Bits range="7:0" field="BW_HI_EQ2[7:0]" default="00000000" desc="MSB field of normalized bandwidth deltaf for EQ band2" />
+    </RegisterInfo>
+    <RegisterInfo address="0x35" name="EQ Band2 bandwidth1">
+      <Bits range="7:0" field="BW_LO_EQ2[7:0]" default="00000000" desc="LSB field of normalized bandwidth deltaf for EQ band2" />
+    </RegisterInfo>
+    <RegisterInfo address="0x36" name="EQ Band3 Gain">
+      <Bits range="7:5" field="RSVD" default="000" desc="Reserved" />
+      <Bits range="4:0" field="K_EQ3" default="01100" desc="dB Gain setting for EQ band3 filter" />
+    </RegisterInfo>
+    <RegisterInfo address="0x37" name="EQ Band3 center frequency2">
+      <Bits range="7:0" field="WC_HI_EQ3[7:0]" default="00000000" desc="MSB field of normalized center frequency for EQ band3" />
+    </RegisterInfo>
+    <RegisterInfo address="0x38" name="EQ Band3 center frequency1">
+      <Bits range="7:0" field="WC_LO_EQ3[7:0]" default="00000000" desc="LSB field of normalized center frequency for EQ band3" />
+    </RegisterInfo>
+    <RegisterInfo address="0x39" name="EQ Band3 bandwidth2">
+      <Bits range="7:0" field="BW_HI_EQ3[7:0]" default="00000000" desc="MSB field of normalized bandwidth deltaf for EQ band3" />
+    </RegisterInfo>
+    <RegisterInfo address="0x3A" name="EQ Band3 bandwidth1">
+      <Bits range="7:0" field="BW_LO_EQ3[7:0]" default="00000000" desc="LSB field of normalized bandwidth deltaf for EQ band3" />
+    </RegisterInfo>    
+    <RegisterInfo address="0x3B" name="EQ Band4 Gain">
+      <Bits range="7:5" field="RSVD" default="000" desc="Reserved" />
+      <Bits range="4:0" field="K_EQ4" default="01100" desc="dB Gain setting for EQ band4 filter" />
+    </RegisterInfo>
+    <RegisterInfo address="0x3C" name="EQ Band4 center frequency2">
+      <Bits range="7:0" field="WC_HI_EQ4[7:0]" default="00000000" desc="MSB field of normalized center frequency for EQ band4" />
+    </RegisterInfo>
+    <RegisterInfo address="0x3D" name="EQ Band4 center frequency1">
+      <Bits range="7:0" field="WC_LO_EQ4[7:0]" default="00000000" desc="LSB field of normalized center frequency for EQ band4" />
+    </RegisterInfo>
+    <RegisterInfo address="0x3E" name="EQ Band4 bandwidth2">
+      <Bits range="7:0" field="BW_HI_EQ4[7:0]" default="00000000" desc="MSB field of normalized bandwidth deltaf for EQ band4" />
+    </RegisterInfo>
+    <RegisterInfo address="0x3F" name="EQ Band4 bandwidth1">
+      <Bits range="7:0" field="BW_LO_EQ4[7:0]" default="00000000" desc="LSB field of normalized bandwidth deltaf for EQ band4" />
+    </RegisterInfo>    
+    <RegisterInfo address="0x40" name="EQ Band5 Gain">
+      <Bits range="7:5" field="RSVD" default="000" desc="Reserved" />
+      <Bits range="4:0" field="K_EQ5" default="01100" desc="dB Gain setting for EQ band5 filter" />
+    </RegisterInfo>
+    <RegisterInfo address="0x41" name="EQ Band5 center frequency2">
+      <Bits range="7:0" field="WC_HI_EQ5[7:0]" default="00000000" desc="MSB field of normalized center frequency for EQ band5" />
+    </RegisterInfo>
+    <RegisterInfo address="0x42" name="EQ Band5 center frequency1">
+      <Bits range="7:0" field="WC_LO_EQ5[7:0]" default="00000000" desc="LSB field of normalized center frequency for EQ band5" />
+    </RegisterInfo>
+    <RegisterInfo address="0x43" name="EQ Band5 bandwidth2">
+      <Bits range="7:0" field="BW_HI_EQ5[7:0]" default="00000000" desc="MSB field of normalized bandwidth deltaf for EQ band5" />
+    </RegisterInfo>
+    <RegisterInfo address="0x44" name="EQ Band5 bandwidth1">
+      <Bits range="7:0" field="BW_LO_EQ5[7:0]" default="00000000" desc="LSB field of normalized bandwidth deltaf for EQ band5" />
+    </RegisterInfo>    
+    <RegisterInfo address="0x45" name="EQ Band6 Gain">
+      <Bits range="7:5" field="RSVD" default="000" desc="Reserved" />
+      <Bits range="4:0" field="K_EQ6" default="01100" desc="dB Gain setting for EQ band6 filter" />
+    </RegisterInfo>
+    <RegisterInfo address="0x46" name="EQ Band6 center frequency2">
+      <Bits range="7:0" field="WC_HI_EQ6[7:0]" default="00000000" desc="MSB field of normalized center frequency for EQ band6" />
+    </RegisterInfo>
+    <RegisterInfo address="0x47" name="EQ Band6 center frequency1">
+      <Bits range="7:0" field="WC_LO_EQ6[7:0]" default="00000000" desc="LSB field of normalized center frequency for EQ band6" />
+    </RegisterInfo>
+    <RegisterInfo address="0x48" name="EQ Band6 bandwidth2">
+      <Bits range="7:0" field="BW_HI_EQ6[7:0]" default="00000000" desc="MSB field of normalized bandwidth deltaf for EQ band6" />
+    </RegisterInfo>
+    <RegisterInfo address="0x49" name="EQ Band6 bandwidth1">
+      <Bits range="7:0" field="BW_LO_EQ6[7:0]" default="00000000" desc="LSB field of normalized bandwidth deltaf for EQ band6" />
+    </RegisterInfo>    
+    <RegisterInfo address="0x4A" name="EQ Band7 Gain">
+      <Bits range="7:5" field="RSVD" default="000" desc="Reserved" />
+      <Bits range="4:0" field="K_EQ7" default="01100" desc="dB Gain setting for EQ band7 filter" />
+    </RegisterInfo>
+    <RegisterInfo address="0x4B" name="EQ Band7 center frequency2">
+      <Bits range="7:0" field="WC_HI_EQ7[7:0]" default="00000000" desc="MSB field of normalized center frequency for EQ band7" />
+    </RegisterInfo>
+    <RegisterInfo address="0x4C" name="EQ Band7 center frequency1">
+      <Bits range="7:0" field="WC_LO_EQ7[7:0]" default="00000000" desc="LSB field of normalized center frequency for EQ band7" />
+    </RegisterInfo>
+    <RegisterInfo address="0x4D" name="EQ Band7 bandwidth2">
+      <Bits range="7:0" field="BW_HI_EQ7[7:0]" default="00000000" desc="MSB field of normalized bandwidth deltaf for EQ band7" />
+    </RegisterInfo>
+    <RegisterInfo address="0x4E" name="EQ Band7 bandwidth1">
+      <Bits range="7:0" field="BW_LO_EQ7[7:0]" default="00000000" desc="LSB field of normalized bandwidth deltaf for EQ band7" />
+    </RegisterInfo>    
+    <RegisterInfo address="0x4F" name="EQ Band8 Gain">
+      <Bits range="7:5" field="RSVD" default="000" desc="Reserved" />
+      <Bits range="4:0" field="K_EQ8" default="01100" desc="dB Gain setting for EQ band8 filter" />
+    </RegisterInfo>
+    <RegisterInfo address="0x50" name="EQ Band8 center frequency2">
+      <Bits range="7:0" field="WC_HI_EQ8[7:0]" default="00000000" desc="MSB field of normalized center frequency for EQ band8" />
+    </RegisterInfo>
+    <RegisterInfo address="0x51" name="EQ Band8 center frequency1">
+      <Bits range="7:0" field="WC_LO_EQ8[7:0]" default="00000000" desc="LSB field of normalized center frequency for EQ band8" />
+    </RegisterInfo>
+    <RegisterInfo address="0x52" name="DAC DRC threshold2">
+      <Bits range="7:0" field="T_DRC_HI[7:0]" default="11111000" desc="MSB field of threshold dB value of DRC compression engine" />
+    </RegisterInfo>
+    <RegisterInfo address="0x53" name="DAC DRC threshold1">
+      <Bits range="7:0" field="T_DRC_LO[7:0]" default="00000111" desc="LSB field of threshold dB value of DRC compression engine" />
+    </RegisterInfo>
+    <RegisterInfo address="0x54" name="DAC DRC offset2">
+      <Bits range="7:0" field="O_DRC_HI[7:0]" default="00000000" desc="MSB field of offset dB value of DRC compression engine" />
+    </RegisterInfo>
+    <RegisterInfo address="0x55" name="DAC DRC offset1">
+      <Bits range="7:0" field="O_DRC_LO[7:0]" default="00000000" desc="LSB field of offset dB value of DRC compression engine" />
+    </RegisterInfo>
+    <RegisterInfo address="0x56" name="DAC DRC compression ratio">
+      <Bits range="7:0" field="K_DRC[7:0]" default="00010000" desc="compression ratio value of DRC compression engine" />
+    </RegisterInfo>
+    <RegisterInfo address="0x57" name="DAC DRC energy alpha register2">
+      <Bits range="7:0" field="DRC_ALPHA_ENG_HI[7:0]" default="00000001" desc="MSB field of DRC alpha energy filter time constant" />
+    </RegisterInfo>
+    <RegisterInfo address="0x58" name="DAC DRC energy alpha register1">
+      <Bits range="7:0" field="DRC_ALPHA_ENG_LO[7:0]" default="01010100" desc="LSB field of DRC alpha energy filter time constant" />
+    </RegisterInfo>
+    <RegisterInfo address="0x59" name="DAC DRC attack alpha register2">
+      <Bits range="7:0" field="DRC_ALPHA_ATK_HI[7:0]" default="00000010" desc="MSB field of DRC attack time constant" />
+    </RegisterInfo>
+    <RegisterInfo address="0x5A" name="DAC DRC attack alpha register1">
+      <Bits range="7:0" field="DRC_ALPHA_ATK_LO[7:0]" default="10100100" desc="LSB field of DRC attack time constant" />
+    </RegisterInfo>
+    <RegisterInfo address="0x5B" name="DAC DRC decay alpha register2">
+      <Bits range="7:0" field="DRC_ALPHA_DEC_HI[7:0]" default="00000000" desc="MSB field of DRC decay time constant" />
+    </RegisterInfo>
+    <RegisterInfo address="0x5C" name="DAC DRC decay alpha register1">
+      <Bits range="7:0" field="DRC_ALPHA_DEC_LO[7:0]" default="10001000" desc="LSB field of DRC decay time constant" />
+    </RegisterInfo>
+    <RegisterInfo address="0x5D" name="DAC left-to-left mix">
+      <Bits range="7:0" field="DAC_LMIXL[7:0]" default="01000000" desc="Mix coefficient for left contribution to left mix" />
+    </RegisterInfo>
+    <RegisterInfo address="0x5E" name="DAC right-to-left mix">
+      <Bits range="7:0" field="DAC_RMIXL[7:0]" default="01000000" desc="Mix coefficient for right contribution to left mix" />
+    </RegisterInfo>
+    <RegisterInfo address="0x5F" name="DAC left-to-right mix">
+      <Bits range="7:0" field="DAC_LMIXR[7:0]" default="01000000" desc="Mix coefficient for left contribution to right mix" />
+    </RegisterInfo>
+    <RegisterInfo address="0x60" name="DAC right-to-right mix">
+      <Bits range="7:0" field="DAC_RMIXR[7:0]" default="01000000" desc="Mix coefficient for right contribution to right mix" />
+    </RegisterInfo>
+    <RegisterInfo address="0x61" name="DSP1_L_dummy1">
+      <Bits range="7:0" field="DSP1_L_DUMMY1[7:0]" default="00000000" desc="Dummy register for DSP1 RAML" />
+    </RegisterInfo>
+    <RegisterInfo address="0x62" name="DSP1_R_dummy1">
+      <Bits range="7:0" field="DSP1_R_DUMMY1[7:0]" default="00000000" desc="Dummy register for DSP1 RAMR" />
+    </RegisterInfo>
+    <RegisterInfo address="0x63" name="DSP1_C2_dummy1">
+      <Bits range="7:0" field="DSP1_C2_DUMMY1[7:0]" default="00000000" desc="Dummy register for DSP1 RAMC2" />
+    </RegisterInfo>
+    <RegisterInfo address="0x68" name="DSP1_C2_dummy2">
+      <Bits range="7:0" field="DSP1_C2_DUMMY2[7:0]" default="00000000" desc="Dummy register for DSP1 RAMC2" />
+    </RegisterInfo>
+    <RegisterInfo address="0x69" name="DSP1_C1_dummy1">
+      <Bits range="7:0" field="DSP1_C1_DUMMY1[7:0]" default="00000000" desc="Dummy register for DSP1 RAMC1" />
+    </RegisterInfo>
+    <RegisterInfo address="0x6A" name="DSP1_L_dummy2">
+      <Bits range="7:0" field="DSP1_L_DUMMY2[7:0]" default="00000000" desc="Dummy register for DSP1 RAML" />
+    </RegisterInfo>
+    <RegisterInfo address="0x6B" name="DSP1_R_dummy2">
+      <Bits range="7:0" field="DSP1_R_DUMMY2[7:0]" default="00000000" desc="Dummy register for DSP1 RAMR" />
+    </RegisterInfo>
+    <RegisterInfo address="0x6C" name="DWA control register">
+      <Bits range="7:5" field="RSVD" default="000" desc="Reserved" />
+      <Bits range="4:3" field="DAC_DWA_OFF_RIGHT" default="00" desc="dac_dwa_off_right" />
+      <Bits range="2:1" field="DAC_DWA_OFF_LEFT" default="00" desc="dac_dwa_off_left" />
+      <Bits range="0" field="DAC_DWA_BYP" default="0" desc="dac_dwa_byp" />
+    </RegisterInfo>
+    <RegisterInfo address="0x6D" name="DSM Scaling Register">
+      <Bits range="7:0" field="DSM_SCALE[7:0]" default="01110000" desc="scaling coefficient for left and right channel DAC DSM" />
+    </RegisterInfo>
+    <RegisterInfo address="0x70" name="ADC Processing Register1">
+      <Bits range="7" field="ADC_4MIC_BEAMFORMING" default="0" desc="Write 0-for 2MIC beamforming 1-for 4MIC beamforming" />
+      <Bits range="6" field="ADC_NG_ENABLE" default="0" desc="Write 1 to enable Noise Gate on ADC path" />
+      <Bits range="5" field="ADC_MUTE_UNMUTE" default="0" desc="Write 1 in order to mute or unmute the ADC record side" />
+      <Bits range="4" field="ADC_VOLUME_UPDATE" default="0" desc="After updating adc_vol_left and adc_vol_right, write 1 to send the volume command" />
+      <Bits range="3" field="ADC_ALC_ENABLE" default="0" desc="Write 1 to enable ALC" />
+      <Bits range="2" field="ADC_EQ_UPDATE" default="0" desc="Reserved" />
+      <Bits range="1" field="ADC_HPF_ENABLE" default="0" desc="Write 1 to enable HPF for wind noise reduction" />
+      <Bits range="0" field="ADC_AEC_ENABLE" default="0" desc="Write 1 to enable AEC" />
+    </RegisterInfo>
+    <RegisterInfo address="0x71" name="ADC Processing Register2">
+      <Bits range="7:4" field="RSVD" default="0000" desc="Reserved" />
+      <Bits range="3" field="ADC_SSL_ENABLE" default="0" desc="Write 1 to enable Sound Source Localization" />
+      <Bits range="2" field="ADC_MICBF_ENABLE" default="0" desc="Write 1 to enable Microphone beam‐forming" />
+      <Bits range="1" field="ADC_AMICDMIC_MIX_ENABLE" default="0" desc="Write 1 to enable ADC path AMIC and DMIC mixing" />
+      <Bits range="0" field="ADC_MIX_ENABLE" default="0" desc="Write 1 to enable ADC path LR mixing" />
+    </RegisterInfo>
+    <RegisterInfo address="0x72" name="ADC Control Register">
+      <Bits range="7" field="DSP1A_FAST_MODE" default="0" desc="0: dsp1a run 512 lines rom code 1: dsp1a run 1024 lines rom code">
+       	<Capbility value="0x0" desc="dsp1a run 512 lines rom code" />
+      	<Capbility value="0x1" desc="dsp1a run 1024 lines rom code" /> 
+   		</Bits>
+      <Bits range="5" field="ADC_SOFT_RAMP_ENABLE" default="0" desc="Write 1 to enable ZCD based soft volume ramp and soft mute/unmute ramp" />
+      <Bits range="4" field="ADC_MONO_MODE" default="0" desc="Write 1 to enable ADC path mono mode operation" />
+      <Bits range="3" field="ADC_RIGHT_MUXSEL" default="0" desc="Select source data for ADC right channel" >
+  			<Capbility value="0x0" desc="Right data goes to ADC right channel" />
+      	<Capbility value="0x1" desc="Left data goes to ADC right channel" /> 
+   		</Bits>
+      <Bits range="2" field="ADC_LEFT_MUXSEL" default="0" desc="Select source data for ADC left channel">
+  			<Capbility value="0x0" desc="Left data goes to DAC left channel" /> 	
+      	<Capbility value="0x1" desc="Right data goes to DAC left channel" /> 
+   		</Bits>
+       <Bits range="1" field="EN_ADC_RIGHT" default="0" desc="Write 1 to enable right channel in ADC path" />
+      <Bits range="0" field="EN_ADC_LEFT" default="0" desc="Write 1 to enable left channel in ADC path" />
+    </RegisterInfo>
+    <RegisterInfo address="0x73" name="ADC Left volume">
+      <Bits range="7:0" field="ADC_LEFT_VOL[7:0]" default="11101011" desc="dB volume setting for left channel in ADC path in 0.5dB step">
+       	<Capbility range="0x00~0xff" valrange="-127.5~0.0" step="0.5" />
+      </Bits>
+    </RegisterInfo>
+    <RegisterInfo address="0x74" name="ADC Right volume">
+      <Bits range="7:0" field="ADC_RIGHT_VOL[7:0]" default="11101011" desc="dB volume setting for right channel in ADC path in 0.5dB step">
+        <Capbility range="0x00~0xff" valrange="-127.5~0.0" step="0.5" />
+      </Bits>
+    </RegisterInfo>
+    <RegisterInfo address="0x75" name="ADC Volume update time">
+      <Bits range="7:6" field="RSVD" default="00" desc="Reserved" />
+      <Bits range="5:4" field="MIC2_BOOST" default="00" desc="Digital Gain boost for both Left and Right channel data on MIC2">
+  			<Capbility value="0x0" desc="No gain boost (x1)" /> 	
+      	<Capbility value="0x1" desc="6 dB gain boost (x2)" /> 
+      	<Capbility value="0x2" desc="12 dB gain boost (x4)" /> 	
+      	<Capbility value="0x3" desc="18 dB gain boost (x8)" /> 
+   		</Bits>
+      <Bits range="3:2" field="MIC1_BOOST" default="00" desc="Digital Gain boost for both Left and Right channel data on MIC1" >
+  			<Capbility value="0x0" desc="No gain boost (x1)" /> 	
+      	<Capbility value="0x1" desc="6 dB gain boost (x2)" /> 
+      	<Capbility value="0x2" desc="12 dB gain boost (x4)" /> 	
+      	<Capbility value="0x3" desc="18 dB gain boost (x8)" /> 
+   		</Bits>
+       <Bits range="1:0" field="ADC_VOL_CHG_TIME" default="01" desc="During volume soft ramp amount of time allowed for ramp to complete" >
+  			<Capbility value="0x0" desc="50ms" /> 	
+      	<Capbility value="0x1" desc="100ms" /> 
+      	<Capbility value="0x2" desc="200ms" /> 	
+      	<Capbility value="0x3" desc="400ms" /> 
+   		</Bits>
+     </RegisterInfo>
+    <RegisterInfo address="0x76" name="ADC ALC upper threshold2">
+      <Bits range="7:0" field="TU_ALC_HI[7:0]" default="11111000" desc="MSB field of upper threshold dB value in ALC" />
+    </RegisterInfo>
+    <RegisterInfo address="0x77" name="ADC ALC upper threshold1">
+      <Bits range="7:0" field="TU_ALC_LO[7:0]" default="00000111" desc="LSB field of upper threshold dB value in ALC" />
+    </RegisterInfo>
+    <RegisterInfo address="0x78" name="ADC ALC lower threshold2">
+      <Bits range="7:0" field="TL_ALC_HI[7:0]" default="11110100" desc="MSB field of lower threshold dB value in ALC" />
+    </RegisterInfo>
+    <RegisterInfo address="0x79" name="ADC ALC lower threshold1">
+      <Bits range="7:0" field="TL_ALC_LO[7:0]" default="00001011" desc="LSB field of lower threshold dB value in ALC" />
+    </RegisterInfo>
+    <RegisterInfo address="0x7A" name="ADC ALC offset2">
+      <Bits range="7:0" field="O_ALC_HI[7:0]" default="00000000" desc="MSB field of offset dB value of ALC engine" />
+    </RegisterInfo>
+    <RegisterInfo address="0x7B" name="ADC ALC offset1">
+      <Bits range="7:0" field="O_ALC_LO[7:0]" default="00000000" desc="LSB field of offset dB value of ALC engine" />
+    </RegisterInfo>
+    <RegisterInfo address="0x7C" name="ADC ALC compression ratio">
+      <Bits range="7:0" field="K_ALC[7:0]" default="00010000" desc="compression ratio value of ALC engine" />
+    </RegisterInfo>
+    <RegisterInfo address="0x7D" name="ADC ALC energy alpha register2">
+      <Bits range="7:0" field="ALC_ALPHA_ENG_HI[7:0]" default="00000001" desc="MSB field of ALC alpha energy filter time constant" />
+    </RegisterInfo>
+    <RegisterInfo address="0x7E" name="ADC ALC energy alpha register1">
+      <Bits range="7:0" field="ALC_ALPHA_ENG_LO[7:0]" default="01010100" desc="LSB field of ALC alpha energy filter time constant" />
+    </RegisterInfo>
+    <RegisterInfo address="0x7F" name="ADC ALC attack alpha register2">
+      <Bits range="7:0" field="ALC_ALPHA_ATK_HI[7:0]" default="00000010" desc="MSB field of ALC attack time constant" />
+    </RegisterInfo>
+    <RegisterInfo address="0x80" name="ADC ALC attack alpha register1">
+      <Bits range="7:0" field="ALC_ALPHA_ATK_LO[7:0]" default="10100100" desc="LSB field of ALC attack time constant" />
+    </RegisterInfo>
+    <RegisterInfo address="0x81" name="ADC ALC decay alpha register2">
+      <Bits range="7:0" field="ALC_ALPHA_DEC_HI[7:0]" default="00000000" desc="MSB field of ALC decay time constant" />
+    </RegisterInfo>
+    <RegisterInfo address="0x82" name="ADC ALC decay alpha register1">
+      <Bits range="7:0" field="ALC_ALPHA_DEC_LO[7:0]" default="10001000" desc="LSB field of ALC decay time constant" />
+    </RegisterInfo>
+    <RegisterInfo address="0x83" name="ADC Noise Gate threshold2">
+      <Bits range="7:0" field="T_NG_HI[7:0]" default="10110000" desc="MSB field of NGthreshold dB value" />
+    </RegisterInfo>
+    <RegisterInfo address="0x84" name="ADC Noise Gate threshold1">
+      <Bits range="7:0" field="T_NG_LO[7:0]" default="01000110" desc="LSB field of NGthreshold dB value" />
+    </RegisterInfo>
+    <RegisterInfo address="0x85" name="ADC left-to-left mix">
+      <Bits range="7:0" field="ADC_LMIXL[7:0]" default="01000000" desc="Mix coefficient for left contribution to left mix" />
+    </RegisterInfo>
+    <RegisterInfo address="0x86" name="ADC right-to-left mix">
+      <Bits range="7:0" field="ADC_RMIXL[7:0]" default="01000000" desc="Mix coefficient for right contribution to left mix" />
+    </RegisterInfo>
+    <RegisterInfo address="0x87" name="ADC left-to-right mix">
+      <Bits range="7:0" field="ADC_LMIXR[7:0]" default="01000000" desc="Mix coefficient for left contribution to right mix" />
+    </RegisterInfo>
+    <RegisterInfo address="0x88" name="ADC right-to-right mix">
+      <Bits range="7:0" field="ADC_RMIXR[7:0]" default="01000000" desc="Mix coefficient for right contribution to right mix" />
+    </RegisterInfo>
+    <RegisterInfo address="0x89" name="AEC Parameter u register2">
+      <Bits range="7:0" field="AEC_MU2[7:0]" default="00000100" desc="MSB field of parameter u" />
+    </RegisterInfo>
+    <RegisterInfo address="0x8A" name="AEC Parameter u register1">
+      <Bits range="7:0" field="AEC_MU1[7:0]" default="00000000" desc="LSB field of parameter u" />
+    </RegisterInfo>
+    <RegisterInfo address="0x8B" name="AEC Parameter lamba register2">
+      <Bits range="7:0" field="AEC_LAM2[7:0]" default="00000000" desc="MSB field of parameter lamba" />
+    </RegisterInfo>
+    <RegisterInfo address="0x8C" name="AEC Parameter lamba register1">
+      <Bits range="7:0" field="AEC_LAM1[7:0]" default="10000000" desc="LSB field of parameter lamba" />
+    </RegisterInfo>
+    <RegisterInfo address="0x8D" name="AEC Parameter beta register2">
+      <Bits range="7:0" field="AEC_BETA2[7:0]" default="00111111" desc="MSB field of parameter beta" />
+    </RegisterInfo>
+    <RegisterInfo address="0x8E" name="AEC Parameter beta register1">
+      <Bits range="7:0" field="AEC_BETA1[7:0]" default="00000000" desc="LSB field of parameter beta" />
+    </RegisterInfo>
+    <RegisterInfo address="0x8F" name="AEC Parameter err_th register2">
+      <Bits range="7:0" field="AEC_ERR_TH2[7:0]" default="00000000" desc="MSB field of parameter err_th" />
+    </RegisterInfo>
+    <RegisterInfo address="0x90" name="AEC Parameter err_th register1">
+      <Bits range="7:0" field="AEC_ERR_TH1[7:0]" default="00100001" desc="LSB field of parameter err_th" />
+    </RegisterInfo>
+    <RegisterInfo address="0x91" name="DSP1A_L_dummy1">
+      <Bits range="7:0" field="DSP1A_L_DUMMY1[7:0]" default="00000000" desc="Dummy register for DSP1A RAML" />
+    </RegisterInfo>
+    <RegisterInfo address="0x92" name="DSP1A_R_dummy1">
+      <Bits range="7:0" field="DSP1A_R_DUMMY1[7:0]" default="00000000" desc="Dummy register for DSP1A RAMR" />
+    </RegisterInfo>
+    <RegisterInfo address="0x93" name="DSP1A_C1_dummy1">
+      <Bits range="7:0" field="DSP1A_C1_DUMMY1[7:0]" default="00000000" desc="Dummy register for DSP1A RAMC1" />
+    </RegisterInfo>
+    <RegisterInfo address="0x94" name="DSP1A_C2_dummy1">
+      <Bits range="7:0" field="DSP1A_C2_dummy1[7:0]" default="00000000" desc="Dummy register for DSP1A RAMC2" />
+    </RegisterInfo>
+    <RegisterInfo address="0x95" name="DSP1A_C2_dummy2">
+      <Bits range="7:0" field="DSP1A_C2_DUMMY2[7:0]" default="00000000" desc="Dummy register for DSP1A RAMC2" />
+    </RegisterInfo>
+    <RegisterInfo address="0x96" name="SSL parameter mu">
+      <Bits range="7:0" field="MU_SSL[7:0]" default="00000100" desc="Sound Source Localization parameter mu" />
+    </RegisterInfo>
+    <RegisterInfo address="0x97" name="SSL parameter phi">
+      <Bits range="7:0" field="PHI_SSL[7:0]" default="01111111" desc="Sound Source Localization parameter phi for energy filter" />
+    </RegisterInfo>
+    <RegisterInfo address="0x9A" name="BF Parameter alpha register MSB">
+      <Bits range="7:0" field="ALPHA_BF_HI[7:0]" default="00000000" desc="MSB field of parameter alpha" />
+    </RegisterInfo>
+    <RegisterInfo address="0x9B" name="BF Parameter alpha register LSB">
+      <Bits range="7:0" field="ALPHA_BF_LO[7:0]" default="00010000" desc="LSB field of parameter alpha" />
+    </RegisterInfo>
+    <RegisterInfo address="0x9C" name="BF Parameter beta register">
+      <Bits range="7:0" field="BETA_BF[7:0]" default="00011010" desc="BF parameter beta" />
+    </RegisterInfo>
+    <RegisterInfo address="0x9D" name="BF Parameter neta register">
+      <Bits range="7:0" field="NETA_BF[7:0]" default="01111110" desc="BF parameter to control alpha energy filter" />
+    </RegisterInfo>
+    <RegisterInfo address="0x9E" name="BF Parameter K register">
+      <Bits range="7:0" field="K_BF[7:0]" default="00010100" desc="BF parameter K" />
+    </RegisterInfo>
+    <RegisterInfo address="0x9F" name="BF Parameter counter limit register">
+      <Bits range="7:0" field="BF_CNTLIMIT[7:0]" default="00111110" desc="BF parameter counter limit" />
+    </RegisterInfo>
+    <RegisterInfo address="0x1F" name="Datapath flow contorl register">
+      <Bits range="7" field="DSP1A_IN2_SEL" default="0" desc="dsp1a input 2 selection">
+			  <Capbility value="0x0" desc="DSPDN2" /> 	
+      	<Capbility value="0x1" desc="I2S2 REC" /> 
+   		</Bits>
+      <Bits range="6" field="DSP1A_IN1_SEL" default="0" desc="dsp1a input 1 selection" >
+  			<Capbility value="0x0" desc="DSPDN1" /> 	
+      	<Capbility value="0x1" desc="I2S1 REC" /> 
+   		</Bits>
+      <Bits range="5:3" field="i2s2_gen_sel" default="000" desc="i2s2 generator selection">
+  			<Capbility value="0x0" desc="DSP1A" /> 	
+      	<Capbility value="0x1" desc="DSPDN1" /> 
+      	<Capbility value="0x2" desc="DSPDN2" />  
+      	<Capbility value="0x3" desc="DSP1" /> 
+      	<Capbility value="0x4" desc="I2S1 REC" /> 
+      	<Capbility value="0x5" desc="I2S2 REC" />
+   		</Bits>
+       <Bits range="2:0" field="I2S1_GEN_SEL" default="000" desc="i2s1 generator selection" >
+  			<Capbility value="0x0" desc="DSP1A" /> 	
+      	<Capbility value="0x1" desc="DSPDN1" /> 
+      	<Capbility value="0x2" desc="DSPDN2" />  
+      	<Capbility value="0x3" desc="DSP1" /> 
+      	<Capbility value="0x4" desc="I2S1 REC" /> 
+      	<Capbility value="0x5" desc="I2S2 REC" />
+   		</Bits>
+     </RegisterInfo>
+    <RegisterInfo address="0x64" name="ADC data to TxRx mix coef Register">
+      <Bits range="7:0" field="TX_2TXRX_MIX[7:0]" default="00000000" desc="tx_2txrx_mix" />
+    </RegisterInfo>
+    <RegisterInfo address="0x65" name="DAC data to TxRx mix coef Register">
+      <Bits range="7:0" field="RX_2TXRX_MIX[7:0]" default="10000000" desc="rx_2txrx_mix" />
+    </RegisterInfo>
+    <RegisterInfo address="0x66" name="Din to ASRC Mix Coef Register">
+      <Bits range="7:0" field="DIN_2ASRCMIX[7:0]" default="01000000" desc="din_2asrcmix" />
+    </RegisterInfo>
+    <RegisterInfo address="0x67" name="ASRC output to ASRC Mix Coef Register">
+      <Bits range="7:0" field="DINUP_2ASRCMIX[7:0]" default="01000000" desc="dinup_2asrcmix" />
+    </RegisterInfo>
+    <RegisterInfo address="0xA2" name="Loopback modes">
+      <Bits range="7:5" field="RSVD" default="000" desc="Reserved" />
+      <Bits range="4" field="LOOPBACK_A2D" default="0" desc="Write 1 to enable this loopback mode See details in Figure 1" />
+      <Bits range="3" field="LOOPBACK_I2S" default="0" desc="Write 1 to enable this loopback mode See details in Figure 2" />
+      <Bits range="2" field="I2S_INT_LOOPBACK" default="0" desc="Write 1 to enable this loopback mode See details in Figure 3" />
+      <Bits range="1" field="DIG_INT_LOOPBACK" default="0" desc="Write 1 to enable this loopback mode See details in Figure 4" />
+      <Bits range="0" field="I2S_EXT_LOOPBACK" default="0" desc="Write 1 to enable this loopback mode See details in Figure 5" />
+    </RegisterInfo>
+    <RegisterInfo address="0x11" name="Top_Control_Register1">
+      <Bits range="4" field="AUDIO_CLK_DIS" default="0" desc="to enable/disable all clocks in both digital and analog domain">
+      	<Capbility value="0x0" desc="All clocks will be running as usual" /> 	
+      	<Capbility value="0x1" desc="Will gate all clocks in digital and in analog domain." /> 
+   		</Bits>
+      <Bits range="3" field="PLL2_PU" default="0" desc="Power up PLL2" >
+       	<Capbility value="0x0" desc="do not power‐up PLL2" /> 	
+      	<Capbility value="0x1" desc="Power up PLL2" /> 
+   		</Bits>
+      <Bits range="2" field="PLL1_PU" default="0" desc="Power up PLL1" >
+  			<Capbility value="0x0" desc="do not power‐up PLL1" /> 	
+      	<Capbility value="0x1" desc="Power up PLL1" /> 
+   		</Bits>
+      <Bits range="1" field="DATAPATH_RSTB" default="0" desc="Synchronous reset of the digital audio module" >
+  			<Capbility value="0x0" desc="audio is reset" /> 	
+      	<Capbility value="0x1" desc="audio is active" /> 
+   		</Bits>
+       <Bits range="0" field="AUDIO_RSTB" default="1" desc="Global entire chip active low reset" />
+     </RegisterInfo>
+    <RegisterInfo address="0x12" name="PROM write control">
+      <Bits range="5" field="BOOTROM_RD_EN" default="0" desc="bootrom_rd_en" />
+      <Bits range="4:2" field="PROM_WR_SEL" default="000" desc="Select which PROM to write to" >
+  			<Capbility value="0x0" desc="Write to DSP1 PROM" /> 	
+      	<Capbility value="0x1" desc="Write to DSP2 PROM" /> 
+      	<Capbility value="0x2" desc="Write to DSP1A PROM" /> 
+      	<Capbility value="0x3" desc="Write to DSP2A PROM" />
+   		</Bits>
+       <Bits range="1" field="PROM_WR_EN" default="0" desc="write enable of prom. Active high" />
+      <Bits range="0" field="PROM_WR_CLK" default="0" desc="write clock of prom" />
+    </RegisterInfo>
+    <RegisterInfo address="0x13" name="PROM Data MSB high">
+      <Bits range="3:0" field="PROM_DATA_HI_HI" default="0000" desc="Data prom_data[28:24]" />
+    </RegisterInfo>
+    <RegisterInfo address="0x14" name="PROM Data MSB low">
+      <Bits range="7:0" field="PROM_DATA_HI_LO[7:0]" default="00000000" desc="Data prom_data[23:16]" />
+    </RegisterInfo>
+    <RegisterInfo address="0x15" name="PROM Data LSB high">
+      <Bits range="7:0" field="PROM_DATA_LO_HI[7:0]" default="00000000" desc="Data prom_data[15:8]" />
+    </RegisterInfo>
+    <RegisterInfo address="0x16" name="PROM Data LSB low">
+      <Bits range="7:0" field="PROM_DATA_LO_LO[7:0]" default="00000000" desc="Data prom_data[7:0]" />
+    </RegisterInfo>
+  </Component>
+	</Chip>
+</Chipset>

@@ -1,0 +1,13 @@
+﻿Please read me if you use CATStudio first time.
+
+Please firstly run "Exec\VS2008SP1_Redist.exe"(or "Exec\vcredist_x86.exe" in *_VC10 package) if you run CATS on new PC or new Win OS.
+
+Please read "Manual\CatStudio_OnlineLogAnalysis_Tutorial_Brief_*.pdf" and "Manual\CatStudio_OfflineLogAnalysis_Tutorial_Brief_*.pdf"
+
+Please read "Manual\CatStudio_Multi_UE_Capture_Analysis_Guide_*.pdf" if you want to capture logs from multiple devices connected to one PC.
+
+如果你是第一次使用CATStudio，请先阅读下文。
+如果你是第一次在新PC或者重装Win OS后的情况下，请先安装VC运行库"Exec\VS2008SP1_Redist.exe"(或者对于VC10版本是"Exec\vcredist_x86.exe")。
+请阅读《CATS简明教程》"Manual\CatStudio_OnlineLogAnalysis_Tutorial_Brief_*.pdf" and "Manual\CatStudio_OfflineLogAnalysis_Tutorial_Brief_*.pdf"。
+如果你需要一台PC挂多个设备抓log，请阅读《CATS多UE抓取解析指南》"Manual\CatStudio_Multi_UE_Capture_Analysis_Guide_*.pdf"。
+

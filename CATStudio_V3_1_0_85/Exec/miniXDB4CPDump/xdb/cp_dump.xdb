@@ -1,0 +1,23 @@
+set reg R0 = 0x06890c28 
+set reg R1 = 0x06070e10 
+set reg R2 = 0x000006eb 
+set reg R3 = 0x00000001 
+set reg R4 = 0x06070e10 
+set reg R5 = 0x000006eb 
+set reg R6 = 0x06070e24 
+set reg R7 = 0x0680cacc 
+set reg R8 = 0x06800068 
+set reg R9 = 0x3a3acdac 
+set reg R10 = 0x06892b90 
+set reg R11 = 0x06655c98 
+set reg R12 = 0x06070b89 
+set reg SP = 0x06894b28 
+set reg LR = 0x06070a33 
+set reg PC = 0x06617ec0 
+set reg CPSR = 0x60000113 
+LOAD /SEGMENT /DEBUG /GLOBAL /NOLOAD OF "E:\testdata\CP_DUMP\test4cpdump\NZ2_LTG_SL.axf"
+LOAD /BINARY /ADDRESS=0x6800000 OF "E:\testdata\CP_DUMP\test4cpdump\com_DDR_RW.bin"
+SHOW CALLS /ARGUMENTS
+SHOW ACTIVE GLOBAL
+BATCH "eval_glob.xdb"
+exit all

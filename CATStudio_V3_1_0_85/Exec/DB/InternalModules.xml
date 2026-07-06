@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<ModulesCount>3</ModulesCount>
+	<Module1>
+		<DLLName>SampleViewer.dll</DLLName>
+		<Title>SampleViewer</Title>
+		<MenuID>1</MenuID>
+		<IsAddToMenu>true</IsAddToMenu>
+		<IsUtility>false</IsUtility>
+		<HasView>true</HasView>
+		<IsSingleView>false</IsSingleView>
+		<IsLoadAtStartup>true</IsLoadAtStartup>
+	</Module1>
+	<Module2>
+		<DLLName>LogPlayer.dll</DLLName>
+		<Title>LogPlayer</Title>
+		<MenuID>2</MenuID>
+		<IsAddToMenu>true</IsAddToMenu>
+		<IsUtility>false</IsUtility>
+		<HasView>false</HasView>
+		<IsSingleView>false</IsSingleView>
+		<IsLoadAtStartup>true</IsLoadAtStartup>
+	</Module2>
+	<Module3>
+		<DLLName>LogPlayer.dll</DLLName>
+		<Title>LogPlayer-2</Title>
+		<MenuID>3</MenuID>
+		<IsAddToMenu>true</IsAddToMenu>
+		<IsUtility>false</IsUtility>
+		<HasView>false</HasView>
+		<IsSingleView>false</IsSingleView>
+		<IsLoadAtStartup>true</IsLoadAtStartup>
+	</Module3>
+</config>

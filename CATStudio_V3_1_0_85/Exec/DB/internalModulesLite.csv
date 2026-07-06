@@ -1,0 +1,6 @@
+DLLName,Title,IsAddToMenu,IsUtility,HasView,IsSingleView,IsLoadAtStartup
+Logger.dll,Logger,TRUE,FALSE,TRUE,TRUE,TRUE
+CPDump.exe,CPDump,TRUE,TRUE,FALSE,FALSE,FALSE
+SulogViewer.dll,Sulog,TRUE,FALSE,TRUE,TRUE,TRUE
+YModemDump.dll,YModemDump,TRUE,FALSE,TRUE,TRUE,TRUE
+ExternLogger.dll,ExternLogger,TRUE,FALSE,TRUE,TRUE,TRUE

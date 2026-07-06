@@ -1,0 +1,18 @@
+Folder = /NVM/
+remote = com_L2_IML.bin
+remote = com_GBDump.bin
+remote = com_IPCDump.bin
+remote = com_EE_Hbuf.bin
+remote = com_DTCM.bin
+remote = mdb/*.*
+
+Folder = /data/
+remote = com_DDR_RW.bin
+remote = DKBx_x.cap
+remote = DKBx_x.txt
+remote = DKBx_x_radio.txt
+remote = DKBx_x_kernel.txt
+remote = DKBx_x.png
+remote = tombstones/*.*
+
+

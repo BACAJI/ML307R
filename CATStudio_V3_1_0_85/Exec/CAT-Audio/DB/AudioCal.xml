@@ -1,0 +1,1367 @@
+<?xml version="1.0"?>
+<root>
+<component id="5" name="BlueTooth" sidetone="No" calibrationfile="audio_bluetooth.nvm" diagtarget="AP">
+	<path id="0" name="BLUETOOTH_OUT" direction="Rx">
+		<gain id="0"/>
+	</path>
+	<path id="1" name="BLUETOOTH_IN" direction="Tx">
+		<gain id="0"/>
+	</path>
+	<path id="2" name="BLUETOOTH_APP_OUT" direction="Rx">
+		<gain id="0"/>
+	</path>
+	<path id="3" name="BLUETOOTH_APP_IN" direction="Tx">
+		<gain id="0"/>
+	</path>
+	<gainmap>
+		<gain id="0" name="Digital Gain" factor="1">
+			<gaindb id="-36" value="-36 dB"/>
+			<gaindb id="-35" value="-35 dB"/>
+			<gaindb id="-34" value="-34 dB"/>
+			<gaindb id="-33" value="-33 dB"/>
+			<gaindb id="-32" value="-32 dB"/>
+			<gaindb id="-31" value="-31 dB"/>
+			<gaindb id="-30" value="-30 dB"/>
+			<gaindb id="-29" value="-29 dB"/>
+			<gaindb id="-28" value="-28 dB"/>
+			<gaindb id="-27" value="-27 dB"/>
+			<gaindb id="-26" value="-26 dB"/>
+			<gaindb id="-25" value="-25 dB"/>
+			<gaindb id="-24" value="-24 dB"/>
+			<gaindb id="-23" value="-23 dB"/>
+			<gaindb id="-22" value="-22 dB"/>
+			<gaindb id="-21" value="-21 dB"/>
+			<gaindb id="-20" value="-20 dB"/>
+			<gaindb id="-19" value="-19 dB"/>
+			<gaindb id="-18" value="-18 dB"/>
+			<gaindb id="-17" value="-17 dB"/>
+			<gaindb id="-16" value="-16 dB"/>
+			<gaindb id="-15" value="-15 dB"/>
+			<gaindb id="-14" value="-14 dB"/>
+			<gaindb id="-13" value="-13 dB"/>
+			<gaindb id="-12" value="-12 dB"/>
+			<gaindb id="-11" value="-11 dB"/>
+			<gaindb id="-10" value="-10 dB"/>
+			<gaindb id="-9" value="-9 dB"/>
+			<gaindb id="-8" value="-8 dB"/>
+			<gaindb id="-7" value="-7 dB"/>
+			<gaindb id="-6" value="-6 dB"/>
+			<gaindb id="-5" value="-5 dB"/>
+			<gaindb id="-4" value="-4 dB"/>
+			<gaindb id="-3" value="-3 dB"/>
+			<gaindb id="-2" value="-2 dB"/>
+			<gaindb id="-1" value="-1 dB"/>
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="1 dB"/>
+			<gaindb id="2 " value="2 dB"/>
+			<gaindb id="3 " value="3 dB"/>
+			<gaindb id="4 " value="4 dB"/>
+			<gaindb id="5 " value="5 dB"/>
+			<gaindb id="6 " value="6 dB"/>
+			<gaindb id="7 " value="7 dB"/>
+			<gaindb id="8 " value="8 dB"/>
+			<gaindb id="9 " value="9 dB"/>
+			<gaindb id="10" value="10 dB"/>
+			<gaindb id="11" value="11 dB"/>
+			<gaindb id="12" value="12 dB"/>
+		</gain>  
+	</gainmap>
+	<command id="0" cat1="Audio" cat2="Bluetooth" cat3="AUDIO_bluetooth_ReadFdiCalibData"/>
+	<command id="1" cat1="AUDIO" cat2="Bluetooth" cat3="AUDIO_blueTooth_ReadFdiDataOK"/>
+	<command id="2" cat1="Audio" cat2="Bluetooth" cat3="AUDIO_bluetooth_GetSlopeOffset"/>
+	<command id="3" cat1="AUDIO" cat2="Bluetooth" cat3="AUDIO_bluetooth_SlopeOffset"/>
+</component>
+<component id="9" name="LEVANTE" sidetone="No" calibrationfile="audio_levante.nvm" diagtarget="AP">
+	<path id="0" name="LEVANTE_AnaMIC1_TO_PCM_L" direction="Tx">
+		<gain id="0"/>
+		<gain id="13"/>
+		<gain id="19"/>
+	</path>
+	<path id="1" name="LEVANTE_AnaMIC1_LOUD_TO_PCM_L" direction="Tx">
+		<gain id="0"/>
+		<gain id="13"/>
+		<gain id="19"/>
+	</path>
+	<path id="2" name="LEVANTE_AnaMIC2_TO_PCM_L" direction="Tx">
+		<gain id="0"/>
+		<gain id="13"/>
+		<gain id="19"/>
+	</path>
+	<path id="3" name="LEVANTE_DigMIC1_TO_PCM_L             " direction="Tx">
+		<gain id="0"/>
+	</path>
+	<path id="4" name="LEVANTE_DigMIC1_LOUD_TO_PCM_L        " direction="Tx">
+			<gain id="0"/>
+	</path>
+	<path id="5" name="LEVANTE_DigMIC2_TO_PCM_R             " direction="Tx">
+				<gain id="0"/>
+	</path>
+	<path id="6" name="LEVANTE_AnaMIC3_TO_PCM_R             " direction="Tx">
+				<gain id="0"/>
+				<gain id="14"/>
+				<gain id="20"/>
+	</path>
+	<path id="7" name="LEVANTE_AUX1_TO_PCM_L                " direction="Tx">
+				<gain id="0"/>
+				<gain id="15"/>
+				<gain id="19"/>
+	</path>
+	<path id="8" name="LEVANTE_AUX2_TO_PCM_R                " direction="Tx">
+				<gain id="0 "/>
+				<gain id="16"/>
+				<gain id="20"/>
+	</path>
+	<path id="9" name="LEVANTE_AnaMIC1_TO_PCM_R              " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="10" name="LEVANTE_AnaMIC1_LOUD_TO_PCM_R        " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="11" name="LEVANTE_AnaMIC2_TO_PCM_R             " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="12" name="LEVANTE_DigMIC1_TO_PCM_R             " direction="Tx">
+				<gain id="0"/>
+	</path>
+	<path id="13" name="LEVANTE_DigMIC1_LOUD_TO_PCM_R        " direction="Tx">
+				<gain id="0"/>
+	</path>
+	<path id="14" name="LEVANTE_DigMIC2_TO_PCM_L             " direction="Tx">
+				<gain id="0"/>
+	</path>
+	<path id="15" name="LEVANTE_AnaMIC3_TO_PCM_L             " direction="Tx">
+				<gain id="0 "/>
+				<gain id="14"/>
+				<gain id="20"/>
+	</path>
+	<path id="16" name="LEVANTE_AUX1_TO_PCM_R                " direction="Tx">
+				<gain id="0 "/>
+				<gain id="15"/>
+				<gain id="19"/>
+	</path>
+	<path id="17" name="LEVANTE_AUX2_TO_PCM_L                " direction="Tx">
+				<gain id="0 "/>
+				<gain id="16"/>
+				<gain id="20"/>
+	</path>
+	<path id="18" name="LEVANTE_AnaMIC1_TO_I2S_L             " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="19" name="LEVANTE_AnaMIC1_LOUD_TO_I2S_L        " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="20" name="LEVANTE_AnaMIC2_TO_I2S_L             " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="21" name="LEVANTE_DigMIC1_TO_I2S_L             " direction="Tx">
+				<gain id="0"/>
+	</path>
+	<path id="22" name="LEVANTE_DigMIC1_LOUD_TO_I2S_L        " direction="Tx">
+				<gain id="0"/>
+	</path>
+	<path id="23" name="LEVANTE_DigMIC2_TO_I2S_R             " direction="Tx">
+				<gain id="0"/>
+	</path>
+	<path id="24" name="LEVANTE_AnaMIC3_TO_I2S_R             " direction="Tx">
+				<gain id="0 "/>
+				<gain id="14"/>
+				<gain id="20"/>
+	</path>
+	<path id="25" name="LEVANTE_AUX1_TO_I2S_L                " direction="Tx">
+				<gain id="0 "/>
+				<gain id="15"/>
+				<gain id="19"/>
+	</path>
+	<path id="26" name="LEVANTE_AUX2_TO_I2S_R                " direction="Tx">
+				<gain id="0 "/>
+				<gain id="16"/>
+				<gain id="20"/>
+	</path>
+	<path id="27" name="LEVANTE_AnaMIC1_TO_I2S_R             " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="28" name="LEVANTE_AnaMIC1_LOUD_TO_I2S_R        " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="29" name="LEVANTE_AnaMIC2_TO_I2S_R             " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="30" name="LEVANTE_DigMIC1_TO_I2S_R             " direction="Tx">
+				<gain id="0"/>
+	</path>
+	<path id="31" name="LEVANTE_DigMIC1_LOUD_TO_I2S_R        " direction="Tx">
+				<gain id="0"/>
+	</path>
+	<path id="32" name="LEVANTE_DigMIC2_TO_I2S_L             " direction="Tx">
+				<gain id="0"/>
+	</path>
+	<path id="33" name="LEVANTE_AnaMIC3_TO_I2S_L             " direction="Tx">
+				<gain id="0 "/>
+				<gain id="14"/>
+				<gain id="20"/>
+	</path>
+	<path id="34" name="LEVANTE_AUX1_TO_I2S_R                " direction="Tx">
+				<gain id="0 "/>
+				<gain id="15"/>
+				<gain id="19"/>
+	</path>
+	<path id="35" name="LEVANTE_AUX2_TO_I2S_L                " direction="Tx">
+				<gain id="0 "/>
+				<gain id="16"/>
+				<gain id="20"/>
+	</path>
+	<path id="36" name="LEVANTE_PCM_L_TO_EAR                 " direction="Rx">
+				<gain id="0 "/>
+				<gain id="1 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="37" name="LEVANTE_PCM_L_TO_SPKR                " direction="Rx">
+				<gain id="0 "/>
+				<gain id="2 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="38" name="LEVANTE_PCM_L_TO_HS1                 " direction="Rx">
+				<gain id="0 "/>
+				<gain id="3 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="39" name="LEVANTE_PCM_L_TO_HS2                 " direction="Rx">
+				<gain id="0 "/>
+				<gain id="4 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="40" name="LEVANTE_PCM_L_TO_HS                  " direction="Rx">
+				<gain id="0 "/>
+				<gain id="3 "/>
+				<gain id="4 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="41" name="LEVANTE_PCM_L_TO_LINEOUT1            " direction="Rx">
+				<gain id="0 "/>
+				<gain id="5 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="42" name="LEVANTE_PCM_L_TO_LINEOUT2            " direction="Rx">
+				<gain id="0 "/>
+				<gain id="6 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="43" name="LEVANTE_PCM_L_TO_LINEOUT             " direction="Rx">
+				<gain id="0 "/>
+				<gain id="5 "/>
+				<gain id="6 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="44" name="LEVANTE_PCM_R_TO_EAR                 " direction="Rx">
+				<gain id="0 "/>
+				<gain id="1 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="45" name="LEVANTE_PCM_R_TO_SPKR                " direction="Rx">
+				<gain id="0 "/>
+				<gain id="2 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="46" name="LEVANTE_PCM_R_TO_HS1                 " direction="Rx">
+				<gain id="0 "/>
+				<gain id="3 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="47" name="LEVANTE_PCM_R_TO_HS2                 " direction="Rx">
+				<gain id="0 "/>
+				<gain id="4 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="48" name="LEVANTE_PCM_R_TO_HS                  " direction="Rx">
+				<gain id="0 "/>
+				<gain id="3 "/>
+				<gain id="4 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="49" name="LEVANTE_PCM_R_TO_LINEOUT1            " direction="Rx">
+				<gain id="0 "/>
+				<gain id="5 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="50" name="LEVANTE_PCM_R_TO_LINEOUT2            " direction="Rx">
+				<gain id="0 "/>
+				<gain id="6 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="51" name="LEVANTE_PCM_R_TO_LINEOUT             " direction="Rx">
+				<gain id="0 "/>
+				<gain id="5 "/>
+				<gain id="6 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="52" name="LEVANTE_I2S_TO_EAR                   " direction="Rx">
+				<gain id="0 "/>
+				<gain id="1 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="53" name="LEVANTE_I2S_TO_SPKR                  " direction="Rx">
+				<gain id="0 "/>
+				<gain id="2 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="54" name="LEVANTE_I2S_TO_HS1                   " direction="Rx">
+				<gain id="0 "/>
+				<gain id="3 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="55" name="LEVANTE_I2S_TO_HS2                   " direction="Rx">
+				<gain id="0 "/>
+				<gain id="4 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="56" name="LEVANTE_I2S_TO_HS                    " direction="Rx">
+				<gain id="0 "/>
+				<gain id="3 "/>
+				<gain id="4 "/>
+				<gain id="8 "/>
+				<gain id="12"/>
+	</path>
+	<path id="57" name="LEVANTE_I2S_TO_LINEOUT1              " direction="Rx">
+				<gain id="0 "/>
+				<gain id="5 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="58" name="LEVANTE_I2S_TO_LINEOUT2              " direction="Rx">
+				<gain id="0 "/>
+				<gain id="6 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="59" name="LEVANTE_I2S_TO_LINEOUT               " direction="Rx">
+				<gain id="0 "/>
+				<gain id="5 "/>
+				<gain id="6 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="60" name="LEVANTE_I2S1_TO_EAR                  " direction="Rx">
+				<gain id="0 "/>
+				<gain id="1 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="61" name="LEVANTE_I2S1_TO_SPKR                 " direction="Rx">
+				<gain id="0 "/>
+				<gain id="2 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="62" name="LEVANTE_I2S1_TO_HS1                  " direction="Rx">
+				<gain id="0 "/>
+				<gain id="3 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="63" name="LEVANTE_I2S1_TO_HS2                  " direction="Rx">
+				<gain id="0 "/>
+				<gain id="4 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="64" name="LEVANTE_I2S1_TO_HS                   " direction="Rx">
+				<gain id="0 "/>
+				<gain id="3 "/>
+				<gain id="4 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="65" name="LEVANTE_I2S1_TO_LINEOUT1             " direction="Rx">
+				<gain id="0 "/>
+				<gain id="5 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="66" name="LEVANTE_I2S1_TO_LINEOUT2             " direction="Rx">
+				<gain id="0 "/>
+				<gain id="6 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="67" name="LEVANTE_I2S1_TO_LINEOUT              " direction="Rx">
+				<gain id="0 "/>
+				<gain id="5 "/>
+				<gain id="6 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="68" name="LEVANTE_IN_L_TO_OUT                  " direction="Rx">
+				<gain id="18"/>
+	</path>
+	<path id="69" name="LEVANTE_IN_R_TO_OUT                  " direction="Rx">
+				<gain id="17"/>
+	</path>
+	<path id="70" name="LEVANTE_IN_BOTH_TO_OUT               " direction="Rx">
+				<gain id="17"/>
+				<gain id="18"/>
+	</path>
+	<path id="71" name="LEVANTE_PCM_INT_LOOP                 " direction="Rx">
+				<gain id="0"/>
+	</path>
+	<path id="72" name="LEVANTE_PCM_EXT_LOOP                 " direction="Rx">
+				<gain id="0"/>
+	</path>
+	<path id="73" name="LEVANTE_I2S_INT_LOOP                 " direction="Rx">
+				<gain id="0"/>
+	</path>
+	<path id="74" name="LEVANTE_I2S_EXT_LOOP                 " direction="Rx">
+				<gain id="0"/>
+	</path>
+	<path id="75" name="LEVANTE_DAC1_IN_EC_LOOP              " direction="Rx">
+				<gain id="0"/>
+	</path>
+	<path id="76" name="LEVANTE_DAC2_IN_EC_LOOP              " direction="Rx">
+				<gain id="0"/>
+	</path>
+	<path id="77" name="LEVANTE_DAC1_DAC2_IN_EC_LOOP         " direction="Rx">
+				<gain id="0"/>
+	</path>
+	<path id="78" name="LEVANTE_PCM_L_IN_TO_I2S_L_OUT_LOOP   " direction="Rx">
+				<gain id="0 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="79" name="LEVANTE_PCM_L_IN_TO_I2S_R_OUT_LOOP   " direction="Rx">
+				<gain id="0 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="80" name="LEVANTE_PCM_L_IN_TO_I2S_Both_OUT_LOOP" direction="Rx">
+				<gain id="0 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="81" name="LEVANTE_PCM_R_IN_TO_I2S_L_OUT_LOOP   " direction="Rx">
+				<gain id="0 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="82" name="LEVANTE_PCM_R_IN_TO_I2S_R_OUT_LOOP   " direction="Rx">
+				<gain id="0 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="83" name="LEVANTE_PCM_R_IN_TO_I2S_Both_OUT_LOOP" direction="Rx">
+				<gain id="0 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="84" name="LEVANTE_I2S_IN_TO_I2S_L_OUT_LOOP     " direction="Rx">
+				<gain id="0 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="85" name="LEVANTE_I2S_IN_TO_I2S_R_OUT_LOOP     " direction="Rx">
+				<gain id="0 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="86" name="LEVANTE_I2S_IN_TO_I2S_Both_OUT_LOOP  " direction="Rx">
+				<gain id="0 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="87" name="LEVANTE_I2S1_IN_TO_I2S_L_OUT_LOOP    " direction="Rx">
+				<gain id="0 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="88" name="LEVANTE_I2S1_IN_TO_I2S_R_OUT_LOOP    " direction="Rx">
+				<gain id="0 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="89" name="LEVANTE_I2S1_IN_TO_I2S_Both_OUT_LOOP " direction="Rx">
+				<gain id="0 "/>
+				<gain id="8 "/>
+				<gain id="9 "/>
+				<gain id="11"/>
+				<gain id="12"/>
+	</path>
+	<path id="90" name="LEVANTE_AUX1_TO_HS2                  " direction="Tx">
+				<gain id="0 "/>
+				<gain id="4 "/>
+				<gain id="15"/>
+	</path>
+	<path id="91" name="LEVANTE_AUX1_TO_LOUT2                " direction="Tx">
+				<gain id="0 "/>
+				<gain id="6 "/>
+				<gain id="15"/>
+	</path>
+	<path id="92 " name="LEVANTE_AUX2_TO_HS1                  " direction="Tx">
+				<gain id="0 "/>
+				<gain id="3 "/>
+				<gain id="15"/>
+	</path>
+	<path id="93 " name="LEVANTE_AUX2_TO_LOUT1                " direction="Tx">
+				<gain id="0 "/>
+				<gain id="5 "/>
+				<gain id="15"/>
+	</path>
+	<path id="94 " name="LEVANTE_PCM_L_TO_EAR_LOOP            " direction="Rx">
+				<gain id="0 "/>
+				<gain id="1 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="95 " name="LEVANTE_PCM_L_TO_HS_LOOP             " direction="Rx">
+				<gain id="0 "/>
+				<gain id="3 "/>
+				<gain id="4 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="96 " name="LEVANTE_PCM_L_TO_SPKR_LOOP           " direction="Rx">
+				<gain id="0 "/>
+				<gain id="2 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="97 " name="LEVANTE_AnaMIC1_TO_PCM_L_LOOP        " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="98 " name="LEVANTE_AnaMIC2_TO_PCM_L_LOOP        " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="99 " name="LEVANTE_AnaMIC1_LOUD_TO_PCM_L_LOOP   " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="100" name="LEVANTE_AUX1_TO_SIDETONE_L           " direction="Tx">
+				<gain id="0 "/>
+				<gain id="15"/>
+				<gain id="19"/>
+	</path>
+	<path id="101" name="LEVANTE_AUX2_TO_SIDETONE_R           " direction="Tx">
+				<gain id="0 "/>
+				<gain id="16"/>
+				<gain id="20"/>
+	</path>
+	<path id="102" name="LEVANTE_SIDETONE_IN_TO_OUT           " direction="Tx">
+				<gain id="0 "/>
+				<gain id="17"/>
+				<gain id="18"/>
+	</path>
+	<path id="103" name="LEVANTE_SIDETONE_TO_SPKR             " direction="Tx">
+				<gain id="0 "/>
+				<gain id="2 "/>
+				<gain id="7 "/>
+				<gain id="10"/>
+	</path>
+	<path id="104" name="LEVANTE_I2S_TO_SPKR_HS               " direction="Rx">
+				<gain id="0"/>
+				<gain id="2"/>
+				<gain id="3"/>
+				<gain id="4"/>
+	</path>
+	<path id="105" name="LEVANTE_AnaMIC1_TO_PCM_I2S_L         " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="106" name="LEVANTE_AnaMIC1_TO_PCM_I2S_R         " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="107" name="LEVANTE_AnaMIC1_LOUD_TO_PCM_I2S_L    " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="108" name="LEVANTE_AnaMIC1_LOUD_TO_PCM_I2S_R    " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="109" name="LEVANTE_AnaMIC2_TO_PCM_I2S_L         " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="110" name="LEVANTE_AnaMIC2_TO_PCM_I2S_R         " direction="Tx">
+				<gain id="0 "/>
+				<gain id="13"/>
+				<gain id="19"/>
+	</path>
+	<path id="111" name="LEVANTE_AUX1_TO_PCM_I2S_L            " direction="Tx">
+				<gain id="0 "/>
+				<gain id="15"/>
+				<gain id="19"/>
+	</path>
+	<path id="112" name="LEVANTE_AUX2_TO_PCM_I2S_R            " direction="Tx">
+				<gain id="0 "/>
+				<gain id="16"/>
+				<gain id="20"/>
+	</path>
+	<gainmap>
+		<gain id="0" name="MsaDigitalMsaGain" factor="1">
+			<gaindb id="-36" value="-36 dB"/>
+			<gaindb id="-35" value="-35 dB"/>
+			<gaindb id="-34" value="-34 dB"/>
+			<gaindb id="-33" value="-33 dB"/>
+			<gaindb id="-32" value="-32 dB"/>
+			<gaindb id="-31" value="-31 dB"/>
+			<gaindb id="-30" value="-30 dB"/>
+			<gaindb id="-29" value="-29 dB"/>
+			<gaindb id="-28" value="-28 dB"/>
+			<gaindb id="-27" value="-27 dB"/>
+			<gaindb id="-26" value="-26 dB"/>
+			<gaindb id="-25" value="-25 dB"/>
+			<gaindb id="-24" value="-24 dB"/>
+			<gaindb id="-23" value="-23 dB"/>
+			<gaindb id="-22" value="-22 dB"/>
+			<gaindb id="-21" value="-21 dB"/>
+			<gaindb id="-20" value="-20 dB"/>
+			<gaindb id="-19" value="-19 dB"/>
+			<gaindb id="-18" value="-18 dB"/>
+			<gaindb id="-17" value="-17 dB"/>
+			<gaindb id="-16" value="-16 dB"/>
+			<gaindb id="-15" value="-15 dB"/>
+			<gaindb id="-14" value="-14 dB"/>
+			<gaindb id="-13" value="-13 dB"/>
+			<gaindb id="-12" value="-12 dB"/>
+			<gaindb id="-11" value="-11 dB"/>
+			<gaindb id="-10" value="-10 dB"/>
+			<gaindb id="-9" value="-9 dB"/>
+			<gaindb id="-8" value="-8 dB"/>
+			<gaindb id="-7" value="-7 dB"/>
+			<gaindb id="-6" value="-6 dB"/>
+			<gaindb id="-5" value="-5 dB"/>
+			<gaindb id="-4" value="-4 dB"/>
+			<gaindb id="-3" value="-3 dB"/>
+			<gaindb id="-2" value="-2 dB"/>
+			<gaindb id="-1" value="-1 dB"/>
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="1 dB"/>
+			<gaindb id="2 " value="2 dB"/>
+			<gaindb id="3 " value="3 dB"/>
+			<gaindb id="4 " value="4 dB"/>
+			<gaindb id="5 " value="5 dB"/>
+			<gaindb id="6 " value="6 dB"/>
+			<gaindb id="7 " value="7 dB"/>
+			<gaindb id="8 " value="8 dB"/>
+			<gaindb id="9 " value="9 dB"/>
+			<gaindb id="10" value="10 dB"/>
+			<gaindb id="11" value="11 dB"/>
+			<gaindb id="12" value="12 dB"/>
+		</gain>  
+		<gain id="1" name="PgaEarpGain" factor="3">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="3 dB"/>
+			<gaindb id="2 " value="6 dB"/>
+			<gaindb id="3 " value="7.66 dB"/>
+			<gaindb id="4 " value="9.54 dB"/>
+			<gaindb id="5 " value="10.66 dB"/>
+			<gaindb id="6 " value="12.89 dB"/>
+		</gain> 
+		<gain id="2" name="PgaSpkrGain" factor="3">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="3 dB"/>
+			<gaindb id="2 " value="6 dB"/>
+			<gaindb id="3 " value="7.66 dB"/>
+			<gaindb id="4 " value="9.54 dB"/>
+			<gaindb id="5 " value="10.66 dB"/>
+			<gaindb id="6 " value="12.89 dB"/>
+		</gain> 
+		<gain id="3" name="PgaHs1Gain" factor="3">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="3 dB"/>
+			<gaindb id="2 " value="6 dB"/>
+			<gaindb id="3 " value="7.66 dB"/>
+			<gaindb id="4 " value="9.54 dB"/>
+			<gaindb id="5 " value="10.66 dB"/>
+			<gaindb id="6 " value="12.89 dB"/>
+		</gain> 
+		<gain id="4" name="PgaHs2Gain" factor="3">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="3 dB"/>
+			<gaindb id="2 " value="6 dB"/>
+			<gaindb id="3 " value="7.66 dB"/>
+			<gaindb id="4 " value="9.54 dB"/>
+			<gaindb id="5 " value="10.66 dB"/>
+			<gaindb id="6 " value="12.89 dB"/>
+		</gain>
+		<gain id="5" name="PgaLout1Gain" factor="3">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="3 dB"/>
+			<gaindb id="2 " value="6 dB"/>
+			<gaindb id="3 " value="7.66 dB"/>
+			<gaindb id="4 " value="9.54 dB"/>
+			<gaindb id="5 " value="10.66 dB"/>
+			<gaindb id="6 " value="12.89 dB"/>
+		</gain>
+		<gain id="6" name="PgaLout2Gain" factor="3">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="3 dB"/>
+			<gaindb id="2 " value="6 dB"/>
+			<gaindb id="3 " value="7.66 dB"/>
+			<gaindb id="4 " value="9.54 dB"/>
+			<gaindb id="5 " value="10.66 dB"/>
+			<gaindb id="6 " value="12.89 dB"/>
+		</gain>
+		<gain id="7" name="Dpga1LofiGainLeftGain" factor="-1.5">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="-1.48 dB"/>
+			<gaindb id="2 " value="-2.87 dB"/>
+			<gaindb id="3 " value="-4.53 dB"/>
+			<gaindb id="4 " value="-6.02 dB"/>
+			<gaindb id="5 " value="-7.50 dB"/>
+			<gaindb id="6 " value="-8.89 dB"/>
+			<gaindb id="7" value="-10.55 dB"/>
+			<gaindb id="8" value="-12.04 dB"/>
+			<gaindb id="9" value="-13.52 dB"/>
+			<gaindb id="10" value="-14.91 dB"/>
+			<gaindb id="11" value="-16.57 dB"/>
+			<gaindb id="12" value="-18.06 dB"/>
+			<gaindb id="13" value="-19.54 dB"/>
+			<gaindb id="14" value="-20.93 dB"/>
+			<gaindb id="15" value="-22.59 dB"/>
+			<gaindb id="16" value="-24.08 dB"/>
+			<gaindb id="17" value="-25.56 dB"/>
+			<gaindb id="18" value="-26.95 dB"/>
+			<gaindb id="19" value="-28.61 dB"/>
+			<gaindb id="20" value="-30.10 dB"/>
+			<gaindb id="21" value="-31.58 dB"/>
+			<gaindb id="22" value="-32.97 dB"/>
+			<gaindb id="23" value="-34.63 dB"/>
+			<gaindb id="24" value="-36.12 dB"/>
+			<gaindb id="25" value="-37.60 dB"/>
+			<gaindb id="26" value="-38.99 dB"/>
+			<gaindb id="27" value="-40.65 dB"/>
+			<gaindb id="28" value="-42.14 dB"/>
+			<gaindb id="29" value="-43.62 dB"/>
+			<gaindb id="30" value="-45.01 dB"/>
+			<gaindb id="31" value="-46.67 dB"/>
+			<gaindb id="32" value="-48.16 dB"/>
+			<gaindb id="33" value="-49.64 dB"/>
+			<gaindb id="34" value="-51.03 dB"/>
+			<gaindb id="35" value="-52.69 dB"/>
+			<gaindb id="36" value="-54.19 dB"/>
+			<gaindb id="37" value="-55.66 dB"/>
+			<gaindb id="38" value="-57.05 dB"/>
+			<gaindb id="39" value="-58.71 dB"/>
+			<gaindb id="40" value="-60.21 dB"/>
+			<gaindb id="41" value="-61.68 dB"/>
+			<gaindb id="42" value="-63.07 dB"/>
+			<gaindb id="43" value="-64.73 dB"/>
+			<gaindb id="44" value="-66.23 dB"/>
+			<gaindb id="45" value="-67.70 dB"/>
+			<gaindb id="46" value="-69.10 dB"/>
+			<gaindb id="47" value="-70.75 dB"/>
+			<gaindb id="48" value="-72.25 dB"/>
+			<gaindb id="49" value="-73.72 dB"/>
+			<gaindb id="50" value="-75.12 dB"/>
+			<gaindb id="51" value="-76.78 dB"/>
+			<gaindb id="52" value="-78.27 dB"/>
+			<gaindb id="53" value="-79.74 dB"/>
+			<gaindb id="54" value="-81.14 dB"/>
+			<gaindb id="55" value="-82.80 dB"/>
+			<gaindb id="56" value="-84.29 dB"/>
+			<gaindb id="57" value="-85.76 dB"/>
+			<gaindb id="58" value="-87.16 dB"/>
+			<gaindb id="59" value="-88.82 dB"/>
+			<gaindb id="60" value="-90.31 dB"/>
+			<gaindb id="61" value="-91.78 dB"/>
+			<gaindb id="62" value="-93.18 dB"/>
+		</gain>
+		<gain id="8" name="Dpga1HifilGainLeftGain" factor="-1.5">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="-1.48 dB"/>
+			<gaindb id="2 " value="-2.87 dB"/>
+			<gaindb id="3 " value="-4.53 dB"/>
+			<gaindb id="4 " value="-6.02 dB"/>
+			<gaindb id="5 " value="-7.50 dB"/>
+			<gaindb id="6 " value="-8.89 dB"/>
+			<gaindb id="7" value="-10.55 dB"/>
+			<gaindb id="8" value="-12.04 dB"/>
+			<gaindb id="9" value="-13.52 dB"/>
+			<gaindb id="10" value="-14.91 dB"/>
+			<gaindb id="11" value="-16.57 dB"/>
+			<gaindb id="12" value="-18.06 dB"/>
+			<gaindb id="13" value="-19.54 dB"/>
+			<gaindb id="14" value="-20.93 dB"/>
+			<gaindb id="15" value="-22.59 dB"/>
+			<gaindb id="16" value="-24.08 dB"/>
+			<gaindb id="17" value="-25.56 dB"/>
+			<gaindb id="18" value="-26.95 dB"/>
+			<gaindb id="19" value="-28.61 dB"/>
+			<gaindb id="20" value="-30.10 dB"/>
+			<gaindb id="21" value="-31.58 dB"/>
+			<gaindb id="22" value="-32.97 dB"/>
+			<gaindb id="23" value="-34.63 dB"/>
+			<gaindb id="24" value="-36.12 dB"/>
+			<gaindb id="25" value="-37.60 dB"/>
+			<gaindb id="26" value="-38.99 dB"/>
+			<gaindb id="27" value="-40.65 dB"/>
+			<gaindb id="28" value="-42.14 dB"/>
+			<gaindb id="29" value="-43.62 dB"/>
+			<gaindb id="30" value="-45.01 dB"/>
+			<gaindb id="31" value="-46.67 dB"/>
+			<gaindb id="32" value="-48.16 dB"/>
+			<gaindb id="33" value="-49.64 dB"/>
+			<gaindb id="34" value="-51.03 dB"/>
+			<gaindb id="35" value="-52.69 dB"/>
+			<gaindb id="36" value="-54.19 dB"/>
+			<gaindb id="37" value="-55.66 dB"/>
+			<gaindb id="38" value="-57.05 dB"/>
+			<gaindb id="39" value="-58.71 dB"/>
+			<gaindb id="40" value="-60.21 dB"/>
+			<gaindb id="41" value="-61.68 dB"/>
+			<gaindb id="42" value="-63.07 dB"/>
+			<gaindb id="43" value="-64.73 dB"/>
+			<gaindb id="44" value="-66.23 dB"/>
+			<gaindb id="45" value="-67.70 dB"/>
+			<gaindb id="46" value="-69.10 dB"/>
+			<gaindb id="47" value="-70.75 dB"/>
+			<gaindb id="48" value="-72.25 dB"/>
+			<gaindb id="49" value="-73.72 dB"/>
+			<gaindb id="50" value="-75.12 dB"/>
+			<gaindb id="51" value="-76.78 dB"/>
+			<gaindb id="52" value="-78.27 dB"/>
+			<gaindb id="53" value="-79.74 dB"/>
+			<gaindb id="54" value="-81.14 dB"/>
+			<gaindb id="55" value="-82.80 dB"/>
+			<gaindb id="56" value="-84.29 dB"/>
+			<gaindb id="57" value="-85.76 dB"/>
+			<gaindb id="58" value="-87.16 dB"/>
+			<gaindb id="59" value="-88.82 dB"/>
+			<gaindb id="60" value="-90.31 dB"/>
+			<gaindb id="61" value="-91.78 dB"/>
+			<gaindb id="62" value="-93.18 dB"/>
+		</gain>
+		<gain id="9" name="Dpga1HifirGainLeftGain" factor="-1.5">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="-1.48 dB"/>
+			<gaindb id="2 " value="-2.87 dB"/>
+			<gaindb id="3 " value="-4.53 dB"/>
+			<gaindb id="4 " value="-6.02 dB"/>
+			<gaindb id="5 " value="-7.50 dB"/>
+			<gaindb id="6 " value="-8.89 dB"/>
+			<gaindb id="7" value="-10.55 dB"/>
+			<gaindb id="8" value="-12.04 dB"/>
+			<gaindb id="9" value="-13.52 dB"/>
+			<gaindb id="10" value="-14.91 dB"/>
+			<gaindb id="11" value="-16.57 dB"/>
+			<gaindb id="12" value="-18.06 dB"/>
+			<gaindb id="13" value="-19.54 dB"/>
+			<gaindb id="14" value="-20.93 dB"/>
+			<gaindb id="15" value="-22.59 dB"/>
+			<gaindb id="16" value="-24.08 dB"/>
+			<gaindb id="17" value="-25.56 dB"/>
+			<gaindb id="18" value="-26.95 dB"/>
+			<gaindb id="19" value="-28.61 dB"/>
+			<gaindb id="20" value="-30.10 dB"/>
+			<gaindb id="21" value="-31.58 dB"/>
+			<gaindb id="22" value="-32.97 dB"/>
+			<gaindb id="23" value="-34.63 dB"/>
+			<gaindb id="24" value="-36.12 dB"/>
+			<gaindb id="25" value="-37.60 dB"/>
+			<gaindb id="26" value="-38.99 dB"/>
+			<gaindb id="27" value="-40.65 dB"/>
+			<gaindb id="28" value="-42.14 dB"/>
+			<gaindb id="29" value="-43.62 dB"/>
+			<gaindb id="30" value="-45.01 dB"/>
+			<gaindb id="31" value="-46.67 dB"/>
+			<gaindb id="32" value="-48.16 dB"/>
+			<gaindb id="33" value="-49.64 dB"/>
+			<gaindb id="34" value="-51.03 dB"/>
+			<gaindb id="35" value="-52.69 dB"/>
+			<gaindb id="36" value="-54.19 dB"/>
+			<gaindb id="37" value="-55.66 dB"/>
+			<gaindb id="38" value="-57.05 dB"/>
+			<gaindb id="39" value="-58.71 dB"/>
+			<gaindb id="40" value="-60.21 dB"/>
+			<gaindb id="41" value="-61.68 dB"/>
+			<gaindb id="42" value="-63.07 dB"/>
+			<gaindb id="43" value="-64.73 dB"/>
+			<gaindb id="44" value="-66.23 dB"/>
+			<gaindb id="45" value="-67.70 dB"/>
+			<gaindb id="46" value="-69.10 dB"/>
+			<gaindb id="47" value="-70.75 dB"/>
+			<gaindb id="48" value="-72.25 dB"/>
+			<gaindb id="49" value="-73.72 dB"/>
+			<gaindb id="50" value="-75.12 dB"/>
+			<gaindb id="51" value="-76.78 dB"/>
+			<gaindb id="52" value="-78.27 dB"/>
+			<gaindb id="53" value="-79.74 dB"/>
+			<gaindb id="54" value="-81.14 dB"/>
+			<gaindb id="55" value="-82.80 dB"/>
+			<gaindb id="56" value="-84.29 dB"/>
+			<gaindb id="57" value="-85.76 dB"/>
+			<gaindb id="58" value="-87.16 dB"/>
+			<gaindb id="59" value="-88.82 dB"/>
+			<gaindb id="60" value="-90.31 dB"/>
+			<gaindb id="61" value="-91.78 dB"/>
+			<gaindb id="62" value="-93.18 dB"/>
+		</gain>
+		<gain id="10" name="Dpga2LofiGainRightGain" factor="-1.5">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="-1.48 dB"/>
+			<gaindb id="2 " value="-2.87 dB"/>
+			<gaindb id="3 " value="-4.53 dB"/>
+			<gaindb id="4 " value="-6.02 dB"/>
+			<gaindb id="5 " value="-7.50 dB"/>
+			<gaindb id="6 " value="-8.89 dB"/>
+			<gaindb id="7" value="-10.55 dB"/>
+			<gaindb id="8" value="-12.04 dB"/>
+			<gaindb id="9" value="-13.52 dB"/>
+			<gaindb id="10" value="-14.91 dB"/>
+			<gaindb id="11" value="-16.57 dB"/>
+			<gaindb id="12" value="-18.06 dB"/>
+			<gaindb id="13" value="-19.54 dB"/>
+			<gaindb id="14" value="-20.93 dB"/>
+			<gaindb id="15" value="-22.59 dB"/>
+			<gaindb id="16" value="-24.08 dB"/>
+			<gaindb id="17" value="-25.56 dB"/>
+			<gaindb id="18" value="-26.95 dB"/>
+			<gaindb id="19" value="-28.61 dB"/>
+			<gaindb id="20" value="-30.10 dB"/>
+			<gaindb id="21" value="-31.58 dB"/>
+			<gaindb id="22" value="-32.97 dB"/>
+			<gaindb id="23" value="-34.63 dB"/>
+			<gaindb id="24" value="-36.12 dB"/>
+			<gaindb id="25" value="-37.60 dB"/>
+			<gaindb id="26" value="-38.99 dB"/>
+			<gaindb id="27" value="-40.65 dB"/>
+			<gaindb id="28" value="-42.14 dB"/>
+			<gaindb id="29" value="-43.62 dB"/>
+			<gaindb id="30" value="-45.01 dB"/>
+			<gaindb id="31" value="-46.67 dB"/>
+			<gaindb id="32" value="-48.16 dB"/>
+			<gaindb id="33" value="-49.64 dB"/>
+			<gaindb id="34" value="-51.03 dB"/>
+			<gaindb id="35" value="-52.69 dB"/>
+			<gaindb id="36" value="-54.19 dB"/>
+			<gaindb id="37" value="-55.66 dB"/>
+			<gaindb id="38" value="-57.05 dB"/>
+			<gaindb id="39" value="-58.71 dB"/>
+			<gaindb id="40" value="-60.21 dB"/>
+			<gaindb id="41" value="-61.68 dB"/>
+			<gaindb id="42" value="-63.07 dB"/>
+			<gaindb id="43" value="-64.73 dB"/>
+			<gaindb id="44" value="-66.23 dB"/>
+			<gaindb id="45" value="-67.70 dB"/>
+			<gaindb id="46" value="-69.10 dB"/>
+			<gaindb id="47" value="-70.75 dB"/>
+			<gaindb id="48" value="-72.25 dB"/>
+			<gaindb id="49" value="-73.72 dB"/>
+			<gaindb id="50" value="-75.12 dB"/>
+			<gaindb id="51" value="-76.78 dB"/>
+			<gaindb id="52" value="-78.27 dB"/>
+			<gaindb id="53" value="-79.74 dB"/>
+			<gaindb id="54" value="-81.14 dB"/>
+			<gaindb id="55" value="-82.80 dB"/>
+			<gaindb id="56" value="-84.29 dB"/>
+			<gaindb id="57" value="-85.76 dB"/>
+			<gaindb id="58" value="-87.16 dB"/>
+			<gaindb id="59" value="-88.82 dB"/>
+			<gaindb id="60" value="-90.31 dB"/>
+			<gaindb id="61" value="-91.78 dB"/>
+			<gaindb id="62" value="-93.18 dB"/>
+		</gain>
+		<gain id="11" name="Dpga2HifilGainRightGain" factor="-1.5">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="-1.48 dB"/>
+			<gaindb id="2 " value="-2.87 dB"/>
+			<gaindb id="3 " value="-4.53 dB"/>
+			<gaindb id="4 " value="-6.02 dB"/>
+			<gaindb id="5 " value="-7.50 dB"/>
+			<gaindb id="6 " value="-8.89 dB"/>
+			<gaindb id="7" value="-10.55 dB"/>
+			<gaindb id="8" value="-12.04 dB"/>
+			<gaindb id="9" value="-13.52 dB"/>
+			<gaindb id="10" value="-14.91 dB"/>
+			<gaindb id="11" value="-16.57 dB"/>
+			<gaindb id="12" value="-18.06 dB"/>
+			<gaindb id="13" value="-19.54 dB"/>
+			<gaindb id="14" value="-20.93 dB"/>
+			<gaindb id="15" value="-22.59 dB"/>
+			<gaindb id="16" value="-24.08 dB"/>
+			<gaindb id="17" value="-25.56 dB"/>
+			<gaindb id="18" value="-26.95 dB"/>
+			<gaindb id="19" value="-28.61 dB"/>
+			<gaindb id="20" value="-30.10 dB"/>
+			<gaindb id="21" value="-31.58 dB"/>
+			<gaindb id="22" value="-32.97 dB"/>
+			<gaindb id="23" value="-34.63 dB"/>
+			<gaindb id="24" value="-36.12 dB"/>
+			<gaindb id="25" value="-37.60 dB"/>
+			<gaindb id="26" value="-38.99 dB"/>
+			<gaindb id="27" value="-40.65 dB"/>
+			<gaindb id="28" value="-42.14 dB"/>
+			<gaindb id="29" value="-43.62 dB"/>
+			<gaindb id="30" value="-45.01 dB"/>
+			<gaindb id="31" value="-46.67 dB"/>
+			<gaindb id="32" value="-48.16 dB"/>
+			<gaindb id="33" value="-49.64 dB"/>
+			<gaindb id="34" value="-51.03 dB"/>
+			<gaindb id="35" value="-52.69 dB"/>
+			<gaindb id="36" value="-54.19 dB"/>
+			<gaindb id="37" value="-55.66 dB"/>
+			<gaindb id="38" value="-57.05 dB"/>
+			<gaindb id="39" value="-58.71 dB"/>
+			<gaindb id="40" value="-60.21 dB"/>
+			<gaindb id="41" value="-61.68 dB"/>
+			<gaindb id="42" value="-63.07 dB"/>
+			<gaindb id="43" value="-64.73 dB"/>
+			<gaindb id="44" value="-66.23 dB"/>
+			<gaindb id="45" value="-67.70 dB"/>
+			<gaindb id="46" value="-69.10 dB"/>
+			<gaindb id="47" value="-70.75 dB"/>
+			<gaindb id="48" value="-72.25 dB"/>
+			<gaindb id="49" value="-73.72 dB"/>
+			<gaindb id="50" value="-75.12 dB"/>
+			<gaindb id="51" value="-76.78 dB"/>
+			<gaindb id="52" value="-78.27 dB"/>
+			<gaindb id="53" value="-79.74 dB"/>
+			<gaindb id="54" value="-81.14 dB"/>
+			<gaindb id="55" value="-82.80 dB"/>
+			<gaindb id="56" value="-84.29 dB"/>
+			<gaindb id="57" value="-85.76 dB"/>
+			<gaindb id="58" value="-87.16 dB"/>
+			<gaindb id="59" value="-88.82 dB"/>
+			<gaindb id="60" value="-90.31 dB"/>
+			<gaindb id="61" value="-91.78 dB"/>
+			<gaindb id="62" value="-93.18 dB"/>
+		</gain>
+		<gain id="12" name="Dpga2HifirGainRightGain" factor="-1.5">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="-1.48 dB"/>
+			<gaindb id="2 " value="-2.87 dB"/>
+			<gaindb id="3 " value="-4.53 dB"/>
+			<gaindb id="4 " value="-6.02 dB"/>
+			<gaindb id="5 " value="-7.50 dB"/>
+			<gaindb id="6 " value="-8.89 dB"/>
+			<gaindb id="7" value="-10.55 dB"/>
+			<gaindb id="8" value="-12.04 dB"/>
+			<gaindb id="9" value="-13.52 dB"/>
+			<gaindb id="10" value="-14.91 dB"/>
+			<gaindb id="11" value="-16.57 dB"/>
+			<gaindb id="12" value="-18.06 dB"/>
+			<gaindb id="13" value="-19.54 dB"/>
+			<gaindb id="14" value="-20.93 dB"/>
+			<gaindb id="15" value="-22.59 dB"/>
+			<gaindb id="16" value="-24.08 dB"/>
+			<gaindb id="17" value="-25.56 dB"/>
+			<gaindb id="18" value="-26.95 dB"/>
+			<gaindb id="19" value="-28.61 dB"/>
+			<gaindb id="20" value="-30.10 dB"/>
+			<gaindb id="21" value="-31.58 dB"/>
+			<gaindb id="22" value="-32.97 dB"/>
+			<gaindb id="23" value="-34.63 dB"/>
+			<gaindb id="24" value="-36.12 dB"/>
+			<gaindb id="25" value="-37.60 dB"/>
+			<gaindb id="26" value="-38.99 dB"/>
+			<gaindb id="27" value="-40.65 dB"/>
+			<gaindb id="28" value="-42.14 dB"/>
+			<gaindb id="29" value="-43.62 dB"/>
+			<gaindb id="30" value="-45.01 dB"/>
+			<gaindb id="31" value="-46.67 dB"/>
+			<gaindb id="32" value="-48.16 dB"/>
+			<gaindb id="33" value="-49.64 dB"/>
+			<gaindb id="34" value="-51.03 dB"/>
+			<gaindb id="35" value="-52.69 dB"/>
+			<gaindb id="36" value="-54.19 dB"/>
+			<gaindb id="37" value="-55.66 dB"/>
+			<gaindb id="38" value="-57.05 dB"/>
+			<gaindb id="39" value="-58.71 dB"/>
+			<gaindb id="40" value="-60.21 dB"/>
+			<gaindb id="41" value="-61.68 dB"/>
+			<gaindb id="42" value="-63.07 dB"/>
+			<gaindb id="43" value="-64.73 dB"/>
+			<gaindb id="44" value="-66.23 dB"/>
+			<gaindb id="45" value="-67.70 dB"/>
+			<gaindb id="46" value="-69.10 dB"/>
+			<gaindb id="47" value="-70.75 dB"/>
+			<gaindb id="48" value="-72.25 dB"/>
+			<gaindb id="49" value="-73.72 dB"/>
+			<gaindb id="50" value="-75.12 dB"/>
+			<gaindb id="51" value="-76.78 dB"/>
+			<gaindb id="52" value="-78.27 dB"/>
+			<gaindb id="53" value="-79.74 dB"/>
+			<gaindb id="54" value="-81.14 dB"/>
+			<gaindb id="55" value="-82.80 dB"/>
+			<gaindb id="56" value="-84.29 dB"/>
+			<gaindb id="57" value="-85.76 dB"/>
+			<gaindb id="58" value="-87.16 dB"/>
+			<gaindb id="59" value="-88.82 dB"/>
+			<gaindb id="60" value="-90.31 dB"/>
+			<gaindb id="61" value="-91.78 dB"/>
+			<gaindb id="62" value="-93.18 dB"/>
+		</gain>
+		<gain id="13" name="PgaMic1Gain" factor="3">
+			<gaindb id="0	" value="6 dB"/>
+			<gaindb id="1 " value="12 dB"/>
+			<gaindb id="2 " value="15.5 dB"/>
+			<gaindb id="3 " value="18 dB"/>
+			<gaindb id="4 " value="20 dB"/>
+			<gaindb id="5 " value="23 dB"/>
+			<gaindb id="6 " value="26 dB"/>
+			<gaindb id="7 " value="29 dB"/>
+		</gain>
+		<gain id="14" name="PgaMic3Gain" factor="3">
+			<gaindb id="0	" value="0 dB"/>
+			<gaindb id="1 " value="6 dB"/>
+			<gaindb id="2 " value="12 dB"/>
+			<gaindb id="3 " value="15.5 dB"/>
+			<gaindb id="4 " value="18 dB"/>
+			<gaindb id="5 " value="20 dB"/>
+			<gaindb id="6 " value="23 dB"/>
+			<gaindb id="7 " value="26 dB"/>
+		</gain>
+		<gain id="15" name="PgaAux1Gain" factor="6">
+			<gaindb id="0	" value="-6 dB"/>
+			<gaindb id="1 " value="0 dB"/>
+			<gaindb id="2 " value="6 dB"/>
+			<gaindb id="3 " value="12 dB"/>
+			<gaindb id="4 " value="18 dB"/>
+		</gain>
+		<gain id="16" name="PgaAux2Gain" factor="6">
+			<gaindb id="0	" value="-6 dB"/>
+			<gaindb id="1 " value="0 dB"/>
+			<gaindb id="2 " value="6 dB"/>
+			<gaindb id="3 " value="12 dB"/>
+			<gaindb id="4 " value="18 dB"/>
+		</gain>
+		<gain id="17" name="ST_R_GAIN" factor="-1.5">
+			<gaindb id="0	" value="-89.78 dB"/>
+			<gaindb id="1 " value="-88.37 dB"/>
+			<gaindb id="2 " value="-87.16 dB"/>
+			<gaindb id="3 " value="-85.45 dB"/>
+			<gaindb id="4 " value="-84.29 dB"/>
+			<gaindb id="5 " value="-82.80 dB"/>
+			<gaindb id="6 " value="-81.14 dB"/>
+			<gaindb id="7" value="-79.74 dB"/>
+			<gaindb id="8" value="-78.27 dB"/>
+			<gaindb id="9" value="-76.78 dB"/>
+			<gaindb id="10" value="-75.12 dB"/>
+			<gaindb id="11" value="-73.72 dB"/>
+			<gaindb id="12" value="-72.25 dB"/>
+			<gaindb id="13" value="-70.75 dB"/>
+			<gaindb id="14" value="-69.10 dB"/>
+			<gaindb id="15" value="-67.70 dB"/>
+			<gaindb id="16" value="-66.23 dB"/>
+			<gaindb id="17" value="-64.73 dB"/>
+			<gaindb id="18" value="-63.07 dB"/>
+			<gaindb id="19" value="-61.68 dB"/>
+			<gaindb id="20" value="-60.21 dB"/>
+			<gaindb id="21" value="-58.71 dB"/>
+			<gaindb id="22" value="-57.05 dB"/>
+			<gaindb id="23" value="-55.66 dB"/>
+			<gaindb id="24" value="-54.19 dB"/>
+			<gaindb id="25" value="-52.69 dB"/>
+			<gaindb id="26" value="-51.03 dB"/>
+			<gaindb id="27" value="-49.64 dB"/>
+			<gaindb id="28" value="-48.16 dB"/>
+			<gaindb id="29" value="-46.67 dB"/>
+			<gaindb id="30" value="-45.01 dB"/>
+			<gaindb id="31" value="-43.62 dB"/>
+			<gaindb id="32" value="-42.14 dB"/>
+			<gaindb id="33" value="-40.65 dB"/>
+			<gaindb id="34" value="-38.99 dB"/>
+			<gaindb id="35" value="-37.60 dB"/>
+			<gaindb id="36" value="-35.60 dB"/>
+			<gaindb id="37" value="-34.63 dB"/>
+			<gaindb id="38" value="-32.97 dB"/>
+			<gaindb id="39" value="-31.58 dB"/>
+			<gaindb id="40" value="-30.10 dB"/>
+			<gaindb id="41" value="-28.61 dB"/>
+			<gaindb id="42" value="-26.95 dB"/>
+			<gaindb id="43" value="-25.56 dB"/>
+			<gaindb id="44" value="-24.08 dB"/>
+			<gaindb id="45" value="-22.59 dB"/>
+			<gaindb id="46" value="-20.93 dB"/>
+			<gaindb id="47" value="-19.54 dB"/>
+			<gaindb id="48" value="-18.06 dB"/>														
+			<gaindb id="49" value="-16.57 dB"/>
+			<gaindb id="50" value="-14.91 dB"/>
+			<gaindb id="51" value="-13.52 dB"/>
+			<gaindb id="52" value="-12.04 dB"/>
+			<gaindb id="53" value="-10.55 dB"/>
+			<gaindb id="54" value="-8.89 dB"/>
+			<gaindb id="55" value="-7.50 dB"/>
+			<gaindb id="56" value="-6.02 dB"/>
+			<gaindb id="57" value="-4.53 dB"/>
+			<gaindb id="58" value="-2.87 dB"/>
+			<gaindb id="59" value="-1.48 dB"/>
+			<gaindb id="60" value="0 dB "/>
+			<gaindb id="61" value="1.02 dB"/>
+			<gaindb id="62" value="1.94 dB"/>    
+			<gaindb id="63" value="4.38 dB"/>
+			<gaindb id="64" value="5.88 dB "/>
+		</gain>   
+		<gain id="18" name="ST_L_GAIN" factor="-1.5">
+			<gaindb id="0	" value="-89.78 dB"/>
+			<gaindb id="1 " value="-88.37 dB"/>
+			<gaindb id="2 " value="-87.16 dB"/>
+			<gaindb id="3 " value="-85.45 dB"/>
+			<gaindb id="4 " value="-84.29 dB"/>
+			<gaindb id="5 " value="-82.80 dB"/>
+			<gaindb id="6 " value="-81.14 dB"/>
+			<gaindb id="7" value="-79.74 dB"/>
+			<gaindb id="8" value="-78.27 dB"/>
+			<gaindb id="9" value="-76.78 dB"/>
+			<gaindb id="10" value="-75.12 dB"/>
+			<gaindb id="11" value="-73.72 dB"/>
+			<gaindb id="12" value="-72.25 dB"/>
+			<gaindb id="13" value="-70.75 dB"/>
+			<gaindb id="14" value="-69.10 dB"/>
+			<gaindb id="15" value="-67.70 dB"/>
+			<gaindb id="16" value="-66.23 dB"/>
+			<gaindb id="17" value="-64.73 dB"/>
+			<gaindb id="18" value="-63.07 dB"/>
+			<gaindb id="19" value="-61.68 dB"/>
+			<gaindb id="20" value="-60.21 dB"/>
+			<gaindb id="21" value="-58.71 dB"/>
+			<gaindb id="22" value="-57.05 dB"/>
+			<gaindb id="23" value="-55.66 dB"/>
+			<gaindb id="24" value="-54.19 dB"/>
+			<gaindb id="25" value="-52.69 dB"/>
+			<gaindb id="26" value="-51.03 dB"/>
+			<gaindb id="27" value="-49.64 dB"/>
+			<gaindb id="28" value="-48.16 dB"/>
+			<gaindb id="29" value="-46.67 dB"/>
+			<gaindb id="30" value="-45.01 dB"/>
+			<gaindb id="31" value="-43.62 dB"/>
+			<gaindb id="32" value="-42.14 dB"/>
+			<gaindb id="33" value="-40.65 dB"/>
+			<gaindb id="34" value="-38.99 dB"/>
+			<gaindb id="35" value="-37.60 dB"/>
+			<gaindb id="36" value="-35.60 dB"/>
+			<gaindb id="37" value="-34.63 dB"/>
+			<gaindb id="38" value="-32.97 dB"/>
+			<gaindb id="39" value="-31.58 dB"/>
+			<gaindb id="40" value="-30.10 dB"/>
+			<gaindb id="41" value="-28.61 dB"/>
+			<gaindb id="42" value="-26.95 dB"/>
+			<gaindb id="43" value="-25.56 dB"/>
+			<gaindb id="44" value="-24.08 dB"/>
+			<gaindb id="45" value="-22.59 dB"/>
+			<gaindb id="46" value="-20.93 dB"/>
+			<gaindb id="47" value="-19.54 dB"/>
+			<gaindb id="48" value="-18.06 dB"/>														
+			<gaindb id="49" value="-16.57 dB"/>
+			<gaindb id="50" value="-14.91 dB"/>
+			<gaindb id="51" value="-13.52 dB"/>
+			<gaindb id="52" value="-12.04 dB"/>
+			<gaindb id="53" value="-10.55 dB"/>
+			<gaindb id="54" value="-8.89 dB"/>
+			<gaindb id="55" value="-7.50 dB"/>
+			<gaindb id="56" value="-6.02 dB"/>
+			<gaindb id="57" value="-4.53 dB"/>
+			<gaindb id="58" value="-2.87 dB"/>
+			<gaindb id="59" value="-1.48 dB"/>
+			<gaindb id="60" value="0 dB "/>
+			<gaindb id="61" value="1.02 dB"/>
+			<gaindb id="62" value="1.94 dB"/>    
+			<gaindb id="63" value="4.38 dB"/>
+			<gaindb id="64" value="5.88 dB "/>
+		</gain>  
+		<gain id="19" name="Mod1GainGain" factor="3">
+			<gaindb id="0" value="-6 dB"/>
+			<gaindb id="1" value="-3 dB"/>
+			<gaindb id="2" value="0 dB"/>
+			<gaindb id="3" value="3 dB"/>
+		</gain>  
+		<gain id="20" name="Mod2GainGain" factor="3">
+			<gaindb id="0" value="-6 dB"/>
+			<gaindb id="1" value="-3 dB"/>
+			<gaindb id="2" value="0 dB"/>
+			<gaindb id="3" value="3 dB"/>
+		</gain>               
+	</gainmap>                  
+	<command id="0" cat1="Audio" cat2="LEVANTE" cat3="ReadFdiCalibData"/>
+	<command id="1" cat1="AUDIO" cat2="LEVANTE" cat3="AUDIO_LEVANTE_ReadFdiDataOK"/>
+	<command id="2" cat1="Audio" cat2="LEVANTE" cat3="GetSlopeOffset"/>
+	<command id="3" cat1="AUDIO" cat2="LEVANTE" cat3="AUDIO_LEVANTE_SlopeOffset"/>
+</component>
+</root>

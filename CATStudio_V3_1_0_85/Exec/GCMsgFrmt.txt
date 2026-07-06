@@ -1,0 +1,869 @@
+Name                           	 Owner Family	Offset  Title                                DataType   MsgType        Format
+LG_UTIL_CYCLE_COUNT_START        0x7  	0x1		0x0    "LG_UTIL_CYCLE_COUNT_START = "       HEX16      Title+Data     ""
+LG_UTIL_CYCLE_COUNT   		 0x7  	0x1		0x1    "LG_UTIL_CYCLE_COUNT = "             HEX16      Formatted      "LG_UTIL_CYCLE_COUNT = %x, 0x%.4hX%.4hX"
+// LG_TASK_STATUS                0x7  	0x1		0x2    "LG_TASK_STATUS = "                  DEC16      Title+Data     "" //moved to IMLT.mdb
+// LG_PMU_START			 0x7  	0x1		0x3    "PMU Results = "                     HEX32      Formatted      "PMU1_REG = 0x%x, PMU2_REG = 0x%x" //moved to IMLT.mdb
+// LG_PMU			 0x7  	0x1		0x4    "PMU Results = "                     HEX32      Formatted      "PMU1_REG = 0x%x, PMU2_REG = 0x%x" //moved to IMLT.mdb
+LG_CRL_RESET_DSP                 0x7  	0x1		0x5    "LG_CRL_RESET_DSP "                  DEC16      Title+Data     ""
+LG_UTIL_EXP                      0x7  	0x1		0x6    "Exp="                               DEC16      Title+Data_E   "" // Do not change this line
+
+LG_TDS_COMMAND                   0x7  	0x1 		0x7    ""                                   DEC16      Formatted      "command1 = %hd, command2 = %hd, controlLoopIO = %hd"
+LG_TDS_BURST_IN_BLOCK_INDEX      0x7  	0x1 		0x8    "Burst Index = "                     DEC16      Title+Data     ""
+LG_TDS_FIRST_LAST_SLOTS_IN_FRAME 0x7  	0x1 		0x9    ""                     		    DEC16      Formatted      "1st TimeSlotInFrame (Val,Flag) = %hd,%hd. Last TimeSlotInFrame (Val,Flag) = %hd,%hd."
+LG_TDS_STATIC_MEMORY_INDEX       0x7  	0x1 		0xA    "Static Memory Index = "             DEC16      Title+Data     ""
+LG_TDS_DRFE_STATE_STRUCT_LIST    0x7  	0x1 		0xB    "DRFE State Struct Ptr List = "      HEX32      Buffer         ""
+LG_TDS_CIR_THRESHOLDS            0x7  	0x1 		0xC    ""      				    DEC16      Formatted      "Cir Thresholds (Mandatory,Non-Mandatory) = %hd, %hd"
+LG_TDS_DEFAULT_VALUES            0x7  	0x1 		0xD    ""      				    DEC16      Formatted      "Default OptChanLen = %hd, Opt Start Offset = %hd"
+LG_VBI_BEP_BRANCH_STT         	 0x7  	0x1 		0x10   "VBI bep branch was activated"  DEC16      Title+Data      ""
+LG_VBI_BEP_BRANCH_AVG_PWR_UPDATED	  0x7  	0x1 		0x11   "AvgPwr was updated by VBI BEP Branch"  DEC16      Title+Data      ""
+LG_VBI_BEP_BRANCH_AVG_PWR_NOT_UPDATED 0x7  	0x1 		0x12   "AvgPwr was NOT updated by VBI BEP Branch"  DEC16      Title+Data      ""
+LG_VBI_PWR_BRANCH_AVG_PWR_UPDATED	  0x7  	0x1 		0x13   "AvgPwr was  updated by VBI POWER Branch"  DEC16      Title+Data      ""
+
+
+// Channel Decoder:
+LG_CD_NUMBER_OF_HEADER           0x7  	0x2		0x0    "Num Of Headers = "            	    DEC32      Title+Data     ""
+LG_CD_NUMBER_OF_BAD_HEADER       0x7  	0x2		0x1    "Num Of Bad Headers = "              DEC32      Title+Data     ""
+LG_CD_NUMBER_OF_DATA_BLOCKS      0x7  	0x2		0x2    "Num Of Data Blocks = "              DEC32      Title+Data     ""
+LG_CD_NUMBER_OF_BAD_DATA_BLOCKS  0x7  	0x2		0x3    "Num Of Bad Data Blocks = "          DEC32      Title+Data     ""
+LG_CD_SF_SYMBOLS_DUMP            0x7  	0x2		0x4    "SF Symbols = "                      HEX16      Buffer         ""
+LG_CD_SF_TYPE                    0x7  	0x2		0x5    "SF_Code = "                         HEX16      Title+Data     ""
+LG_CD_CPS_TYPE                   0x7  	0x2		0x6    "CPS = "                             DEC16      Title+Data     ""
+LG_CD_TFI_TYPE                   0x7  	0x2		0x7    ""                                   DEC16      Formatted      "Received TFI = %d, Expected TFI = %d"
+LG_CD_USF_TYPE                   0x7  	0x2		0x8    "USF_Code = "                        DEC16      Title+Data     ""
+LG_CD_HEADER_CRC_ERRORS_TYPE     0x7  	0x2		0x9    "HeaderCrcErrors = "                 DEC16      Title+Data     ""
+LG_CD_DATA_CRC_ERRORS_TYPE       0x7  	0x2		0xA    "DataCrcErrors = "                   DEC16      Title+Data     ""
+LG_CD_BIT_ERRORS_TYPE            0x7  	0x2		0xB    "BER = "                             DEC16      Title+Data     ""
+LG_CD_HEADER_DATA_DUMP           0x7  	0x2		0xC    "Header Data = "                     HEX16      Buffer         ""
+LG_CD_PAYLOAD_DATA_DUMP          0x7  	0x2		0xD    "Payload Data = "                    HEX16      Buffer         ""
+LG_CD_EXP_TYPE                   0x7  	0x2		0xE    "Burst Exponent = "                  HEX16      Title+Data     ""
+LG_CD_CIR_TYPE                   0x7  	0x2		0xF    "Burst CIR: "                        FLP_ME     Title+Data     ""
+LG_CD_NOISE_TYPE                 0x7  	0x2		0x10    "Burst Noise: "                     FLP_ME     Title+Data     ""
+LG_CD_KN_TYPE                    0x7  	0x2		0x11    "Norm Factor: "                     HEX16      Formatted      "Exp = 0x%x, Man = 0x%x"
+LG_CD_BSN_TYPE                   0x7  	0x2		0x13    "BSN = "                            DEC16      Title+Data     ""
+// LG_CD_RESULTS                 0x7 	0x2   	0x14    "CD Results: "                      DEC16      Formatted      ""
+LG_CD_HEADER_VITERBI_INPUT       0x7  	0x2		0x15    "Header Viterbi Input = "           DEC16      Buffer_E       ""
+LG_CD_DATA_VITERBI_INPUT         0x7  	0x2		0x16    "Data Viterbi Input = "             DEC16      Buffer_E       ""
+LG_CD_HEADER_VITERBI_OUTPUT      0x7  	0x2		0x17    "Header Viterbi Output = "          DEC16      Buffer_E       ""
+LG_CD_DATA_VITERBI_OUTPUT        0x7  	0x2		0x18    "Data Viterbi Output = "            DEC16      Buffer_E       ""
+LG_CD_COUNTER                    0x7  	0x2		0x19    "CrlDecodeTaskCounter = "     	    DEC16      Title+Data     ""
+LG_CD_QUEUE                   	 0x7  	0x2		0x1A    "CrlDecodeTaskQueue[] = "     	    HEX32      Title+Data     ""
+LG_CD_FLAG                   	 0x7  	0x2		0x1B    "CrlDecodeTaskFlag = "     	    DEC16      Title+Data     ""
+LG_CD_GPRS_PRE_VIT               0x7  	0x2		0x1C    ""     				    DEC16      Formatted      "CrlDecodeGprs_PreVit %d"
+LG_CD_GPRS_POST_VIT              0x7  	0x2		0x1D    ""     				    DEC16      Formatted      "CrlDecodeGprs_PostVit %d"
+LG_CD_EGPRS_PRE_VIT_H            0x7  	0x2		0x1E    ""     				    DEC16      Formatted      "CrlDecodeEgprs_PreVit_H %d"
+LG_CD_EGPRS_POST_VIT_H           0x7  	0x2		0x1F    ""     				    DEC16      Formatted      "CrlDecodeEgprs_PostVit_H %d"
+LG_CD_EGPRS_PRE_VIT_D            0x7  	0x2		0x20    ""     				    DEC16      Formatted      "CrlDecodeEgprs_PreVit_D(%d)"
+LG_CD_EGPRS_POST_VIT_D           0x7  	0x2		0x21    ""     				    DEC16      Formatted      "CrlDecodeEgprs_PostVit_D(%d)"
+// LG_CD_GSM_RESULTS             0x7  	0x2		0x22    ""     				    DEC16      Formatted      ""
+LG_RSACCH_CURRENT_BLOCK_SOFTBITS  	0x7 	0x2		0x25    "R-SACCH_current Block Soft Bits"  DEC16      Buffer_E      ""
+LG_RSACCH_PREVIOUS_BLOCK_SOFTBITS 	0x7   	0x2		0x26    "R-SACCH_previous Block Soft Bits"  DEC16      Buffer_E      ""
+LG_RSACCH_COMBINED_BLOCK_SOFTBITS 	0x7   	0x2		0x27    "R-SACCH_combined Block Soft Bits"  DEC16      Buffer_E      ""
+LG_RSACCH_VITERBI_OUTPUT	0x7	   0x2		0x28    "R-SACCH_output Viterbi"  DEC16      Buffer_E      ""
+
+// RTV:
+LG_RTV_TDS_COMMAND1               0x7 	0x3		0x0     "TDS_Command1 = "                   HEX16      Title+Data     ""
+LG_RTV_TDS_COMMAND2               0x7 	0x3		0x1     "TDS_Command2 = "                   HEX16      Title+Data     ""
+LG_RTV_TDS_CONTROL_LOOP_IO	  0x7 	0x3		0x2     "TDS_controlLoopIO = " 		    HEX16      Title+Data     ""
+
+// DRX:
+LG_DRX_OPTIMAL_OFFSET             0x7 	0x4		0x0     "LG_DRX_OPTIMAL_OFFSET "            DEC16      Formatted      "Drx optimal position:%d "
+LG_DRX_GENERAL_1                  0x7 	0x4		0x1     "LG_DRX_GENERAL_1 "                 COMP16Q15  Buffer_E       ""
+
+// CLTE:
+LG_CLTE_IN_TAPS                   0x7 	0x5		0x0     "CLTE_InTaps = "                    COMP16Q15  Buffer_E       ""
+LG_CLTE_IN_NOISE_VAR              0x7	0x5		0x1     "LG_CLTE_IN_NOISE_VAR = "           FlpNumQ15  Title+Data     ""
+LG_CLTE_IN_RESET_FLAG             0x7 	0x5		0x2     "CLTE_In_ResetFlag = "              Q0         Title+Data     ""
+LG_CLTE_IN_FORCE_RESULT_FLAG      0x7 	0x5		0x3     "CLTE_ForceResult = "               Q0         Title+Data     ""
+LG_CLTE_IN_UPDATE_HIST_FLAG       0x7 	0x5		0x4     "LG_CLTE_IN_UPDATE_HIST_FLAG = "    Q0         Title+Data     ""
+LG_CLTE_1                         0x7 	0x5		0x5     ""                                  DEC32      Formatted      "NoiseEn = %d, ModNoiseEnSum = %d"
+LG_CLTE_2                         0x7 	0x5		0x6     ""                                  DEC16      Formatted      "CurHistLen = %d, NoiseAboveMedian = %d, NoiseBelowMedian = %d, NoiseAtMedian = %d"
+LG_CLTE_3                         0x7 	0x5		0x7     ""                                  DEC16      Formatted      "LastTapNoiseRat= %d, F_TapNoiseRat= %d, S_TapNoiseRat= %d, Cir= %d"
+LG_CLTE_4                         0x7 	0x5		0x8     ""          			    DEC32      Formatted      "MedianNoisePerTapLevel = %d, InitialNoisePerChanTapEnergy = %d"
+LG_CLTE_5                         0x7 	0x5		0x9     ""           	                    DEC32      Formatted      "EstAvgGoodMeasCir = %d"
+LG_CLTE_6                         0x7 	0x5		0xA     ""                                  DEC16      Formatted      "ReqTimeCorrSymb= %d, QualOfMeas= %d, NumOfGoodMeas= %d, OptChLen= %d, OptChStartOff= %d"
+LG_CLTE_7                         0x7 	0x5		0xB     ""                                  FlpNum     Formatted      "EffNoisePerRxSampleEnergy = %d"
+LG_CLTE_NOISE_PER_TAPS_HIST       0x7 	0x5		0xC     "NoisePerTapsHist = "               DEC32      Buffer         ""
+LG_CLTE_TAP_ENERGY_HIST           0x7 	0x5		0xD     "TapsEnergyHist = "                 DEC32      Buffer         ""
+LG_CLTE_EST_AVG_TAP_ENERGY        0x7 	0x5		0xE     "AvgTapsEnergy = "                  DEC32      Buffer         ""
+LG_CLTE_CUR_TAP_ENERGY            0x7	0x5		0xF     "CLTE_CurChTapEnergy = "            DEC32      Buffer         ""
+
+// Match Filter:
+LG_MF_IN_TAPS                     0x7 	0x6		0x0     "MF In Taps = "                     COMP16Q15  Buffer_E       ""
+LG_MF_IN_SAMP                     0x7 	0x6		0x1     "MF In Samples = "                  COMP16Q15  Buffer_E       ""
+LG_MF_OUT_SAMP                    0x7	0x6		0x2     "MF Out Samples = "                 COMP16Q15  Buffer_E       ""
+LG_MF_OUT_TAPS                    0x7 	0x6		0x3     "MF Out Taps = "                    COMP16Q15  Buffer_E       ""
+LG_MF_IN_AR_TAPS		  0x7 	0x6		0x4     "MF In AR Flatt. filter Taps = "    COMP16Q15  Buffer_E       ""
+// SF:
+LG_SF_IN_TAPS                     0x7 	0x7		0x0     "SF In Taps = "                     COMP16Q15  Buffer_E       ""
+LG_SF_OUT_CAUSAL_TAPS             0x7 	0x7		0x1     "SF Out Causal Taps = "             COMP16Q15  Buffer_E       ""
+LG_SF_OUT_ANTI_CAUSAL_TAPS        0x7 	0x7		0x2     "SF Out Anti Causl Taps = "         COMP16Q15  Buffer_E       ""
+
+// SCH Detect:
+LG_SCHD_IN_FREQ                   0x7 	0x8		0x0     "LG_SCHD_IN_FREQ = "                DEC16      Title+Data     ""
+LG_SCHD_IN_SAMP                   0x7 	0x8		0x1     "LG_SCHD_IN_SAMP = "                COMP16Q15  Buffer_E       ""
+LG_SCHD_OUT_FREQ                  0x7 	0x8		0x2     "LG_SCHD_OUT_FREQ = "               DEC16      Title+Data     ""
+LG_SCHD_OUT_START                 0x7 	0x8		0x3     "LG_SCHD_OUT_START = "              DEC16      Title+Data     ""
+LG_SCHD_OUT_SAMP                  0x7 	0x8 		0x4     "LG_SCHD_OUT_SAMP = "               COMP16Q15  Buffer_E       ""
+LG_SCHD_OUT_TAPS                  0x7 	0x8		0x5     "LG_SCHD_OUT_TAPS = "               COMP16Q15  Buffer_E       ""
+
+
+// Noise Whiting filter
+LG_NWF_IN_TAPS                    0x7 	0x9		0x0     "NWF In Taps = "                     COMP16Q15  Buffer_E          ""
+LG_NWF_IN_SAMP                    0x7 	0x9		0x1     "NWF In Samples = "                  COMP16Q15  Buffer_E          ""
+LG_NWF_CAUSAL_IN_SAMP             0x7 	0x9		0x2     "NWF In Causal Samples = "           COMP16Q15  Buffer_E          ""
+LG_NWF_ANTI_CAUSAL_IN_SAMP        0x7 	0x9		0x3     "NWF In ACausal Samples = "          COMP16Q15  Buffer_E          ""
+LG_NWF_CAUSAL_SF_COEF             0x7 	0x9		0x4     "NWF Causal SF Coef = "              COMP16Q15  Buffer_E          ""
+LG_NWF_ANTI_CAUSAL_SF_COEF        0x7 	0x9		0x5     "NWF ACausal SF Coef = "             COMP16Q15  Buffer_E          ""
+LG_NWF_CAUSAL_OUT_SAMP            0x7 	0x9		0x6     "NWF Causal Out Samples = "          COMP16Q15  Buffer_E          ""
+LG_NWF_ANTI_CAUSAL_OUT_SAMP       0x7 	0x9		0x7     "NWF ACausal Out Samples = "         COMP16Q15  Buffer_E          ""
+
+// Coded BER point:
+LG_BER_CONTROL_WORD	  	  0x7 	0xA		0x0	"BER Control Word = "		     HEX16	Formatted	  ""
+LG_CODED_BER_DATA 	          0x7 	0xA		0x1     "Coded BER Switched data = " 	     HEX16 	Buffer 	   	  ""
+LG_UNCODED_BER_DATA 	          0x7 	0xA		0x2     "Uncoded BER Packed data = "	     HEX16 	Buffer 	   	  ""
+LG_UNCODED_BER_PARAMS             0x7 	0xA		0x3     "" 				     DEC16      Formatted 	  "BrstIndx=%d, RcvdBlk=%d, PackBits=%d, Residue=%d, BufOffset=%d"
+
+// Equalizer:
+LG_EQ_IN_SAMP_CAUSAL              0x7 	0xB		0x0    "EQ In Causal Samples = "            COMP16Q15     Buffer_E         ""
+LG_EQ_IN_SAMP_ANTI_CAUSAL         0x7 	0xB		0x1    "EQ In ACausal Samples = "           COMP16Q15     Buffer_E         ""
+LG_EQ_IN_TAPS_CAUSAL              0x7 	0xB		0x2    "EQ In Causal Taps = "               COMP16Q15     Buffer_E         ""
+LG_EQ_IN_TAPS_ANTI_CAUSAL         0x7 	0xB		0x3    "EQ In ACausal Taps = "              COMP16Q15     Buffer_E         ""
+LG_EQ_IN_LMS_MUE                  0x7 	0xB		0x4    "EQ In LMS MUE = "                   Q17        	  Title+Data       ""
+LG_EQ_IN_SAMP_ANTI_CAUSAL_FLIP    0x7 	0xB		0x5    "LG_EQ_IN_SAMP_ANTI_CAUSAL_FLIP = "  COMP16Q15     Buffer_E         ""
+//  HW EQ log points:
+LG_HW_EQ_BEFORE_QUANT_CAUSAL	  0x7 	0xB		0x6    "LG_HW_EQ_BEFORE_QUANT_CAUSAL = "    COMP16Q15  Buffer_E     	   ""
+LG_HW_EQ_BEFORE_QUANT_ANTI	  0x7 	0xB		0x7    "LG_HW_EQ_BEFORE_QUANT_ANTI = "	    COMP16Q15  Buffer_E     	   ""
+LG_HW_EQ_BEFORE_QUANT_TAPS	  0x7 	0xB		0x8    "LG_HW_EQ_BEFORE_QUANT_TAPS = "	    COMP16Q15  Buffer_E     	   ""
+LG_HW_EQ_AFTER_QUANT_CAUSAL	  0x7 	0xB		0x9    "LG_HW_EQ_AFTER_QUANT_CAUSAL = "	    COMP16Q0  Buffer_E     	   ""
+LG_HW_EQ_AFTER_QUANT_ANTI	  0x7 	0xB		0xA    "LG_HW_EQ_AFTER_QUANT_ANTI = "	    COMP16Q0  Buffer_E     	   ""
+LG_HW_EQ_AFTER_QUANT_TAPS	  0x7 	0xB		0xB    "LG_HW_EQ_AFTER_QUANT_TAPS = "	    COMP16Q0  Buffer_E     	   ""
+LG_HW_EQ_N0			  0x7 	0xB		0xC    "LG_HW_EQ_N0 = "              	    FlpNumQ15  Title+Data     	   ""
+LG_HW_EQ_REGS_READ		  0x7 	0xB		0xD    "LG_HW_EQ_REGS_READ = "		    COMP16Q15  Buffer_E     	   ""
+LG_HW_EQ_REGS_WRITE		  0x7 	0xB		0xE    "LG_HW_EQ_REGS_WRITE = "		    COMP16Q15  Buffer_E     	   ""
+
+
+// DRFE:
+LG_DRFE_IN_SAMP			  0x7 	0xC		0x0    "Drfe Input = "                      COMP16Q15  Buffer_E     	   ""
+LG_DRFE_FRAME_COUNTER             0x7 	0xC	        0x1    "FrameCounter ="                     DEC32      Title+Data     	   ""
+LG_DRFE_OUT_NOISE_VAR             0x7 	0xC	        0x2    "LG_DRFE_OUT_NOISE_VAR = "           FlpNumQ15  Title+Data     	   ""
+LG_DRFE_OUT_CH_LEN                0x7 	0xC	        0x3    "DRFE Out Channel Len = "            Q0         Title+Data     	   ""
+LG_DRFE_OUT_MODULATION            0x7 	0xC	        0x4    "DRFE Out Modulation = "             Q0         Title+Data     	   ""
+LG_DRFE_OUT_SB_EXP                0x7 	0xC	        0x5    "DRFE Out SB Fxp = "                 Q0         Title+Data     	   ""
+LG_DRFE_OUT_SB                    0x7 	0xC	        0x6    "DRFE Out Soft bits = "  	    DEC8      Buffer_E       	   ""
+LG_DRFE_OUT_CIR                   0x7 	0xC	        0x7    "LG_DRFE_OUT_CIR = "                 FlpNumQ15  Title+Data     	   ""
+LG_DRFE_RAW_RX_DATA               0x7 	0xC	        0x8    "LG_DRFE_RAW_RX_DATA = "             DEC32      Buffer      	   ""
+// LG_BEQ_RESULTS                 0x7  	0xC	       	0x9    "BEQ Results: "                      DEC16      Formatted           ""
+// LG_AEQ_RESULTS                 0x7  	0xC	       	0xA    "AEQ Results: "                      DEC16      Formatted           ""
+
+LG_DRFE_IN_GMSK_SAMP		  0x7  	0xC		0xB    "Drfe GSMK Input = "                 COMP16Q15  Buffer_E     	   ""
+
+LG_DRFE_IN_EPSK_SAMP_SLOT_0       0x7  	0xC		0xC    "Drfe EPSK Input Slot 0 = "          COMP16Q15  Buffer_E     	   ""
+LG_DRFE_IN_EPSK_SAMP_SLOT_1       0x7  	0xC		0xD    "Drfe EPSK Input Slot 1 = "          COMP16Q15  Buffer_E     	   ""
+LG_DRFE_IN_EPSK_SAMP_SLOT_2       0x7 	0xC		0xE    "Drfe EPSK Input Slot 2 = "          COMP16Q15  Buffer_E     	   ""
+LG_DRFE_IN_EPSK_SAMP_SLOT_3       0x7  	0xC		0xF    "Drfe EPSK Input Slot 3 = "          COMP16Q15  Buffer_E     	   ""
+
+LG_DRFE_OUT_SB_SLOT_0             0x7  	0xC	        0x10   "DRFE Out Soft bits Slot 0 = "  	    DEC8      Buffer_E       	   ""
+LG_DRFE_OUT_SB_SLOT_1             0x7  	0xC	        0x11   "DRFE Out Soft bits Slot 1 = "  	    DEC8      Buffer_E       	   ""
+LG_DRFE_OUT_SB_SLOT_2             0x7  	0xC	        0x12   "DRFE Out Soft bits Slot 2 = "  	    DEC8      Buffer_E       	   ""
+LG_DRFE_OUT_SB_SLOT_3             0x7  	0xC	        0x13   "DRFE Out Soft bits Slot 3 = "  	    DEC8      Buffer_E       	   ""
+
+LG_DRFE_IN_CHAN_TYPE              0x7  	0xC		0x14   "Chan. Type For Samples Print = "    HEX16     Title+Data     	   ""
+
+// AFC:
+LG_AFC_INPUT_EQU_SB               0x7 	0xD	        0x0    "LG_AFC_INPUT_EQU_SB = "             DEC16      Buffer_E       	   ""
+LG_AFC_INPUT_CH_TAPS              0x7 	0xD	        0x1    "LG_AFC_INPUT_CH_TAPS = "            COMP16Q15  Buffer_E       	   ""
+LG_AFC_INPUT_EQU_IQ_IN            0x7 	0xD	        0x2    "LG_AFC_INPUT_EQU_IQ_IN = "          COMP16Q15  Buffer_E       	   ""
+LG_AFC_INPUT_ENABLE_FLAG          0x7 	0xD	        0x3    "LG_AFC_INPUT_ENABLE_FLAG = "        DEC16      Title+Data     	   ""
+LG_AFC_OUT_FREQ_OFFSET_EGDUH      0x7 	0xD	        0x4    "EGDUH AFC_EstFreqOffsetHz = "       Q5         Title+Data     	   ""
+LG_AFC_OUT_FREQ_OFFSET_DNS        0x7 	0xD	        0x5    "DNS AFC_EstFreqOffsetHz = "         Q5         Title+Data     	   ""
+LG_AFC_CIR_ACC_RESET         	  0x7 	0xD	        0x6    "AFC Cir Accumulators Reset "        DEC16      Title+Data     	   ""
+LG_AFC_ACC_CIR                    0x7 	0xD	        0x7    "AFC Accumulated Cir Counter    = "   FlpNumQ15  Title+Data     	   ""
+LG_AFC_STATIC_MEM_INDEX           0x7 	0xD	        0x8    "AFC Static Memory Index        = "   DEC16  Buffer_E 	   ""
+LG_AFC_SLOT_NUM_IN_BLOCK          0x7 	0xD	        0x9    "AFC Slot Num In Block          = "   DEC16  Buffer_E 	   ""
+LG_AFC_PREV_BURST_INDEX_IN_BLOCK  0x7 	0xD	        0xA    "AFC Prev Burst Index In Block  = "   DEC16  Buffer_E 	   ""
+LG_AFC_CIR_TO_ADD                 0x7 	0xD	        0xB    "AFC Cir To Add To Acc 	       = "   FlpNumQ15  Title+Data     	   ""
+LG_AFC_ACC_BEFORE_ADD_CIR         0x7 	0xD	        0xC    "AFC Accumulated Cir Before Add = "   FlpNumQ15 Title+Data     	   ""
+LG_AFC_LAST_MAX_ACC_GROUP_CIR_INDEX 	0x7	0xD 	0xD    "Afc Last Max Accumulated Group Cir Index = " DEC16  Buffer_E 	   ""
+
+LG_AFC_DEBUG_BURST_BUILD        0x7	0xD 	0xE    	"LG_AFC_DEBUG_BURST_BUILD = " 		DEC16  Buffer_E 	   ""
+LG_AFC_DEBUG_RX_REF_MODULATE    0x7	0xD 	0xF    	"LG_AFC_DEBUG_RX_REF_MODULATE = " 	COMP16Q15  Buffer_E 	   ""
+LG_AFC_DEBUG_RX_REF_FIR_C       0x7	0xD 	0x10    "LG_AFC_DEBUG_RX_REF_FIR_C = " 		COMP16Q15  Buffer_E 	   ""
+LG_AFC_DEBUG_RX_REF_FIR_AC      0x7	0xD 	0x11    "LG_AFC_DEBUG_RX_REF_FIR_AC = " 	COMP16Q15  Buffer_E 	   ""
+LG_AFC_DEBUG_PHASE_VECTOR       0x7	0xD 	0x12    "LG_AFC_DEBUG_PHASE_VECTOR = " 		COMP16Q15  Buffer_E 	   ""
+LG_AFC_DEBUG_SMOOTHING_FILTER   0x7	0xD 	0x13    "LG_AFC_DEBUG_SMOOTHING_FILTER = "	COMP16Q15  Buffer_E 	   ""
+LG_AFC_DEBUG_AUTO_CORRELATION   0x7 	0xD 	0x14    "LG_AFC_DEBUG_AUTO_CORRELATION = " 	DEC16  Buffer_E 	   ""
+LG_AFC_DEBUG_ARG                0x7	0xD 	0x15    "LG_AFC_DEBUG_ARG = " 			DEC16  Buffer_E 	   ""
+LG_AFC_DEBUG_FREQ_OFFSET        0x7	0xD 	0x16    "LG_AFC_DEBUG_FREQ_OFFSET = " 		DEC16  Buffer_E 	   ""
+
+
+//  RXPE log points:
+LG_RXPE_RX_IN                  0x7    	0xE		0x0    "RXPE RX In = "                      COMP16Q15     Buffer_E         ""
+LG_RXPE_CE_ESTTYPE             0x7    	0xE	 	0x1    "RXPE ChEstimation EstType (LS = 0, WLS = 1)     = "         DEC16   	Title+Data	""
+LG_RXPE_CE_CHLEN               0x7    	0xE	 	0x2    "RXPE ChEstimation Channel Length in Samples     = "	  	DEC16   	Title+Data	""
+LG_RXPE_CE_MODTYPE             0x7    	0xE	 	0x3    "RXPE ChEstimation ModType (GMSK = 0, 8PSK = 1)  = "		DEC16   	Title+Data	""
+LG_RXPE_CE_DCOFFSET            0x7    	0xE	 	0x4    "RXPE ChEstimation DC Offset = "				COMP16Q15     	Buffer_E        ""
+LG_RXPE_CE_CHANNEL_TAPS       	0x7   	0xE	 	0x5    "RXPE ChEstimation Channel Taps = "				COMP16Q15     	Buffer_E        ""
+LG_RXPE_GMSK_INIT_TAPS         0x7    	0xE	 	0x6    "GMSK Init. Taps = "                 COMP16Q15     Buffer_E         ""
+LG_RXPE_EPSK_INIT_TAPS         0x7    	0xE	 	0x7    "EPSK Init. Taps = "                 COMP16Q15     Buffer_E         ""
+LG_RXPE_OUT_GMSK_CIR           0x7    	0xE	 	0x8    "RXPE Out GMSK CIR = "               FlpNumQ15  Title+Data       ""
+LG_RXPE_OUT_GMSK_NOISE_VAR     0x7    	0xE	 	0x9    "RXPE Out GMSK Noise Var = "         FlpNumQ15  Title+Data       ""
+LG_RXPE_OUT_EPSK_CIR           0x7    	0xE	 	0xA    "RXPE Out EPSK CIR = "               FlpNumQ15  Title+Data       ""
+LG_RXPE_OUT_EPSK_NOISE_VAR     0x7    	0xE	 	0xB    "RXPE Out EPSK Noise Var = "         FlpNumQ15  Title+Data       ""
+LG_RXPE_OUT_OPT_START_OFFSET   0x7    	0xE	 	0xC    "RXPE Opt Start Offset = "           DEC16      Title+Data       ""
+LG_RXPE_OUT_OPT_CHAN_LEN       0x7    	0xE	 	0xD    "RXPE Out Opt. Chan. Len = "         DEC16      Title+Data       ""
+LG_RXPE_OUT_REQ_TIME_CORR      0x7    	0xE	 	0xE    "RXPE Out Req. Time Corr. = "        DEC16      Title+Data       ""
+
+LG_CLTE_EGDUH_TASK_1ST_TS_IN_FRAME  	  0x7	0xE   0xF    "CLTE (Egduh) 1st Time-slot In Frame Index = "  	DEC16 	Title+Data 	""
+LG_CLTE_EGDUH_TASK_SLOT_INDEX_IN_FRAME    0x7	0xE   0x10   "CLTE (Egduh) Slot Index In Frame          = "  	DEC16 	Title+Data 	""
+LG_CLTE_EGDUH_TASK_NEEDED_OFFSET          0x7	0xE   0x11   "CLTE (Egduh) Needed Timing Offset         = "  	DEC16 	Title+Data 	""
+LG_CLTE_EGDUH_TASK_TIMING_OFFSET_TABLE    0x7	0xE   0x12   "CLTE (Egduh) Timing Offset Table          = "  	HEX32 	Title+Data 	""
+LG_CLTE_EGDUH_TASK_LOG_GSIZE		  0x7	0xE	0x13   "CLTE (Egduh) Grouping Size Set            = "  	DEC16 	Title+Data 	""
+
+LG_CLTE_EST_AVG_TAP_ENERGY_VALS		  0x7	0xE	0x14   "CLTE Average History Table Tap Energy = " 	UDEC32 	Buffer_E 	""
+LG_CLTE_WORKING_MODE			  0x7	0xE	0x15   "CLTE Working Mode (0 = Initial)       = " 	DEC16 	Buffer_E 	""
+LG_CLTE_OPT_CHAN_LEN			  0x7	0xE	0x16   "CLTE Opt Channel Length               = " 	DEC16 	Buffer_E 	""
+LG_CLTE_OPT_CHAN_START_OFFSET   	  0x7	0xE	0x17   "CLTE Opt Channel Start Offset         = " 	DEC16 	Buffer_E 	""
+LG_CLTE_CURR_HIST_LEN         		  0x7	0xE	0x18   "CLTE Current History Length           = " 	DEC16 	Buffer_E 	""
+LG_CLTE_NUM_ALLOCATED_SLOTS   		  0x7	0xE	0x19   "CLTE Num Allocated Slots              = " 	DEC16 	Buffer_E 	""
+LG_CLTE_EST_FINAL_CIR_INPUT		  0x7	0xE	0x1A   "CLTE Final EstCir Input               = " 	DEC16 	Buffer_E 	""
+LG_CLTE_EST_FINAL_CIR_USED		  0x7	0xE	0x1B   "CLTE Final EstCir Used                = " 	DEC16 	Buffer_E 	""
+LG_CLTE_IHT_INDEX			  0x7	0xE	0x1C   "CLTE IHT Index                        = " 	DEC16 	Buffer_E 	""
+LG_CLTE_GROUPING_SIZE			  0x7	0xE	0x1D   "CLTE Grouping Size Used               = " 	DEC16 	Buffer_E 	""
+LG_CLTE_GROUP_AVG_CIR			  0x7	0xE	0x1E   "CLTE IHT Group Average Cir            = " 	DEC16 	Buffer_E 	""
+LG_CLTE_CIR_THRESHOLD_USED		  0x7	0xE	0x1F   "CLTE Cir Threshold Used               = " 	DEC16 	Buffer_E 	""
+LG_CLTE_IS_MANDATORY_BURST		  0x7	0xE	0x20   "CLTE Is Mandatory Burst               = " 	DEC16 	Buffer_E 	""
+LG_CLTE_TT_FORCE_RESULT			  0x7	0xE	0x21   "CLTE TT Force Result                  = " 	DEC16 	Buffer_E 	""
+LG_CLTE_FIRST_TTN_RATIO     		  0x7	0xE	0x22   "CLTE 1st Tap2Noise Ratio              = " 	DEC16 	Buffer_E 	""
+LG_CLTE_SECOND_TTN_RATIO    		  0x7	0xE	0x23   "CLTE 2nd Tap2Noise Ratio              = " 	DEC16 	Buffer_E 	""
+LG_CLTE_LAST_TTN_RATIO      		  0x7	0xE	0x24   "CLTE Last Tap2Noise Ratio             = " 	DEC16 	Buffer_E 	""
+LG_CLTE_REQ_TIME_CORRECTION_SYMBOLS	  0x7	0xE	0x25   "CLTE Required TT Correction [Symbols] = " 	DEC16 	Buffer_E 	""
+LG_CLTE_MASTER_TIMESLOT_INDEX  		  0x7	0xE	0x26   "CLTE Master Time-slot Index           = " 	DEC16 	Buffer_E 	""
+LG_CLTE_1ST_SLOT_INDEX_IN_FRAME		  0x7	0xE	0x27   "CLTE 1st Time-slot Index In Frame     = " 	DEC16 	Buffer_E 	""
+LG_CLTE_MASTER_TIMESLOT_TABLE		  0x7	0xE	0x28   "CLTE Master Time-slot Table           = " 	HEX32 	Buffer_E 	""
+LG_CLTE_LOCAL_TAP_EN_COUNT		  0x7	0xE	0x29   "CLTE LocalTapEnCount                  = " 	DEC16 	Buffer_E 	""
+LG_CLTE_NUM_SLOTS_IN_IHT_AVG        	  0x7	0xE	0x2A   "CLTE Number Of Averaged Slots In IHT  = " 	DEC16 	Buffer_E 	""
+LG_CLTE_AVG_IHT_CIR                 	  0x7	0xE   0x2B   "CLTE Average Cir Over IHT (Q5)        = " 	DEC32 	Buffer_E 	""
+LG_CLTE_AVG_NOISE_PER_CH_TAP_ENERGY 	  0x7	0xE   0x2C   "CLTE Noise Per Tap Energy List (Q31)   = " 	DEC32   Buffer_E	"CLTE Avg Noise Per Tap Energy (Q31)   = %d "
+LG_RXPE_CLTE_MEDIAN_COUNTERS  		  0x7	0xE   0x2D   "" 						DEC16 	Formatted 	"CLTE Median Counters (Below,At,Above) = %3hd, %3hd, %3hd "
+LG_RXPE_CLTE_NEXT_PLACE_CYC_BUF		  0x7	0xE	0x2E   "CLTE Next Place In Cyclic Buff        = " 	DEC16 	Title+Data 	""
+LG_CLTE_CHANNEL_TAPS_INPUT		  0x7	0xE	0x2F   "CLTE 1st Place In Cyclic Buff         = " 	DEC16 	Title+Data 	""
+LG_CLTE_DIV_S				  0x7	0xE	0x30   "" 						DEC16 	Formatted 	"CLTE div_s( %5hd, %5hd ) "
+LG_CLTE_MEDIAN_LEVEL			  0x7	0xE	0x31   "CLTE Median Noise Per Tap Level (Q31) = "  	UDEC32 	Title+Data 	""
+LG_CLTE_AVG_ENERGY_PER_CH_TAP   	  0x7	0xE	0x32   "CLTE Avg Energy Per Channel Tap(Q31)  = "  	UDEC32 	Buffer_E 	""
+LG_CLTE_VEC   	  			  0x7	0xE	0x33   "Vec = "  					UDEC32 	Buffer 		""
+LG_CLTE_STATE_STRUCT_PTR_LIST             0x7	0xE   0x34   "CLTE State Struct Ptr List (Address)  = "  	HEX32 	Buffer_E	""
+LG_CLTE_USED_STATE_STRUCT_PTR             0x7	0xE   0x35   "CLTE Used State Struct Ptr (Address)  = "  	HEX32 	Buffer_E	""
+LG_CLTE_CURR_FRAME_NUM_LSB         	  0x7	0xE   0x36   "CLTE Current Frame Num (LSB)          = "  	HEX16 	Buffer_E	""
+LG_CLTE_OLDEST_ENTRY_FRAME_NUM_LSB 	  0x7	0xE   0x37   "CLTE Oldest History Entry Frame Num   = "  	HEX16 	Buffer_E	""
+LG_CLTE_DELETE_DONE			  0x7	0xE   0x38   "CLTE Delete From History Done = "  		HEX16 	Title+Data	""
+LG_CLTE_HIST_UPDATE_DONE                  0x7	0xE   0x39   "CLTE Update History Done = "  			HEX16 	Title+Data	""
+
+LG_RXPE_EST_GMSK_CHANNEL_TAPS      	  0x7	0xE   0x3A   "RXPE Est GMSK Channel Taps = "  		COMP16Q15  Buffer_E	""
+LG_RXPE_EST_EPSK_CHANNEL_TAPS      	  0x7	0xE   0x3B   "RXPE Est EPSK Channel Taps = "  		COMP16Q15  Buffer_E	""
+LG_RXPE_EST_KNOWN_GMSK_CHANNEL_TAPS       0x7	0xE   0x3C   "RXPE Est Known GMSK Channel Taps = "  		COMP16Q15  Buffer_E	""
+LG_RXPE_EST_KNOWN_EPSK_CHANNEL_TAPS 	  0x7	0xE   0x3D   "RXPE Est Known EPSK Channel Taps = "  		COMP16Q15  Buffer_E	""
+LG_RXPE_FINAL_GMSK_CHANNEL_TAPS           0x7	0xE   0x3E   "RXPE Final GMSK Channel Taps = "  		COMP16Q15  Buffer_E	""
+LG_RXPE_FINAL_EPSK_CHANNEL_TAPS           0x7	0xE   0x3F   "RXPE Final EPSK Channel Taps = "  		COMP16Q15  Buffer_E	""
+
+LG_AR_IN_NOISE_SAMP			  0x7	0xE	0x40   "AR Filter Input Noise samples = "  		COMP16Q15  Buffer_E	""
+LG_AR_AUTOCORR				  0x7	0xE	0x41   "AR Filter Autocorrelation Result = "		COMP16Q15  Buffer_E	""
+LG_AR_OUT_TAPS				  0x7	0xE	0x42   "AR Filter Out Taps = "  	       		COMP16Q15  Buffer_E	""
+
+
+
+
+// Incremental Redundancy points:
+LG_IR_EXTRACT_PARAMS_TYPE         0x7 	0xF		0x0    ""                                   DEC16      Formatted      "IR Extract Params: BSN=%d, NewMCS=%d, NewPS=%d, PaddingFlag=%d, SPB = %d, WS=%d"
+LG_IR_EXTRACT_STATUS_TYPE         0x7 	0xF		0x1    ""                                   DEC16      Formatted      "IR Extract Result: Status=%d"
+LG_IR_STORE_PARAMS_TYPE           0x7 	0xF		0x2    ""                                   DEC16      Formatted      "IR Store Params: BSN=%d, NewMCS=%d, NewPS=%d, PaddingFlag=%d, SPB = %d"
+LG_IR_STORE_STATUS_TYPE           0x7 	0xF		0x3    ""                                   DEC16      Formatted      "IR Store Result: Memory Status=%d"
+LG_IR_REMOVE_STATUS_TYPE          0x7 	0xF		0x4    ""                                   DEC16      Formatted      "IR Remove Result: Removed BSN=%d, VS=%d, VE=%d (SPB = %d)"
+LG_IR_STORE_BURST_DATA            0x7 	0xF		0x5    "LG_IR_STORE_BURST_DATA ="           DEC16      Buffer_E       ""
+LG_IR_EXTRACT_BURST_DATA          0x7 	0xF		0x6    "LG_IR_EXTRACT_BURST_DATA ="         DEC16      Buffer_E       ""
+LG_IR_NORM_NEW_BURST_DATA         0x7 	0xF		0x7    "LG_IR_NORM_NEW_BURST_DATA ="        DEC16      Buffer_E       ""
+LG_IR_DUMPING                     0x7 	0xF		0x8    ""                                   DEC16      Formatted      "IR Dumped BSN %d, VS = %d, VE = %d"
+LG_IR_RESET                       0x7 	0xF		0x9    ""                                   DEC16      Formatted      "IR Reset! (%d)"
+
+
+// AGC log points:
+LG_AGC_CHAR                       0x7 	0x10		0x0    ""		                    UDEC32Q32  Formatted      "OriginalTargetPower = %d(w/o DigitalGain) MinimumSignalBelowDC = %d"
+// LG_AGC_BUFFER                  0x7 	0x10		0x1    ""           			    DEC16      Formatted      "G2[dB]=%d, RSSI[dBm]=%d"
+LG_AGC_MEASUREDY	          0x7 	0x10		0x2    "MeasuredY[dBm]: " 		    Q4         Title+Data     ""
+LG_AGC_G2	        	  0x7 	0x10		0x3    "G2[dB]: "     			    DEC16      Title+Data     ""
+LG_AGC_INPUT_SAMP                 0x7 	0x10		0x4    "Agc Input Samp = "                  COMP16Q0   Buffer_E       ""
+LG_AGC_PRIME			  0x7 	0x10		0x5    ""				    DEC16      Formatted      "SetPoint[dBm]=%d, PrimeVal[dBm]=%d, TransPwr[dB]=%d"
+LG_AGC_AVG_PWR_FXP     		  0x7 	0x10		0x6    ""			            UDEC32Q32  Formatted      "AveragePower = %d"
+LG_AGC_TPF_FXP 			  0x7 	0x10		0x7    ""			    	    UDEC32Q32  Formatted      "TargetPowerFactored = min(%d,%d)"
+LG_AGC_GAIN_CHANGE_DB_FXP 	  0x7 	0x10		0x8    ""				    DEC32Q24   Formatted     "AGC GAIN Change DB = %d (Q24)"
+LG_AGC_GAIN_CHANGE_LINEAR_FXP 	  0x7 	0x10		0x9    "AGC Linear Gain Change(linear) = "  FlpNumQ15  Title+Data     ""
+LG_AGC_GAIN_CORRECTION_DB_FXP     0x7 	0x10		0xA    " "     	    			    DEC32Q24   Formatted     "AGC Gain correction = %d (Q24)"
+LG_AGC_PWR_NO_DC_FXP 	      	  0x7 	0x10		0xB    "WARNING!!!WARNING!!!WARNING!!! IQ SAMPLES ARE DC... AGC PWR No DC = "    UDEC32     Title+Data     ""
+LG_AGC_PWR_DC_FXP                 0x7 	0x10		0xC    "AGC PWR DC = "                      UDEC32     Title+Data     ""
+LG_AGC_PEAK_DC_PWR_FXP 		  0x7 	0x10		0xD    "AGC Peak DC = " 		    UDEC32Q24  Title+Data    ""
+LG_AGC_ACT_PEAK_FXP 		  0x7 	0x10		0xE    "AGC ACT PEAK = "                    UDEC32     Title+Data     ""
+LG_AGC_PEAK_ALPHA_FXP 		  0x7 	0x10		0xF    "AGC PEAK ALPHA = " 		    UDEC16     Title+Data     ""
+LG_AGC_ALPHA_FXP 		  0x7 	0x10		0x10   "" 			    	    UDEC16Q16  Formatted      "Alpha = %d PeakAlpha = %d"
+LG_SET_GAIN_IDEAL_GAIN_BUFFER	  0x7 	0x10		0x11   ""                                   DEC16Q4    Formatted      "IdealGain[0] = %d IdealGain[1] = %d IdealGain[2] = %d IdealGain[3] = %d - Q4"
+LG_SET_GAIN_BTS_C0_HOPE		  0x7 	0x10		0x12   ""                                   DEC16      Formatted      "DeltaGain2NextTraffic[0] = %d DeltaGain2NextTraffic[1] = %d DeltaGain2NextTraffic[2] = %d DeltaGain2NextTraffic[3] = %d - Q0"
+LG_SET_GAIN_IDEAL_GAIN		  0x7 	0x10		0x13   ""                                   DEC16Q4    Formatted      "ChoosenIdealGain = %d(Q4) SelectedBtsPwrDeltaGain = %d(Q4)"
+LG_FAST_STATIC_BUFFER_INDEXS_FLAGS 0x7	0x10		0x14   ""                                   DEC16      Formatted      "UsePtmPowerControl = %d MultiSlotFlag = %d UsePRflag = %d DoubleBufferIndex = %d DoubleBufferBurstIndex = %d"
+LG_AGC_POWERS_FXP		  0x7 	0x10		0x15   ""				    UDEC32Q32  Formatted      "PowerNoDc = %d(Q32) PowerMeanDc = %d(Q32)"
+LG_AGC_CHAR_2			  0x7 	0x10		0x16   ""                                   DEC16      Formatted      "FullScalePower = %d(Q15) PeakToAverageRatio = %d(Q11) InterferenceMargin = %d(Q8)"
+LG_AGC_CHAR_3	  		  0x7 	0x10		0x17   ""                                   DEC16      Formatted      "AlphaAttackUpGain = %d(Q12) AlphaAttackDownGain = %d(Q12) AlphaAttack = %d(Q16) AlphaDecay = %d(Q16)"
+LG_AGC_CHAR_4	  		  0x7 	0x10		0x18   ""                                   DEC16      Formatted      "PeakAlphaAttack = %d(Q16) PeakAlphaDecay = %d(Q16) DigitalGain = %d(In Bits)"
+LG_AGC_CHAR_5	  		  0x7 	0x10		0x19   "HighGainChange = "                  FlpNumQ15  Title+Data     ""
+LG_AGC_NEXT_IDEAL_GAIN            0x7 	0x10		0x1A   "IdealGainInFastAgc = "              Q4         Title+Data     ""
+LG_AGC_INPUT_SAMP                  0x10		0x4    "Agc Input Samp = "                  COMP16Q015 Buffer_E         ""
+
+
+// Channel Enoder points:
+LG_CENC_INPUT_BUFFER_DATA_DUMP     0x7	0x11		0x0    "CENC_INPUT_BUFFER_DATA_DUMP = "     DEC16      Buffer           ""
+LG_CENC_INTER_BUFFER_DATA_DUMP     0x7	0x11    	0x1    "CENC_INTER_BUFFER_DATA_DUMP = "     DEC16      Buffer           ""
+LG_CENC_FORMATTED_BUFFER_DATA_DUMP 0x7	0x11    	0x2    "CENC_FORMATTED_BUFFER_DATA_DUMP = " DEC16      Buffer           ""
+LG_CENC_ILV_PRE_F_BUFFER_DATA_DUMP 0x7	0x11    	0x3    "CENC_ILV_PRE_F_BUFFER_DATA_DUMP = " DEC16      Buffer           ""
+
+LG_CENC_ILV_BUFFER_DATA_DUMP 	  0x7 	0x11		0x4    "CENC_ILV_PRE_F_BUFFER_DATA_DUMP = " HEX16      Buffer_E           ""
+LG_CENC_ENCXBUFFER_DATA_DUMP 	  0x7 	0x11		0x5    "LG_CENC_ENCXBUFFER_DATA_DUMP = "    HEX16      Buffer_E           ""
+LG_TX_DATA_BUF                    0x7 	0x11 	0x6    "LG_TX_DATA_BUF = " 		    HEX16      Buffer_E           ""
+LG_TX_SW_BUF                      0x7 	0x11 	0x7    "LG_TX_SW_BUF = " 		    HEX16      Buffer_E           ""
+
+LG_CC_AMR_DTX_INBAND		  0x7 	0x11		0x8    "LG_CC_AMR_DTX_INBAND = " 		    HEX16      Buffer           ""
+LG_CC_AMR_DTX_PAYLOAD_BUF         0x7 	0x11		0x9    "LG_CC_AMR_DTX_PAYLOAD_BUF = " 		    HEX16      Buffer           ""
+LG_CC_AMR_SPEECH_PAYLOAD_BUF      0x7 	0x11		0xA    "LG_CC_AMR_SPEECH_PAYLOAD_BUF = " 	    HEX16      Buffer           ""
+LG_CC_AMR_DTX_ENCODED_BUF         0x7 	0x11		0xB    "LG_CC_AMR_DTX_ENCODED_BUF = " 		    HEX16      Buffer           ""
+LG_CC_AMR_SPEECH_ENCODED_BUF      0x7 	0x11		0xC    "LG_CC_AMR_SPEECH_ENCODED_BUF = " 	    HEX16      Buffer           ""
+LG_SID_UPDATE_P2_TYPE_BURST 	  0x7 	0x11  	0xD    "IML_ENABLE_LG_SID_UPDATE_P2_TYPE_BURST = "  HEX16      Buffer           ""
+LG_SID_UPDATE_P1_TYPE             0x7 	0x11  	0xE    "IML_ENABLE_SID_UPDATE_P1_TYPE = " 	    HEX16      Buffer           ""
+
+LG_CHETDS_LOG_TYPE               0x7 	0x11  	0xF     ""   					   DEC16      Formatted           "Tx Parameters: BurstIndex = %hd, GSM/(E)GPRS Mode (1=EGPRS,0=GSM/GPRS) = %hd, (M)CS = %hd"
+LG_CHETDS_LOOPBACK               0x7  	0x11  	0x10    "LoopBack Mode (0=OFF,1=ON) = "   	   DEC16      Title+Data           ""
+
+// DC:
+LG_DC_IN                         0x7  	0x12		0x0    "DC In = "                           FlpNumQ15  Title+Data       ""
+LG_DC_IN_SAMP                    0x7  	0x12		0x1    "LG_DC_IN_SAMP = "                   COMP16Q15     Buffer_E         ""
+LG_DC_OUT_SAMP                   0x7  	0x12    	0x2    "DC Out Samples = "                  COMP16Q15     Buffer_E         ""
+
+// FF:
+LG_FF_IN_SAMP                    0x7  	0x13		0x0    "FF In Samples = "                   COMP16Q15     Buffer_E         ""
+LG_FF_OUT_SAMP                   0x7  	0x13		0x1    "FF Out Samples = "                  COMP16Q15     Buffer_E         ""
+
+
+// FB log points
+LG_FBS_BLOCK_IN_SAMP		 0x7  	0x14		0x0    "FB block samples BEFORE filter = "  	COMP16Q15     Buffer_E         ""
+LG_FBS_BLOCK_OUT_SAMP		 0x7  	0x14		0x1    "FB block samples AFTER filter = "   	COMP16Q15     Buffer_E         ""
+LG_FREQ_EST_IN_SAMP              0x7  	0x14		0x2    "FB frequency estimation IN sample = " 	COMP16Q15     Buffer_E         ""
+LG_FREQ_EST_OUT_SAMP 		 0x7  	0x14		0x3    "FB frequency estimation OUT sample = "  DEC32Q15      Buffer_E	       ""
+LG_T2_FB_RECEIVED_IQ		 0x7  	0x14		0x4    "FB Recived samples = "  	        COMP16Q15     Buffer_E         ""
+LG_FB_CORRELATION_RES 		 0x7  	0x14		0x5    "FB Correlation sum = "  	        DEC32Q15      Buffer_E         ""
+// LG_FB_STATE_MACHINE 		 0x7  	0x14		0x6    "FB STATE MACHINE = "  	                HEX16         Buffer_E         ""
+LG_FB_BEFORE_NORMALIZE		 0x7  	0x14		0x7    "FB samples BEFORE NORMAILZE = "  	COMP16Q15     Buffer_E         ""
+LG_FB_AFTER_NORMALIZE		 0x7  	0x14		0x8    "FB samples AFTER NORMAILZE  = "   	COMP16Q15     Buffer_E         ""
+LG_FB_AFTER_ROTATE		 0x7  	0x14		0x9    "FB samples AFTER  ROTATTE = "  		COMP16Q15     Buffer_E         ""
+LG_FBS_BEFORE_DETECT 		 0x7  	0x14		0xA    "FB samples BEFORE DETECT = "   		COMP16Q15     Buffer_E	       ""
+LG_FBS_INSIDE_FILTER 		 0x7  	0x14		0xB    "FB samples INSIDE FILTER = "   		COMP16Q15     Buffer_E	       ""
+LG_FBS_NUM_DURATION_BITS	 0x7	0x14            0xE	"FB - num of duration bits left is:"	UDEC16      Title+Data           ""
+
+// CIR
+LG_CIR_IN_SAMP                   0x7  	0x15		0x0    "CIR In Samples = "                 COMP16Q15     Buffer_E         ""
+LG_CIR_IN_TAPS                   0x7  	0x15		0x1    "CIR In Taps = "                    COMP16Q15     Buffer_E         ""
+LG_CIR_IN_TS                     0x7  	0x15		0x2    "CIR In Ts = "                      COMP16Q15     Buffer_E         ""
+LG_CIR_IN_NOISE_VAR_FAC          0x7  	0x15		0x3    "LG_CIR_IN_NOISE_VAR_FAC = "        Q2         Title+Data       ""
+LG_CIR_OUT_SAMP                  0x7  	0x15		0x4    "CIR Out Samples = "                COMP16Q15     Buffer_E         ""
+LG_CIR_OUT_SLOT_CIR              0x7  	0x15		0x5    "CIR Out Slot CIR = "               FlpNumQ15  Title+Data       ""
+LG_CIR_OUT_NOISE_VAR             0x7  	0x15		0x6    "CIR Out Nois Var = "               Q2         Title+Data       ""
+
+LG_NSC_IN_SAMP                   0x7  	0x16		0x0    "LG_NSC_IN_SAMP = "                  COMP16Q15     Buffer_E         ""
+LG_NSC_OUT_SAMP                  0x7  	0x16		0x1    "NSC Out Samples = "                 COMP16Q15     Buffer_E         ""
+LG_NSC_OUT_CLASS                 0x7  	0x16		0x2    "LG_NSC_OUT_CLASS = "                DEC16         Title+Data       ""
+
+
+LG_QBEP_INPUT_BURST   	   	 0x7  	0x17		0x0    "(QBep) InputBurst = "               DEC16      Buffer_E         ""
+LG_QBEP_N0_IN   	   	 0x7  	0x17		0x1    "(QBep) No = "            	    FlpNumQ15  Title+Data       ""
+LG_QBEP_TF_IN   	   	 0x7  	0x17		0x2    "(QBep) TotalFactor = "              FlpNumQ15  Title+Data       ""
+LG_QBEP_CIR_IN   	   	 0x7  	0x17		0x3    "(QBep) CIR = "            	    FlpNumQ15  Title+Data       ""
+LG_QBEP_KQ_IN   	   	 0x7  	0x17		0x4    "(QBep) Kq = "            	    FlpNumQ15  Title+Data       ""
+LG_QBEP_INVN0_IN         	 0x7  	0x17		0x5    "(QBep) InvNo = "            	    FlpNumQ15  Title+Data       ""
+LG_QBEP_BEP_BURST_TIMES_N   	 0x7  	0x17		0x6    "(QBep) BEPburstTimesN = "           DEC32      Title+Data       ""
+LG_QBEP_MEAN_BEP         	 0x7  	0x17		0x7    "(QBep) MeanBep = "            	    FlpNum     Title+Data       ""
+LG_QBEP_CV_BEP		         0x7  	0x17		0x8    "(QBep) CvBep = "              	    FlpNum     Title+Data       ""
+LG_QBEP_CV_LUT		         0x7  	0x17		0x9    "(QBep) QBepLUT = "                  DEC16      Buffer_E         ""
+LG_QBEP_FF      	   	 0x7  	0x17		0xA    "(QBep) FixedFactor = "              FlpNumQ15  Title+Data       ""
+LG_QBEP_AF	         	 0x7  	0x17		0xB    "(QBep) AdaptiveFactor = "           FlpNumQ15  Title+Data       ""
+LG_QBEP_START	         	 0x7  	0x17		0xC    "(QBep) QBEP START "           	    DEC16      Title+Data       ""
+
+LG_QBEP_GET_BEP_BURST_INPUT 		      	0x7	0x17  0xD    "(QBep) BepBurst*N = "           	  DEC32   Title+Data    ""
+LG_QBEP_GET_BEP_BURST_MOD_T                   	0x7	0x17  0xE    "(QBep) Burst Modulation (0=GMSK) = "  DEC16   Title+Data    ""
+LG_QBEP_GET_BEP_BURST_OUTPUT 		      	0x7	0x17  0xF    "(QBep) BepBurst = "           	  DEC32   Title+Data    ""
+LG_QBEP_GET_MBEP_CBEP_BLOCK_INPUT_BEPBURST    	0x7	0x17  0x10   "(QBep) BepBurst Values = "            DEC32   Buffer_E      ""
+LG_QBEP_GET_MBEP_CBEP_BLOCK_OUTPUT_MEANBEP    	0x7	0x17  0x11   ""           	  		  DEC16   Formatted     "(QBep) TempMeanBep (Mant, Exp) = %hd, %hd"
+LG_QBEP_GET_MBEP_CBEP_BLOCK_OUTPUT_TMPVARBEP  	0x7	0x17  0x12   ""           	  		  DEC16   Formatted     "(QBep) TempVarBep  (Mant, Exp) = %hd, %hd"
+LG_QBEP_GET_MBEP_CBEP_BLOCK_OUTPUT_CVBEP      	0x7	0x17  0x13   ""           	  		  DEC16   Formatted     "(QBep) CvBep       (Mant, Exp) = %hd, %hd"
+LG_QBEP_ERROR 				      	0x7	0x17  0x14   "(QBep) Error! ChLen > Max ChLen "     DEC16   Title+Data    ""
+LG_QBEP_TF		   		      	0x7	0x17  0x15   ""           	  		  DEC16   Formatted     "(QBep) FixedFactor = %hd, AdaptiveFactor = %hd, TotalFactor = %hd"
+LG_BURST_INDEX_FROM_DEINT_BUF                 	0x7	0x17  0x16   "Index From Deint Buffer = "           DEC16   Buffer_E      ""
+LG_BURST_FROM_DEINT_BUF                       	0x7	0x17  0x17   "Burst From Deint Buffer = "           DEC16   Buffer_E      ""
+LG_BURST_INDEX_TO_DEINT_BUF                   	0x7	0x17  0x18   "Index Into Deint Buffer = "           DEC16   Buffer_E      ""
+LG_BURST_TO_DEINT_BUF                         	0x7	0x17  0x19   "Burst Into Deint Buffer = "           DEC16   Buffer_E      ""
+LG_MEAN_BEP_MANT_EXP                  	      	0x7	0x17  0x1A   "MEAN_BEP = "           		  DEC16   Title+Data      ""
+LG_CV_BEP_MANT_EXP                            	0x7	0x17  0x1B   "CV_BEP   = "           		  DEC16   Title+Data      ""
+LG_BEP_BURST_TIMES_N                          	0x7	0x17  0x1C   "BepBurstTimesN = "        		  DEC32   Title+Data      ""
+LG_BEP_BURST                         	      	0x7	0x17  0x1D   "BepBurst       = "        		  DEC32   Title+Data      ""
+// LG_BEP_RESULTS                   	      	0x7	0x17  0x1E   ""        		  		  DEC32   Title+Data      ""
+
+
+LG_LB_DL_MOD     		0x7   	0x18		0x0    "Loopback DL modulation (0=GMSK) = " DEC16      Title+Data     ""
+LG_LB_STORE			0x7   	0x18		0x1    ""				    HEX16      Formatted      "mode(sym=0)=%x UL_mod(GMSK=0)=%x stealing=%x"
+LG_LB_INPUT_BUF                 0x7   	0x18		0x2    "Loopback - Input soft bits: "       HEX16      Buffer         ""
+LG_LB_OUTPUT_BUF                0x7   	0x18		0x3    "Loopback - Tx buffer: "             HEX16      Buffer         ""
+
+LG_BD_GMSK_METRIC_IN            0x7   	0x19		0x0    "LG_BD_GMSK_METRIC_IN = "            FlpNum     Title+Data       ""
+LG_BD_EPSK_METRIC_IN            0x7   	0x19		0x1    "LG_BD_EPSK_METRIC_IN = "            FlpNum     Title+Data       ""
+LG_BD_GMSK_METRIC_OUT           0x7   	0x19		0x2    "LG_BD_GMSK_METRIC_OUT = "           FlpNum     Title+Data       ""
+LG_BD_EPSK_METRIC_OUT           0x7   	0x19		0x3    "LG_BD_EPSK_METRIC_OUT = "           FlpNum     Title+Data       ""
+LG_BD_MOD_TYPE_OUT              0x7   	0x19		0x4    "LG_BD_MOD_TYPE_OUT = "              FlpNumQ15  Title+Data       ""
+LG_BD_DETECTED_MOD              0x7   	0x19		0x5    "Detected Modulation = "             DEC16      Title+Data      ""
+
+
+
+LG_NQ_IN_SB                     0x7   	0x1A		0x0    "LG_NQ_IN_SB = "     		    DEC16      Buffer_E         ""
+LG_NQ_NORM_IN_Kn                0x7   	0x1A		0x1    "LG_NQ_NORM_IN_Kn = "     	    DEC16      Buffer_E         ""
+LG_NQ_NORM_IN_N0                0x7   	0x1A		0x2    "LG_NQ_NORM_IN_N0 = "     	    DEC16      Buffer_E         ""
+LG_NQ_OUT_SB                    0x7   	0x1A		0x3    "LG_NQ_OUT_SB = "     		    DEC16      Buffer_E         ""
+
+// AMR General
+LG_AMR_ESTIMATED_CIR_PER_SLOT_DB   	0x7	0x1B	0x0    "LG_AMR_ESTIMATED_CIR_PER_SLOT_DB = "	DEC16Q8    Buffer_E         ""
+LG_AMR_NORM_INPUT_CIR                   0x7	0x1B    0x1    "LG_AMR_NORM_INPUT_CIR = "		DEC16Q15   Buffer_E         ""
+LG_AMR_NORM_INPUT_NOISE                 0x7	0x1B    0x2    "LG_AMR_NORM_INPUT_NOISE = "		DEC16Q15   Buffer_E         ""
+LG_AMR_NORM_INPUT_EXP                   0x7	0x1B    0x3    "LG_AMR_NORM_INPUT_EXP = "		DEC16Q0    Title+Data         ""
+LG_AMR_NORM_OUTPUT_STEP_SIZE            0x7	0x1B    0x4    "LG_AMR_NORM_OUTPUT_STEP_SIZE = "	FlpNum     Title+Data         ""
+LG_AMR_PREV_CODEC_CMD_METRIC         	0x7	0x1B    0x5    "LG_AMR_PREV_CODEC_CMD_METRIC = "	DEC16Q15   Buffer_E         ""
+LG_AMR_PREV_CODEC_IND_METRIC         	0x7	0x1B    0x6    "LG_AMR_PREV_CODEC_IND_METRIC = "	DEC16Q15   Buffer_E         ""
+LG_AMR_VITERBI_OUTPUT		     	0x7	0x1B    0x7    "LG_AMR_VITERBI_OUTPUT = "		DEC16Q0    Buffer_E         ""
+LG_AMR_VITERBI_INPUT    	     	0x7	0x1B    0x8    "LG_AMR_VITERBI_INPUT = "		DEC16Q0    Buffer_E         ""
+
+// AMR Full-rate
+LG_AMR_FR_DEINT_SID_UPDATE              0x7	0x1B    0x9    "LG_AMR_FR_DEINT_SID_UPDATE = "		DEC16Q0    Buffer_E         ""
+LG_AMR_FR_SELECTED_CMD_SID_UPDATE       0x7	0x1B    0xA    "LG_AMR_FR_SELECTED_CMD_SID_UPDATE = "	DEC16Q0    Title+Data         ""
+LG_AMR_FR_SELECTED_IND_SID_UPDATE       0x7	0x1B    0xB    "LG_AMR_FR_SELECTED_IND_SID_UPDATE = "	DEC16Q0    Title+Data         ""
+LG_AMR_FR_MARKER_METRIC_SID_UPDATE      0x7	0x1B    0xC    "LG_AMR_FR_MARKER_METRIC_SID_UPDATE = "	DEC16Q15   Buffer_E         ""
+LG_AMR_FR_I_MARKER_METRIC_SID_UPDATE    0x7	0x1B    0xD    "LG_AMR_FR_I_MARKER_METRIC_SID_UPDATE = "	DEC16Q15   Title+Data         ""
+LG_AMR_FR_MARKER_MAX_METRIC_SID_UPDATE  0x7	0x1B    0xE    "LG_AMR_FR_MARKER_MAX_METRIC_SID_UPDATE = "	DEC16      Title+Data         ""
+LG_AMR_FR_MARKER_BER_SID_UPDATE         0x7	0x1B    0xF    "LG_AMR_FR_MARKER_BER_SID_UPDATE = "	DEC16Q15   Title+Data         ""
+LG_AMR_FR_FOUND_SID_UPDATE              0x7	0x1B    0x10    "LG_AMR_FR_FOUND_SID_UPDATE = "		DEC16Q0    Title+Data         ""
+LG_AMR_FR_CRC_SID_UPDATE                0x7	0x1B    0x11    "LG_AMR_FR_CRC_SID_UPDATE = "		DEC16Q0    Title+Data         ""
+LG_AMR_FR_BER_SID_UPDATE                0x7	0x1B    0x12    "LG_AMR_FR_BER_SID_UPDATE = "		DEC16Q0    Title+Data         ""
+
+LG_AMR_FR_SELECTED_IND_SID_ONSET        0x7	0x1B	0x13    "LG_AMR_FR_SELECTED_IND_SID_ONSET = "	DEC16Q0    Title+Data         ""
+LG_AMR_FR_IB_METRIC_SID_ONSET   	0x7	0x1B    0x14    "LG_AMR_FR_IB_METRIC_SID_ONSET = "		DEC16Q15   Title+Data         ""
+LG_AMR_FR_MARKER_MAX_METRIC_SID_ONSET   0x7	0x1B    0x15    "LG_AMR_FR_MARKER_MAX_METRIC_SID_ONSET = "	DEC16Q15   Title+Data         ""
+LG_AMR_FR_IB_BER_SID_ONSET             	0x7	0x1B    0x16    "LG_AMR_FR_IB_BER_SID_ONSET = "		DEC16Q0    Title+Data         ""
+LG_AMR_FR_FOUND_SID_ONSET               0x7	0x1B    0x17    "LG_AMR_FR_FOUND_SID_ONSET = "		DEC16Q0    Title+Data         ""
+
+LG_AMR_FR_MARKER_METRIC_SID_FIRST       0x7	0x1B    0x18    "LG_AMR_FR_MARKER_METRIC_SID_FIRST = "	DEC16Q15   Buffer_E         ""
+LG_AMR_FR_I_MARKER_METRIC_SID_FIRST     0x7	0x1B    0x19    "LG_AMR_FR_I_MARKER_METRIC_SID_FIRST = "	DEC16Q15   Title+Data         ""
+LG_AMR_FR_MARKER_MAX_METRIC_SID_FIRST   0x7	0x1B    0x1A    "LG_AMR_FR_MARKER_MAX_METRIC_SID_FIRST = "	DEC16Q15   Title+Data         ""
+LG_AMR_FR_MARKER_BER_SID_FIRST         	0x7	0x1B    0x1B    "LG_AMR_FR_MARKER_BER_SID_FIRST = "	DEC16Q0    Title+Data         ""
+LG_AMR_FR_FOUND_SID_FIRST               0x7	0x1B    0x1C    "LG_AMR_FR_FOUND_SID_FIRST = "		DEC16Q0    Title+Data         ""
+
+LG_AMR_FR_DEINT_RATSCCH	             	0x7	0x1B    0x1D    "LG_AMR_FR_DEINT_RATSCCH = "		DEC16Q0    Buffer_E         ""
+LG_AMR_FR_SELECTED_CMD_RATSCCH          0x7	0x1B    0x1E    "LG_AMR_FR_SELECTED_CMD_RATSCCH = "		DEC16Q0    Title+Data         ""
+LG_AMR_FR_SELECTED_IND_RATSCCH          0x7	0x1B    0x1F    "LG_AMR_FR_SELECTED_IND_RATSCCH = "		DEC16Q0    Title+Data         ""
+LG_AMR_FR_MARKER_METRIC_RATSCCH         0x7	0x1B    0x20    "LG_AMR_FR_MARKER_METRIC_RATSCCH = "		DEC16Q15   Buffer_E         ""
+LG_AMR_FR_I_MARKER_METRIC_RATSCCH       0x7	0x1B    0x21    "LG_AMR_FR_I_MARKER_METRIC_RATSCCH = "	DEC16Q15   Title+Data         ""
+LG_AMR_FR_MARKER_MAX_METRIC_RATSCCH     0x7	0x1B    0x22    "LG_AMR_FR_MARKER_MAX_METRIC_RATSCCH = "	DEC16      Title+Data         ""
+LG_AMR_FR_MARKER_BER_RATSCCH            0x7	0x1B    0x23    "LG_AMR_FR_MARKER_BER_RATSCCH = "		DEC16Q15   Title+Data         ""
+LG_AMR_FR_FOUND_RATSCCH                 0x7	0x1B    0x24    "LG_AMR_FR_FOUND_RATSCCH = "			DEC16Q0    Title+Data         ""
+LG_AMR_FR_CRC_RATSCCH			0x7	0x1B    0x25    "LG_AMR_FR_CRC_RATSCCH = "			DEC16Q0    Title+Data         ""
+
+LG_AMR_FR_FOUND_FACCH                   0x7	0x1B    0x26    "LG_AMR_FR_FOUND_FACCH = "			DEC16Q0    Title+Data         ""
+
+LG_AMR_FR_SELECTED_CMD_SPEECH           0x7	0x1B    0x27    "LG_AMR_FR_SELECTED_CMD_SPEECH = "		DEC16Q0    Title+Data         ""
+LG_AMR_FR_SELECTED_IND_SPEECH           0x7	0x1B    0x28    "LG_AMR_FR_SELECTED_IND_SPEECH = "		DEC16Q0    Title+Data         ""
+LG_AMR_FR_METRIC_SPEECH                 0x7	0x1B    0x29    "LG_AMR_FR_METRIC_SPEECH = "			DEC16Q0    Title+Data         ""
+LG_AMR_FR_MAX_METRIC_SPEECH             0x7	0x1B    0x2A    "LG_AMR_FR_MAX_METRIC_SPEECH = "		DEC16Q0    Title+Data         ""
+LG_AMR_FR_BER_SPEECH                    0x7	0x1B    0x2B    "LG_AMR_FR_BER_SPEECH = "			DEC16Q0    Title+Data         ""
+LG_AMR_FR_FOUND_SPEECH                  0x7	0x1B    0x2C    "LG_AMR_FR_FOUND_SPEECH = "			DEC16Q0    Title+Data         ""
+LG_AMR_FR_RE_ENCODE_SPEECH		0x7	0x1B    0x2D    "LG_AMR_FR_RE_ENCODE_SPEECH = "			DEC16Q0    Buffer_E         ""
+LG_AMR_FR_CRC_SPEECH		     	0x7	0x1B    0x2E    "LG_AMR_FR_CRC_SPEECH = "			DEC16Q0    Title+Data       ""
+LG_AMR_FR_AVG_C2I_SPEECH                0x7	0x1B    0x2F	""						DEC16Q4    Formatted	   "AVERAGE_C2I = %d(Q4) "
+
+
+// AMR Half-rate
+LG_AMR_HR_DEINT_BLOCK			0x7   	0x1D   0x0  "LG_AMR_HR_DEINT_BLOCK = "			DEC16Q0    Buffer_E         ""
+LG_AMR_HR_I_MARKER_METRIC_SID_1ST	0x7   	0x1D   0x1  "LG_AMR_HR_I_MARKER_METRIC_SID_1ST = "		DEC16Q15   Title+Data         ""
+LG_AMR_HR_I_MARKER_METRIC_SID_LAST	0x7   	0x1D   0x2  "LG_AMR_HR_I_MARKER_METRIC_SID_LAST = "		DEC16Q15   Title+Data         ""
+LG_AMR_HR_MARKER_METRIC_SID_1ST		0x7   	0x1D   0x3  "LG_AMR_HR_MARKER_METRIC_SID_1ST = "		DEC16Q15   Buffer_E         ""
+LG_AMR_HR_MARKER_METRIC_SID_LAST	0x7   	0x1D   0x4  "LG_AMR_HR_MARKER_METRIC_SID_LAST = "		DEC16Q15   Buffer_E         ""
+LG_AMR_HR_MARKER_MAX_METRIC_SID_1ST	0x7   	0x1D   0x5  "LG_AMR_HR_MARKER_MAX_METRIC_SID_1ST = "		DEC16      Title+Data         ""
+LG_AMR_HR_MARKER_MAX_METRIC_SID_LAST	0x7   	0x1D   0x6  "LG_AMR_HR_MARKER_MAX_METRIC_SID_LAST = "	DEC16      Title+Data         ""
+LG_AMR_HR_MARKER_BER_SID_1ST		0x7   	0x1D   0x7  "LG_AMR_HR_MARKER_BER_SID_1ST = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_MARKER_BER_SID_LAST		0x7   	0x1D   0x8  "LG_AMR_HR_MARKER_BER_SID_LAST = "		DEC16Q0    Title+Data         ""
+
+LG_AMR_HR_CODEC_MODE_SID_FIRST_P1	0x7   	0x1D   0x9  	"LG_AMR_HR_CODEC_MODE_SID_FIRST_P1 = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_FOUND_SID_FIRST_P1		0x7   	0x1D   0xA  	"LG_AMR_HR_FOUND_SID_FIRST_P1 = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_CODEC_MODE_SID_UPDATE_P1	0x7   	0x1D   0xB  	"LG_AMR_HR_CODEC_MODE_SID_UPDATE_P1 = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_FOUND_SID_UPDATE_P1		0x7   	0x1D   0xC  	"LG_AMR_HR_FOUND_SID_UPDATE_P1 = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_CODEC_MODE_SID_UPDATE_P2	0x7   	0x1D	  0xD	"LG_AMR_HR_CODEC_MODE_SID_UPDATE_P2 = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_IB_BER_SID_UPDATE_P2		0x7   	0x1D	  0xE   "LG_AMR_HR_IB_BER_SID_UPDATE_P2 = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_DEINT_SID_UPDATE_P2		0x7   	0x1D	  0xF   "LG_AMR_HR_DEINT_SID_UPDATE_P2 = "		DEC16Q0    Buffer_E           ""
+LG_AMR_HR_FOUND_SID_UPDATE_P2		0x7   	0x1D	  0x10  "LG_AMR_HR_FOUND_SID_UPDATE_P2 = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_CRC_SID_UPDATE		0x7   	0x1D	  0x11  "LG_AMR_HR_CRC_SID_UPDATE = "			DEC16Q0    Title+Data         ""
+LG_AMR_HR_BER_SID_UPDATE		0x7   	0x1D	  0x12  "LG_AMR_HR_BER_SID_UPDATE = "			DEC16Q0    Title+Data         ""
+
+LG_AMR_HR_MARKER_METRIC_RATSCCH		0x7   	0x1D   0x13  "LG_AMR_HR_MARKER_METRIC_RATSCCH = "		DEC16Q15   Buffer_E         ""
+LG_AMR_HR_I_MARKER_METRIC_RATSCCH       0x7   	0x1D   0x14  "LG_AMR_HR_I_MARKER_METRIC_RATSCCH = "		DEC16Q15   Title+Data         ""
+LG_AMR_HR_MARKER_MAX_METRIC_RATSCCH     0x7  	0x1D   0x15  "LG_AMR_HR_MARKER_MAX_METRIC_RATSCCH = "	DEC16      Title+Data         ""
+LG_AMR_HR_MARKER_BER_RATSCCH            0x7   	0x1D   0x16  "LG_AMR_HR_MARKER_BER_RATSCCH = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_CODEC_MODE_RATSCCH_MARKER     0x7   	0x1D   0x17  "LG_AMR_HR_CODEC_MODE_RATSCCH_MARKER = "	DEC16Q0    Title+Data         ""
+LG_AMR_HR_FOUND_RATSCCH_MARKER     	0x7   	0x1D   0x18  "LG_AMR_HR_FOUND_RATSCCH_MARKER = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_CODEC_MODE_RATSCCH_DATA       0x7   	0x1D   0x19  "LG_AMR_HR_CODEC_MODE_RATSCCH_DATA = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_CRC_RATSCCH   		0x7   	0x1D   0x1A  "LG_AMR_HR_CRC_RATSCCH = "			DEC16Q0    Title+Data         ""
+
+LG_AMR_HR_SELECTED_MODE_HALF_BLOCK      0x7   	0x1D   0x1B  "LG_AMR_HR_SELECTED_MODE_HALF_BLOCK = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_MODE_METRIC_HALF_BLOCK          0x7 	0x1D   0x1C  "LG_AMR_HR_MODE_METRIC_HALF_BLOCK = "		DEC16Q15   Buffer_E         ""
+LG_AMR_HR_SELECTED_MODE_METRIC_HALF_BLOCK 0x7 	0x1D   0x1D  "LG_AMR_HR_SELECTED_MODE_METRIC_HALF_BLOCK = "	DEC16Q0    Title+Data         ""
+LG_AMR_HR_MARKER_MAX_METRIC_HALF_BLOCK    0x7 	0x1D   0x1E  "LG_AMR_HR_MARKER_MAX_METRIC_HALF_BLOCK = "	DEC16      Title+Data         ""
+
+LG_AMR_HR_FOUND_FACCH			0x7   	0x1D   0x1F  "LG_AMR_HR_FOUND_FACCH = "			DEC16      Title+Data         ""
+
+LG_AMR_HR_IB_BER_ONSET                 	0x7   	0x1D   0x20  "LG_AMR_HR_IB_BER_ONSET = "			DEC16Q0    Title+Data         ""
+LG_AMR_HR_FOUND_ONSET                   0x7   	0x1D   0x21  "LG_AMR_HR_FOUND_ONSET = "			DEC16Q0    Title+Data         ""
+
+LG_AMR_HR_CODEC_MODE_SPEECH             0x7   	0x1D   0x22  "LG_AMR_HR_CODEC_MODE_SPEECH = "		DEC16Q0    Title+Data         ""
+LG_AMR_HR_CRC_SPEECH                    0x7   	0x1D   0x23  "LG_AMR_HR_CRC_SPEECH = "			DEC16Q0    Title+Data       ""
+LG_AMR_HR_RE_ENCODE_SPEECH              0x7   	0x1D   0x24  "LG_AMR_HR_RE_ENCODE_SPEECH = "			DEC16Q0    Buffer_E         ""
+LG_AMR_HR_METRIC_SPEECH                 0x7   	0x1D   0x25  "LG_AMR_HR_METRIC_SPEECH = "			DEC16Q0	   Title+Data         ""
+LG_AMR_HR_MAX_METRIC_SPEECH             0x7   	0x1D   0x26  "LG_AMR_HR_MAX_METRIC_SPEECH = "		DEC16      Title+Data         ""
+LG_AMR_HR_BER_SPEECH                    0x7   	0x1D   0x27  "LG_AMR_HR_BER_SPEECH = "			DEC16Q0    Title+Data         ""
+LG_AMR_HR_FOUND_SPEECH                  0x7   	0x1D   0x28  "LG_AMR_HR_FOUND_SPEECH = "			DEC16Q0    Title+Data         ""
+
+LG_AMR_HR_NEXT_AHS_BLOCK                0x7   	0x1D   0x29  "LG_AMR_HR_NEXT_AHS_BLOCK = "			DEC16Q0    Title+Data         ""
+LG_AMR_HR_DECODER_DTX_MODE		0x7   	0x1D   0x2A  "LG_AMR_HR_DECODER_DTX_MODE = "			DEC16Q0    Title+Data         ""
+
+// AMR codec link adaptation
+LG_AMR_LINK_ADAPTATION_FRAME_RELIABLE_VALUE      			0x7	0x1D   0x2B  "LG_AMR_LINK_ADAPTATION_FRAME_RELIABLE_VALUE = "	    		    DEC16    	 Title+Data         ""
+LG_AMR_LINK_ADAPTATION_CIR_PER_FRAME_DB	       				0x7	0x1D   0x2C  "LG_AMR_LINK_ADAPTATION_CIR_PER_FRAME_DB = "	    	    		    FlpNum    Title+Data         ""
+LG_AMR_LINK_ADAPTATION_TABLE_PARAMS 		   			0x7	0x1D   0x2D  ""	    	 	   							    FlpNum    Formatted         "link adaptation table params CirEstValue = 0x%.4hX(Q8) ,a = 0x%.4hX(Q7) ,c =0x%.4hX(Q8)"
+LG_AMR_LINK_ADAPTATION_CIR_AVERAGE_FILTER_SUM_DB	       		0x7	0x1D   0x2E  "LG_AMR_LINK_ADAPTATION_CIR_FILTER_SUM_DB = "	    	    	    FlpNum    Title+Data         ""
+LG_AMR_LINK_ADAPTATION_BIASED_CIR_FILTER_OUTPUT_VALUE_DB 		0x7	0x1D   0x2F  "LG_AMR_LINK_ADAPTATION_BIASED_CIR_FILTER_OUTPUT_VALUE_DB = "	    FlpNum    Title+Data         ""
+LG_AMR_LINK_ADAPTATION_BIASED_CIR_WITH_ADAPTIVE_FACTOR_VALUE_DB 	0x7	0x1D   0x30  "LG_AMR_LINK_ADAPTATION_BIASED_CIR_WITH_ADAPTIVE_FACTOR_VALUE_DB = "	    FlpNum    Title+Data         ""
+
+// SAIC DRFE
+
+LG_VASR_EIG_INPUT_CALC_OPT_WEIGHT                 0x7	0x1E   0x0   "LG_VASR_EIG_INPUT_CALC_OPT_WEIGHT = "                        DEC16Q15   Buffer_E        ""
+LG_VASR_EIG_VAL_CALC_OPT_WEIGHT		   	  0x7	0x1E	 0x1   "LG_VASR_EIG_VAL_CALC_OPT_WEIGHT = "                          DEC16Q15   Buffer_E         ""
+LG_VASR_EIG_VECTORS_CALC_OPT_WEIGHT	   	  0x7	0x1E	 0x2   "LG_VASR_EIG_VECTORS_CALC_OPT_WEIGHT = "        	             DEC16Q15   Buffer_E         ""
+LG_VASR_WEIGHT_MATRIX				  0x7	0x1E	 0x3   "LG_VASR_WEIGHT_MATRIX = "        	                     DEC16Q15   Buffer_E         ""
+LG_VASR_H_OUT					  0x7	0x1E	 0x4   "LG_VASR_H_OUT = "        	                             DEC16Q15   Buffer_E         ""
+LG_VASR_IN_H_MAT_REDUCE_ANT_NUM		   	  0x7	0x1E   0x5   "LG_VASR_IN_H_MAT_REDUCE_ANT_NUM = "                          DEC16Q15   Buffer_E         ""
+LG_VASR_IN_CAUSAL_XOUT_SMP_REDUCE_ANT_NUM  	  0x7	0x1E   0x6   "LG_VASR_IN_CAUSAL_XOUT_SMP_REDUCE_ANT_NUM = "                DEC16Q15   Buffer_E ""
+LG_VASR_IN_ANTI_CAUSAL_XOUT_SMP_REDUCE_ANT_NUM    0x7	0x1E   0x7   "LG_VASR_IN_ANTI_CAUSAL_XOUT_SMP_REDUCE_ANT_NUM = "           DEC16Q15   Buffer_E ""
+LG_VASR_OUT_EQU_CHANNEL_REDUCE_ANT_NUM	          0x7	0x1E   0x8   "LG_VASR_OUT_EQU_CHANNEL_REDUCE_ANT_NUM = "                   COMP16Q15  Buffer_E ""
+LG_VASR_OUT_EQU_CAUSAL_INPUT_REDUCE_ANT_NUM       0x7	0x1E   0x9   "LG_VASR_OUT_EQU_CAUSAL_INPUT_REDUCE_ANT_NUM = "              COMP16Q15  Buffer_E ""
+LG_VASR_OUT_EQU_ANTI_CAUSAL_INPUT_REDUCE_ANT_NUM  0x7	0x1E   0xA   "LG_VASR_OUT_EQU_ANTI_CAUSAL_INPUT_REDUCE_ANT_NUM = "         COMP16Q15  Buffer_E ""
+
+LG_ROTATE_AND_SPLIT_IN_SAMP			  0x7	0x1E   0xB   "LG_ROTATE_AND_SPLIT_IN_SAMP = "         		     COMP16Q15  Buffer_E ""
+LG_ROTATE_AND_SPLIT_NORM_VAL			  0x7	0x1E   0xC   "LG_ROTATE_AND_SPLIT_NORM_VAL = "         		     DEC16Q15   Buffer_E ""
+LG_ROTATE_AND_SPLIT_CAUSAL_OUT_SAMP		  0x7	0x1E   0xD   "LG_ROTATE_AND_SPLIT_CAUSAL_OUT_SAMP = "         	     COMP16Q15  Buffer_E ""
+LG_ROTATE_AND_SPLIT_ANTI_CAUSAL_OUT_SAMP          0x7	0x1E   0xE   "LG_ROTATE_AND_SPLIT_ANTI_CAUSAL_OUT_SAMP = "                 COMP16Q15  Buffer_E ""
+
+LG_STWF_CAUSAL_IN_SAMP		                  0x7	0x1E   0xF   "LG_STWF_CAUSAL_IN_SAMP = "         			     COMP16Q15  Buffer_E ""
+LG_STWF_CAUSAL_COEFFICIENTS                       0x7	0x1E   0x10  "LG_STWF_CAUSAL_COEFFICIENTS = "         		     COMP16Q15  Buffer_E ""
+LG_STWF_CAUSAL_OUT_SAMP			          0x7	0x1E   0x11  "LG_STWF_CAUSAL_OUT_SAMP = "         		  	     COMP16Q15  Buffer_E ""
+LG_STWF_ANTICAUSAL_IN_SAMP		          0x7	0x1E   0x12  "LG_STWF_ANTICAUSAL_IN_SAMP = "         		  	     COMP16Q15  Buffer_E ""
+LG_STWF_ANTICAUSAL_COEFFICIENTS                   0x7	0x1E   0x13  "LG_STWF_ANTICAUSAL_COEFFICIENTS = "         		     COMP16Q15  Buffer_E ""
+LG_STWF_ANTICAUSAL_OUT_SAMP		          0x7	0x1E   0x14  "LG_STWF_ANTICAUSAL_OUT_SAMP = "         		     COMP16Q15  Buffer_E ""
+
+// SAIC status LOGS moved to IMLT.mdb
+// LG_DRFE_MODEM_INIT_MODE			  0x7	0x1E   0x15
+// LG_RXPE_MODEM_INITIAL_DECISION		  0x7	0x1E   0x16
+// LG_RXPE_MODEM_FINAL_DECISION			  0x7	0x1E   0x17
+// LG_EQUALIZER_MODE				  0x7	0x1E   0x18
+
+
+LG_CALC_ACCUMULATED_METRIC_INPUT_LSB_VAL   	  0x7	0x1E   0x19  "LG_CALC_ACCUMULATED_METRIC_INPUT_LSB_VAL = "    	     FlpNumQ15  Title+Data ""
+LG_CALC_ACCUMULATED_METRIC_NOISE_VAR_COUNTER      0x7	0x1E   0x1A  "LG_CALC_ACCUMULATED_METRIC_NOISE_VAR_COUNTER = "    	     DEC16  Title+Data ""
+LG_CALC_ACCUMULATED_METRIC_ZERO_PATH_METRIC   	  0x7	0x1E   0x1B  "LG_CALC_ACCUMULATED_METRIC_ZERO_PATH_METRIC = "    	     DEC16  Title+Data ""
+LG_CALC_ACCUMULATED_METRIC_SURVIVAL_PATH_METRIC   0x7	0x1E   0x1C  "LG_CALC_ACCUMULATED_METRIC_SURVIVAL_PATH_METRIC = "    	     DEC16  Title+Data ""
+LG_CALC_ACCUMULATED_METRIC_RESULT   		  0x7	0x1E	 0x1D  "LG_CALC_ACCUMULATED_METRIC_RESULT = "    	     	     FlpNumQ15  Title+Data ""
+
+LG_CALC_SINR_N0_INPUT_TAPS_POWER                  0x7	0x1E   0x1E  "LG_CALC_SINR_N0_INPUT_TAPS_POWER = "    	     	     FlpNumQ15  Title+Data ""
+LG_CALC_SINR_N0_INPUT_ACCUMULATED_METRIC          0x7	0x1E   0x1F  "LG_CALC_SINR_N0_INPUT_ACCUMULATED_METRIC = "    	     FlpNumQ15  Title+Data ""
+LG_CALC_SINR_N0_OUTPUT_N0                         0x7	0x1E   0x20  "LG_CALC_SINR_N0_OUTPUT_N0 = "    	     	     	     FlpNumQ15  Title+Data ""
+LG_CALC_SINR_N0_OUTPUT_SINR	                  0x7	0x1E   0x21  "LG_CALC_SINR_N0_OUTPUT_SINR = "    	     	     	     FlpNumQ15  Title+Data ""
+
+LG_AVERAGE_FLP_NUM_STRUCT_INPUT_SINR1             0x7	0x1E   0x22  "LG_AVERAGE_FLP_NUM_STRUCT_INPUT_SINR1 = "    	     	     FlpNumQ15  Title+Data ""
+LG_AVERAGE_FLP_NUM_STRUCT_INPUT_SINR2	          0x7	0x1E   0x23  "LG_AVERAGE_FLP_NUM_STRUCT_INPUT_SINR2 = "    	     	     FlpNumQ15  Title+Data ""
+LG_AVERAGE_FLP_NUM_STRUCT_OUTPUT_RESULT           0x7	0x1E   0x24  "LG_AVERAGE_FLP_NUM_STRUCT_OUTPUT_RESULT = "    	     	     FlpNumQ15  Title+Data ""
+
+
+// SAIC RXPE
+LG_RXPE_SAIC_CIR_INPUT_CXX		          0x7	0x1F   0x0  "LG_RXPE_SAIC_CIR_INPUT_CXX = "         		             DEC16Q15  Buffer_E ""
+LG_RXPE_SAIC_CIR_INPUT_CHAN_TAPS		  0x7	0x1F   0x1  "LG_RXPE_SAIC_CIR_INPUT_CHAN_TAPS = "         		     COMP16Q15 Buffer_E ""
+LG_RXPE_SAIC_CIR_OUTPUT		          	  0x7	0x1F   0x2  "LG_RXPE_SAIC_CIR_OUTPUT = "         		             FlpNumQ15 Title+Data ""
+
+LG_CONDITION_NUMBER_EIGENS_FLAG                   0x7	0x1F   0x3  "LG_CONDITION_NUMBER_DECISION_DEBUG = "                        FlpNum  Title+Data ""
+LG_CONDITION_NUMBER_EIGEN_VALUES     	          0x7	0x1F   0x4  "LG_CONDITION_NUMBER_EIGEN_VALUES = "                          FlpNumQ15 Title+Data ""
+LG_CONDITION_NUMBER_FALLBACK1		   	  0x7	0x1F   0x5  "LG_CONDITION_NUMBER_FALLBACK1 = "    	                     FlpNumQ15 Title+Data ""
+LG_CONDITION_NUMBER_FALLBACK2		   	  0x7	0x1F   0x6  "LG_CONDITION_NUMBER_FALLBACK2 = "    	                     FlpNumQ15 Title+Data ""
+LG_CONDITION_NUMBER_FILTER_INPUT_Qn		  0x7	0x1F   0x7  "LG_CONDITION_NUMBER_FILTER_INPUT_Qn = "    	             FlpNumQ15 Title+Data ""
+LG_CONDITION_NUMBER_FILTER_INPUT_Vn		  0x7	0x1F   0x8  "LG_CONDITION_NUMBER_FILTER_INPUT_Vn = "    	             FlpNumQ15 Title+Data ""
+LG_CONDITION_NUMBER_FILTER_INPUT_Alpha	          0x7	0x1F   0x9  "LG_CONDITION_NUMBER_FILTER_INPUT_Alpha = "                    FlpNumQ15 Title+Data ""
+LG_CONDITION_NUMBER_FILTER_INPUT_Beta		  0x7	0x1F   0xA  "LG_CONDITION_NUMBER_FILTER_INPUT_Beta = "                     FlpNumQ15 Title+Data ""
+LG_CONDITION_NUMBER_FILTER_OUTPUT_Qn		  0x7	0x1F   0xB  "LG_CONDITION_NUMBER_FILTER_OUTPUT_Qn = "                      FlpNumQ15 Title+Data ""
+LG_CONDITION_NUMBER_FILTER_OUTPUT_Vn		  0x7	0x1F   0xC  "LG_CONDITION_NUMBER_FILTER_OUTPUT_Vn = "                      FlpNumQ15 Title+Data ""
+LG_CONDITION_NUMBER_DECISION_INPUT_CXX            0x7	0x1F   0xD  "LG_CONDITION_NUMBER_DECISION_INPUT_CXX = "                    DEC16Q15  Buffer_E   ""
+LG_CONDITION_NUMBER_DECISION_OUTPUT		  0x7	0x1F   0xE  "LG_CONDITION_NUMBER_DECISION_OUTPUT = "    	             DEC16 	Title+Data   ""
+
+LG_DIAG_CONST_INPUT		                  0x7	0x1F   0xF  "LG_DIAG_CONST_INPUT = "    	             		     FlpNumQ15 Title+Data ""
+LG_DIAG_CONST_OUTPUT                              0x7	0x1F   0x10 "LG_DIAG_CONST_OUTPUT = "    	             		     FlpNumQ15 Title+Data ""
+
+LG_COV_MAT_INPUT_NOISE_SAMPLES                    0x7	0x1F   0x11 "LG_COV_MAT_INPUT_NOISE_SAMPLES = "    	                     DEC16Q15 Buffer_E ""
+LG_COV_MAT_OUTPUT_CXX			          0x7	0x1F   0x12 "LG_COV_MAT_OUTPUT_CXX = "    	             		     DEC16Q15 Buffer_E ""
+LG_COV_MAT_OUTPUT_CXY			          0x7	0x1F   0x13 "LG_COV_MAT_OUTPUT_CXY = "    	             		     DEC16Q15 Buffer_E ""
+LG_COV_MAT_OUTPUT_CYY			          0x7	0x1F   0x14 "LG_COV_MAT_OUTPUT_CYY = "    	             		     DEC16Q15 Buffer_E ""
+
+LG_ERROR_MAT_INPUT_CXX			          0x7	0x1F   0x15 "LG_ERROR_MAT_INPUT_CXX = "    	             		     DEC16Q15 Buffer_E ""
+LG_ERROR_MAT_INPUT_CXY			          0x7	0x1F   0x16 "LG_ERROR_MAT_INPUT_CXY = "    	             		     DEC16Q15 Buffer_E ""
+LG_ERROR_MAT_INPUT_CYY			          0x7	0x1F   0x17 "LG_ERROR_MAT_INPUT_CYY = "    	             		     DEC16Q15 Buffer_E ""
+LG_ERROR_MAT_INPUT_INV_CYY		          0x7	0x1F   0x18 "LG_ERROR_MAT_INPUT_INV_CYY = "    	                     DEC16Q15 Buffer_E ""
+LG_ERROR_MAT_OUTPUT_CX_Y		          0x7	0x1F   0x19 "LG_ERROR_MAT_OUTPUT_CX_Y = "    	             		     DEC16Q15 Buffer_E ""
+LG_ERROR_MAT_OUTPUT_CxyXInvCyy                    0x7	0x1F   0x1A "LG_ERROR_MAT_OUTPUT_CxyXInvCyy = "    	                     DEC16Q15 Buffer_E ""
+
+LG_INV_COV_MAT_INPUT_CYY		          0x7	0x1F   0x1B "LG_INV_COV_MAT_INPUT_CYY = "    	                     	     DEC16Q15 Buffer_E ""
+LG_INV_COV_MAT_OUTPUT_INV_CYY	                  0x7	0x1F   0x1C "LG_INV_COV_MAT_OUTPUT_INV_CYY = "    	                     DEC16Q15 Buffer_E ""
+
+LG_RXPE_UPDATE_CH_TAPS_INPUT_FILTER_COEFFICIENTS  0x7	0x1F   0x1D "LG_RXPE_UPDATE_CH_TAPS_INPUT_FILTER_COEFFICIENTS = "    	     DEC16Q15 Buffer_E ""
+LG_RXPE_UPDATE_CH_TAPS_INPUT_CHANNEL    	  0x7	0x1F   0x1E "LG_RXPE_UPDATE_CH_TAPS_INPUT_CHANNEL = "    	     	     COMP16Q15 Buffer_E ""
+LG_RXPE_UPDATE_CH_TAPS_OUTPUT_UPDATED_CH_TAPS	  0x7	0x1F   0x1F "LG_RXPE_UPDATE_CH_TAPS_OUTPUT_UPDATED_CH_TAPS = "    	     DEC16Q15 Buffer_E ""
+
+LG_SPATIAL_FILTER_COEFFICIENTS_INPUT_CX_Y	  0x7	0x1F   0x20 "LG_SPATIAL_FILTER_COEFFICIENTS_INPUT_CX_Y = "    	     DEC16Q15 Buffer_E ""
+LG_SPATIAL_FILTER_COEFFICIENTS_INPUT_CxyXInvXCyy  0x7	0x1F   0x21 "LG_SPATIAL_FILTER_COEFFICIENTS_INPUT_CxyXInvXCyy = "    	     DEC16Q15 Buffer_E ""
+LG_SPATIAL_FILTER_COEFFICIENTS_EIGENS_VALUES      0x7	0x1F   0x22 "LG_SPATIAL_FILTER_COEFFICIENTS_EIGENS_VALUES = "    	     FlpNumQ15 Title+Data ""
+LG_SPATIAL_FILTER_COEFFICIENTS_EIGEN_VECTORS      0x7	0x1F   0x23 "LG_SPATIAL_FILTER_COEFFICIENTS_EIGEN_VECTORS = "    	     DEC16Q15 Buffer_E ""
+LG_SPATIAL_FILTER_COEFFICIENTS_EIGENS_FLAG        0x7	0x1F   0x24 "LG_SPATIAL_FILTER_COEFFICIENTS_EIGENS_FLAG = "    	     DEC16   Title+Data ""
+LG_SPATIAL_FILTER_COEFFICIENTS_SPHERING_MATRIX    0x7	0x1F   0x25 "LG_SPATIAL_FILTER_COEFFICIENTS_SPHERING_MATRIX = "    	     DEC16Q15 Buffer_E ""
+LG_SPATIAL_FILTER_COEFFICIENTS_OUTPUT_FILTER_COEFFICIENTS   0x7	0x1F   0x26 "LG_SPATIAL_FILTER_COEFFICIENTS_OUTPUT_FILTER_COEFFICIENTS = " DEC16Q15 Buffer_E ""
+
+LG_CLSCE_INPUT_RX_GMSK_TSC		          0x7	0x1F   0x27  "LG_CLSCE_INPUT_RX_GMSK_TSC = "    	      		     COMP16Q15 Buffer_E ""
+LG_CLSCE_ESTTYPE				  0x7	0x1F   0x28  "LG_CLSCE_ESTTYPE = "                               	     Q0        Title+Data ""
+LG_CLSCE_CHLEN					  0x7	0x1F   0x29  "LG_CLSCE_CHLEN = "                               	     Q0        Title+Data ""
+LG_CLSCE_MODTYPE				  0x7	0x1F   0x2A  "LG_CLSCE_MODTYPE = "                               	     Q0        Title+Data ""
+LG_CLSCE_PRE_HYP_TSC_INDEXES	                  0x7	0x1F   0x2B  "LG_CLSCE_PRE_HYP_TSC_INDEXES = "                             DEC16Q0  Buffer_E ""
+LG_CLSCE_PRE_HYP_TSC_DELAYS		          0x7	0x1F   0x2C  "LG_CLSCE_PRE_HYP_TSC_DELAYS = "                              DEC16Q0  Buffer_E ""
+LG_CLSCE_SNR_INITIAL			          0x7	0x1F   0x2D  "LG_CLSCE_SNR_INITIAL = "    	             		     FlpNumQ15 Title+Data ""
+LG_CLSCE_SNR_BEST				  0x7	0x1F   0x2E  "LG_CLSCE_SNR_BEST = "    	             		     FlpNumQ15 Title+Data ""
+LG_CLSCE_BEST_INTERFERER_INDEX                    0x7	0x1F   0x2F  "LG_CLSCE_BEST_INTERFERER_INDEX = "                           Q0        Title+Data ""
+LG_CLSCE_BEST_INTERFERER_DELAY                    0x7	0x1F   0x30  "LG_CLSCE_BEST_INTERFERER_DELAY = "                           Q0        Title+Data ""
+LG_CLSCE_OUTPUT_CHANNEL_TAPS	                  0x7	0x1F   0x31  "LG_CLSCE_OUTPUT_CHANNEL_TAPS = "    	     	     	     COMP16Q15 Buffer_E ""
+
+LG_NORM_AND_REARANGE_CHAN_TAPS_INPUT		  0x7	0x1F   0x32  "LG_NORM_AND_REARANGE_CHAN_TAPS_INPUT = "    	     	     COMP16Q15 Buffer_E ""
+LG_NORM_AND_REARANGE_NOISE_SAMP_INPUT		  0x7	0x1F   0x33  "LG_NORM_AND_REARANGE_NOISE_SAMP_INPUT = "    	     	     COMP16Q15 Buffer_E ""
+LG_NORM_AND_REARANGE_NORM_CHAN_TAPS_OUTPUT	  0x7	0x1F   0x34  "LG_NORM_AND_REARANGE_NORM_CHAN_TAPS_OUTPUT = "    	     COMP16Q15 Buffer_E ""
+LG_NORM_AND_REARANGE_NORM_NOISE_SAMP_OUTPUT       0x7	0x1F   0x35  "LG_NORM_AND_REARANGE_NORM_NOISE_SAMP_OUTPUT = "    	     COMP16Q15 Buffer_E ""
+LG_NORM_AND_REARANGE_INVERS_NORM_VAL_OUTPUT       0x7	0x1F   0x36  "LG_NORM_AND_REARANGE_INVERS_NORM_VAL_OUTPUT = "    	     DEC16Q15  Buffer_E ""
+
+// Cdmn
+LG_LTE_SAM_CDMN_RSRP_FLP_REPORT     		0x0	0x10   0x21  "LG_LTE_SAM_CDMN_RSRP_FLP_REPORT = "     					FlpNumQ15  Title+Data       ""
+
+// LTE Searcher
+LG_LTE_PHY_SEARCHER_ST2_S0											0x0	0x17   0x8   "LG_LTE_PHY_SEARCHER_ST2_S0 = "								COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_PHY_SEARCHER_ST2_S1	       									0x0	0x17   0x9   "LG_LTE_PHY_SEARCHER_ST2_S1 = "								COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_TH_NOISE_LEVEL     								0x0	0x17   0xA   "LG_LTE_CELL_SEARCH_TH_NOISE_LEVEL = "     					FlpNumQ15  		Title+Data    		""
+LG_LTE_CELL_SEARCH_RELATIVE_TH     									0x0	0x17   0xB   "LG_LTE_CELL_SEARCH_RELATIVE_TH = "     						FlpNumQ15  		Title+Data     		""
+LG_LTE_CELL_SEARCH_ST1_DILUT_INPUT									0x0	0x17   0xC   "LG_LTE_CELL_SEARCH_ST1_DILUT_INPUT = "						COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST1_DILUT_SQ_INPUT	    						0x0	0x17   0xD   "LG_LTE_CELL_SEARCH_ST1_DILUT_SQ_INPUT = "						DECFLP16Q15		Buffer_E       		""
+LG_LTE_PHY_SEARCHER_ST2_EXP_BUFFER     								0x0	0x17   0x11  "LG_LTE_PHY_SEARCHER_ST2_EXP_BUFFER = "     					HEX32  			Buffer_E    		""
+LG_LTE_PHY_SEARCHER_ST2_SCORE_BUFFER								0x0	0x17   0x12  "LG_LTE_PHY_SEARCHER_ST2_SCORE_BUFFER = "						DECFLP16Q15  	Buffer_E       		""
+LG_LTE_PHY_SEARCHER_ST1_SCORE_BUFFER								0x0	0x17   0x13  "LG_LTE_PHY_SEARCHER_ST1_SCORE_BUFFER = "						DECFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST1_DILUT_SCORE_PER_PSC     						0x0	0x17   0x14  "LG_LTE_CELL_SEARCH_ST1_DILUT_SCORE_PER_PSC = "     			DECFLP16Q15		Buffer_E     		""
+LG_LTE_CELL_SEARCH_ST1_DILUT_SQ_SCORE_PER_PSC						0x0	0x17   0x15  "LG_LTE_CELL_SEARCH_ST1_DILUT_SQ_SCORE_PER_PSC = "				DECFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST1_DILUT_SCORE_PER_PSC							0x0	0x17   0x16  "LG_LTE_CELL_SEARCH_ST1_DILUT_SCORE_PER_PSC = "				DECFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST1_DILUT_SQ_SCORE_PER_PSC_AFTER_DILUT   		0x0	0x17   0x17  "LG_LTE_CELL_SEARCH_ST1_DILUT_SQ_SCORE_PER_PSC_AFTER_DILUT = " DECFLP16Q15  	Buffer_E			""
+LG_LTE_CELL_SEARCH_ST1_DILUT_SURV_IDX								0x0	0x17   0x18  "LG_LTE_CELL_SEARCH_ST1_DILUT_SURV_IDX = "						DECFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST1_DILUT_TIME_PSC_IND_SORTED					0x0	0x17   0x19  "LG_LTE_CELL_SEARCH_ST1_DILUT_TIME_PSC_IND_SORTED = "			DECFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST1_SORT_TOP_CANDS   							0x0	0x17   0x1A  "LG_LTE_CELL_SEARCH_ST1_SORT_TOP_CANDS = " 					DECFLP16Q15  	Buffer_E			""
+LG_LTE_CELL_SEARCH_ST1_UNSORT_ST1_CANDS								0x0	0x17   0x1B  "LG_LTE_CELL_SEARCH_ST1_UNSORT_ST1_CANDS = "					DECFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST1_SORT_ST1_CANDS								0x0	0x17   0x1C  "LG_LTE_CELL_SEARCH_ST1_SORT_ST1_CANDS = "						DECFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_TH_MARGIN										0x0	0x17   0x1D  "LG_LTE_CELL_SEARCH_TH_MARGIN = "								FlpNumQ15  		Title+Data     		""
+LG_LTE_CELL_SEARCH_ST1_HW_RES     									0x0	0x17   0x1E  "LG_LTE_CELL_SEARCH_ST1_HW_RES = "     						HEX32  			Buffer_E    		""
+LG_LTE_CELL_SEARCH_ST2_SSC_USEFUL_ANT0_INPUT     					0x0	0x17   0x1F  "LG_LTE_CELL_SEARCH_ST2_SSC_USEFUL_ANT0_INPUT = "     			COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SSC_CH_SMOOTH_ANT0_INPUT						0x0	0x17   0x20  "LG_LTE_CELL_SEARCH_ST2_SSC_CH_SMOOTH_ANT0_INPUT = "			COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SSC_USEFUL_ANT1_INPUT						0x0	0x17   0x21  "LG_LTE_CELL_SEARCH_ST2_SSC_USEFUL_ANT1_INPUT = "				COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SSC_CH_SMOOTH_ANT1_INPUT   					0x0	0x17   0x22  "LG_LTE_CELL_SEARCH_ST2_SSC_CH_SMOOTH_ANT1_INPUT = " 			COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SSC_CH_SMOOTH_ANT0_OUTPUT					0x0	0x17   0x23  "LG_LTE_CELL_SEARCH_ST2_SSC_CH_SMOOTH_ANT0_OUTPUT = "			COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SSC_CH_SMOOTH_ANT1_OUTPUT					0x0	0x17   0x24  "LG_LTE_CELL_SEARCH_ST2_SSC_CH_SMOOTH_ANT1_OUTPUT = "			COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SSC_CH_SMOOTH_COMBINED_OUTPUT				0x0	0x17   0x25  "LG_LTE_CELL_SEARCH_ST2_SSC_CH_SMOOTH_COMBINED_OUTPUT = "		COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_FHT_PRE_PERMUT					 			0x0	0x17   0x26  "LG_LTE_CELL_SEARCH_ST2_FHT_PRE_PERMUT = "						COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_FHT_CORE_OUTPUT								0x0	0x17   0x27  "LG_LTE_CELL_SEARCH_ST2_FHT_CORE_OUTPUT = "					COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_FHT_POST_PERMUT								0x0	0x17   0x28  "LG_LTE_CELL_SEARCH_ST2_FHT_POST_PERMUT = "					COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_EXTRACTED_MANT_ANT0							0x0	0x17   0x29  "LG_LTE_CELL_SEARCH_ST2_EXTRACTED_MANT_ANT0 = "				HEX32  			Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_EXTRACTED_MANT_ANT1							0x0	0x17   0x2A  "LG_LTE_CELL_SEARCH_ST2_EXTRACTED_MANT_ANT1= "					HEX32  			Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_PSC_FREQ_OUTPUT_ANT0                         0x0	0x17   0x2B  "LG_LTE_CELL_SEARCH_ST2_PSC_FREQ_OUTPUT_ANT0 = "				COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_PSC_FREQ_OUTPUT_ANT1                         0x0	0x17   0x2C  "LG_LTE_CELL_SEARCH_ST2_PSC_FREQ_OUTPUT_ANT1  = "				COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_PSC_FFT_OUTPUT_ANT0                          0x0	0x17   0x2D  "LG_LTE_CELL_SEARCH_ST2_PSC_FFT_OUTPUT_ANT0 = "				COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_PSC_FFT_OUTPUT_ANT1                          0x0 0x17   0x2E  "LG_LTE_CELL_SEARCH_ST2_PSC_FFT_OUTPUT_ANT1 = "				COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_PSC_MULT_REF_ANT0                            0x0 0x17   0x2F  "LG_LTE_CELL_SEARCH_ST2_PSC_MULT_REF_ANT0 = "					COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_PSC_MULT_REF_ANT1                            0x0	0x17   0x30  "LG_LTE_CELL_SEARCH_ST2_PSC_MULT_REF_ANT1 = "					COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_PSC_REF_VEC                                  0x0	0x17   0x31  "LG_LTE_CELL_SEARCH_ST2_PSC_REF_VEC = "						COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SMOOTH_SHIFT_HALF_FFT_ANT0                   0x0	0x17   0x32  "LG_LTE_CELL_SEARCH_ST2_SMOOTH_SHIFT_HALF_FFT_ANT0 = "			COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SMOOTH_SHIFT_HALF_FFT_ANT1                   0x0	0x17   0x33  "LG_LTE_CELL_SEARCH_ST2_SMOOTH_SHIFT_HALF_FFT_ANT1 = "			COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SMOOTH_TIME_DOMAIN_ANT0                      0x0	0x17   0x34  "LG_LTE_CELL_SEARCH_ST2_SMOOTH_TIME_DOMAIN_ANT0 = "			COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SMOOTH_TIME_DOMAIN_ANT1                      0x0	0x17   0x35  "LG_LTE_CELL_SEARCH_ST2_SMOOTH_TIME_DOMAIN_ANT1 = "			COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SMOOTH_FREQ_DOMAIN_ANT0                      0x0	0x17   0x36  "LG_LTE_CELL_SEARCH_ST2_SMOOTH_FREQ_DOMAIN_ANT0 = "			COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SMOOTH_FREQ_DOMAIN_ANT1                      0x0	0x17   0x37  "LG_LTE_CELL_SEARCH_ST2_SMOOTH_FREQ_DOMAIN_ANT1 = "			COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SMOOTH_FREQ_DOMAIN_128_ANT0                  0x0	0x17   0x38  "LG_LTE_CELL_SEARCH_ST2_SMOOTH_FREQ_DOMAIN_128_ANT0 = "		COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SMOOTH_FREQ_DOMAIN_128_ANT1                  0x0	0x17   0x39  "LG_LTE_CELL_SEARCH_ST2_SMOOTH_FREQ_DOMAIN_128_ANT1 = "		COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_S0_FHT_INPUT                                 0x0	0x17   0x3A  "LG_LTE_CELL_SEARCH_ST2_S0_FHT_INPUT = "						COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_S0_FHT_OUTPUT                                0x0	0x17   0x3B  "LG_LTE_CELL_SEARCH_ST2_S0_FHT_OUTPUT = "						COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_S0_SORTED_SCORES                             0x0	0x17   0x3C  "LG_LTE_CELL_SEARCH_ST2_S0_SORTED_SCORES = "					DECFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_S1_FHT_INPUT                                 0x0	0x17   0x3D  "LG_LTE_CELL_SEARCH_ST2_S1_FHT_INPUT = "						COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_S1_FHT_OUTPUT                                0x0	0x17   0x3E  "LG_LTE_CELL_SEARCH_ST2_S1_FHT_OUTPUT = "						COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_S1_HYP                                       0x0	0x17   0x3F  "LG_LTE_CELL_SEARCH_ST2_S1_HYP = "								DECFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_S1_LEGAL_SCORES                              0x0	0x17   0x40  "LG_LTE_CELL_SEARCH_ST2_S1_LEGAL_SCORES = "					COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_S1_ABS_SCORES                                0x0	0x17   0x41  "LG_LTE_CELL_SEARCH_ST2_S1_ABS_SCORES = "						DECFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_S1_SORTED_ABS_SCORES                         0x0	0x17   0x42  "LG_LTE_CELL_SEARCH_ST2_S1_SORTED_ABS_SCORES = "				DECFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_S1_SORTED_INDICES                            0x0	0x17   0x43  "LG_LTE_CELL_SEARCH_ST2_S1_SORTED_INDICES = "					DECFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_COMBINE_S0_INPUT_SCORE                       0x0	0x17   0x44  "LG_LTE_CELL_SEARCH_ST2_COMBINE_S0_INPUT_SCORE = "				COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_COMBINE_S1_INPUT_SCORE                       0x0	0x17   0x45  "LG_LTE_CELL_SEARCH_ST2_COMBINE_S1_INPUT_SCORE = "				COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_COMBINE_OUTPUT_SCORE                         0x0	0x17   0x46  "LG_LTE_CELL_SEARCH_ST2_COMBINE_OUTPUT_SCORE = "				COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_PROCESS_EXP_VEC                              0x0	0x17   0x47  "LG_LTE_CELL_SEARCH_ST2_PROCESS_EXP_VEC = "					DECFLP16Q15		Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_PROCESS_VEC                                  0x0	0x17   0x48  "LG_LTE_CELL_SEARCH_ST2_PROCESS_VEC = "						COMPFLP16Q15	Buffer_E       		""
+LG_LTE_PHY_SEARCHER_ST2_MANT_BUFFER                                 0x0 0x17   0x4B  "LG_LTE_PHY_SEARCHER_ST2_MANT_BUFFER = "     					HEX32           Buffer_E            ""
+LG_LTE_CELL_SEARCH_ST2_SSC_SNR_REF_SSC                            	0x0	0x17   0x4D  "LG_LTE_CELL_SEARCH_ST2_SSC_SNR_REF_SSC = "					COMPFLP16Q15    Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SSC_SCORE                       				0x0	0x17   0x4E  "LG_LTE_CELL_SEARCH_ST2_SSC_SCORE = "							COMPFLP16Q15	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SSC_SNR_PHSOR                       			0x0	0x17   0x4F  "LG_LTE_CELL_SEARCH_ST2_SSC_SNR_PHSOR = "						COMPFLP16Q15  	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SSC_SNR_REF_PSC_CH                         	0x0	0x17   0x50  "LG_LTE_CELL_SEARCH_ST2_SSC_SNR_REF_PSC_CH = "					COMPFLP16Q15	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SSC_SNR_REF_SSC_SYN                          0x0	0x17   0x51  "LG_LTE_CELL_SEARCH_ST2_SSC_SNR_REF_SSC_SYN = "				COMPFLP16Q15	Buffer_E       		""
+LG_LTE_CELL_SEARCH_ST2_SSC_SNR_NOISE_PWR                            0x0	0x17   0x52  "LG_LTE_CELL_SEARCH_ST2_SSC_SNR_NOISE_PWR = "					FlpNumQ15		Title+Data       		""
+LG_LTE_CELL_SEARCH_ST2_SSC_SNR_RES                                 	0x0 0x17   0x53  "LG_LTE_CELL_SEARCH_ST2_SSC_SNR_RES = "     					FlpNumQ15     	Title+Data            ""
+LG_LTE_CELL_SEARCH_ST2_SSC_SNR_SSC_SCORE                            0x0 0x17   0x5C  "LG_LTE_CELL_SEARCH_ST2_SSC_SNR_SSC_SCORE = "     				FlpNumQ15     	Title+Data            ""
+LG_LTE_CELL_SEARCH_ST2_SSC_SNR_RECVE_SSC                            0x0 0x17   0x60  "LG_LTE_CELL_SEARCH_ST2_SSC_SNR_RECVE_SSC = "     				COMPFLP16Q15    Buffer_E            ""
+LG_LTE_CELL_SEARCH_ST2_SSC_SNR_NOISE_VEC                            0x0 0x17   0x61  "LG_LTE_CELL_SEARCH_ST2_SSC_SNR_NOISE_VEC = "     				COMPFLP16Q15    Buffer_E            ""
+
+
+// LTE SW MIMO
+LG_LTE_SW_MIMO_PCFICH_OUT_LLRS		          0x0	0x18   0x08  "LG_LTE_SW_MIMO_PCFICH_OUT_LLRS = "    	        DEC16Q0 Buffer_E ""
+LG_LTE_SW_MIMO_PDCCH_OUT_LLRS		          0x0	0x18   0x09  "LG_LTE_SW_MIMO_PDCCH_OUT_LLRS = "               	DEC16Q0 Buffer_E ""
+LG_LTE_TEST					  0x0	0x02   0x23  "LG_LTE_TEST = "				     	DEC16 Title+Data ""
+GSM_DESCISER					  0x7	0x1F   0x37  "GSM_DESCISER = "				     	DEC16 Title+Data ""
+LG_LTE_SW_CH_EST_PILOTS0     			  0x0	0x21   0x03  "LG_LTE_SW_CH_EST_PILOTS0 = "     			COMPFLP16Q15 Buffer_E ""
+LG_LTE_SW_CH_EST_PILOTS1     		       	  0x0	0x21   0x04  "LG_LTE_SW_CH_EST_PILOTS1 = "     			COMPFLP16Q15 Buffer_E ""
+LG_LTE_SW_CH_EST_RNN_INV      			  0x0	0x21   0x05  "LG_LTE_SW_CH_EST_RNN_INV = "     			DECFLP16Q15  Buffer_E ""
+LG_LTE_SW_CH_EST_W0       			  0x0	0x21   0x06  "LG_LTE_SW_CH_EST_W0 = "     			COMPFLP16Q15 Buffer_E ""
+LG_LTE_SW_CH_EST_W1     			  0x0	0x21   0x07  "LG_LTE_SW_CH_EST_W1  = "     			COMPFLP16Q15 Buffer_E ""
+LG_LTE_SW_CH_EST_SNR     			  0x0	0x21   0x08  "LG_LTE_SW_CH_EST_SNR = "     			DECFLP16Q15  Buffer_E ""
+LG_LTE_SW_CH_EST_H0       			  0x0	0x21   0x09  "LG_LTE_SW_CH_EST_H0 = "     			COMPFLP16Q15 Buffer_E ""
+LG_LTE_SW_CH_EST_H1       			  0x0	0x21   0x0A  "LG_LTE_SW_CH_EST_H1 = "     			COMPFLP16Q15 Buffer_E ""
+
+LG_LTE_CH_EST_DPM_INPUT       		  0x0	0x31   0x27  "LG_LTE_CH_EST_DPM_INPUT = "     					COMP16Q15 Buffer_E ""
+LG_LTE_MODULE_IPC_DEBUG_DATA_CHANNEL_ACK       	  0x0  	0x29   0x00 "LG_LTE_MODULE_IPC_DEBUG_DATA_CHANNEL_ACK = "	    		DEC16      Formatted "Data channel ACK of channel ID = %d"
+LG_LTE_MODULE_IPC_DEBUG_BUFFER_FREE       	  0x0  	0x29   0x01 "LG_LTE_MODULE_IPC_DEBUG_BUFFER_FREE_ACK = "	    		DEC16      Formatted "Buffer free ACK of Channel ID = %d"
+LG_LTE_MODULE_IPC_DEBUG_DATA_CPU_TO_DSP           0x0  	0x29   0x02 "LG_LTE_MODULE_IPC_DEBUG_DATA_CPU_TO_DSP = "     			HEX16      Buffer_E         "Data CPU -> DSP ="
+LG_LTE_MODULE_IPC_DEBUG_DSP_NOTIFY_DATA_RCV       0x0  	0x29   0x03 "LG_LTE_MODULE_IPC_DEBUG_DSP_NOTIFY_DATA_RCV = "	    		DEC16      Formatted "DSP notify data recived from Channel ID = %d"
+LG_LTE_MODULE_IPC_DEBUG_DSP_POINTER_RESPONSE      0x0  	0x29   0x04 "LG_LTE_MODULE_IPC_DEBUG_DSP_POINTER_RESPONSE = "	    		HEX16      Formatted "DSP returns pointer address = %x %x"
+LG_LTE_MODULE_IPC_DEBUG_DATA_ALLOCATION_PARAMS    0x0  	0x29   0x05 "LG_LTE_MODULE_IPC_DEBUG_BUFFER_FREE_ACK = "	    		DEC16      Formatted "DataPacketSize = $d , CommandParams: SetID = %d,SubOpcode = %d,CmdMsgLength = %d,UrgentFlag= %d"
+
+// LTE measurements
+LG_LTE_MEASURE_RSRP_ANT0     		    	 0x0	0x26   0xB  "LG_LTE_MEASURE_RSRP_ANT0 = "     					FlpNumQ15  Title+Data       ""
+LG_LTE_MEASURE_RSRP_ANT1     		    	 0x0	0x26   0xC  "LG_LTE_MEASURE_RSRP_ANT1 = "     					FlpNumQ15  Title+Data       ""
+LG_LTE_MEASURE_RSSI_ANT0     		  	 0x0	0x26   0xD  "LG_LTE_MEASURE_RSSI_ANT0 = "     					FlpNumQ15  Title+Data       ""
+LG_LTE_MEASURE_RSSI_ANT1     		     	 0x0	0x26   0xE  "LG_LTE_MEASURE_RSSI_ANT1 = "     					FlpNumQ15  Title+Data       ""
+LG_LTE_MEASURE_RSSNR_ANT0    	 	  	 0x0	0x26   0xF  "LG_LTE_MEASURE_RSSNR_ANT0 = "     					FlpNumQ15  Title+Data       ""
+LG_LTE_MEASURE_RSSNR_ANT1	     	  	 0x0	0x26   0x10  "LG_LTE_MEASURE_RSSNR_ANT1 = "     				FlpNumQ15  Title+Data       ""
+LG_LTE_PHY_MEASURE_SEARCHER_BUFFER   0x0	0x26   0x11  "LG_LTE_PHY_MEASURE_SEARCHER_BUFFER = "   	HEX32 Buffer_E	""
+LG_LTE_PHY_MEASURE_EXTRACTED_SYMBOL_ANT0         0x0	0x26   0x16  "LG_LTE_PHY_MEASURE_EXTRACTED_SYMBOL_ANT0       = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_EXTRACTED_SYMBOL_ANT1         0x0	0x26   0x17  "LG_LTE_PHY_MEASURE_EXTRACTED_SYMBOL_ANT1        = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_FREQ_INPUT_ANT0               0x0	0x26   0x18  "LG_LTE_PHY_MEASURE_FREQ_INPUT_ANT0              = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_FREQ_INPUT_ANT1               0x0 	0x26   0x19  "LG_LTE_PHY_MEASURE_FREQ_INPUT_ANT1             = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_FREQ_OUTPUT_ANT0              0x0 	0x26   0x1A  "LG_LTE_PHY_MEASURE_FREQ_OUTPUT_ANT0             = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_FREQ_OUTPUT_ANT1              0x0	0x26   0x1B  "LG_LTE_PHY_MEASURE_FREQ_OUTPUT_ANT1             = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_FFT_INPUT_ANT0                0x0	0x26   0x1C  "LG_LTE_PHY_MEASURE_FFT_INPUT_ANT0              = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_FFT_INPUT_ANT1                0x0	0x26   0x1D  "LG_LTE_PHY_MEASURE_FFT_INPUT_ANT1               = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_FFT_OUTPUT_ANT0               0x0	0x26   0x1E  "LG_LTE_PHY_MEASURE_FFT_OUTPUT_ANT0              = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_FFT_OUTPUT_ANT1               0x0	0x26   0x1F  "LG_LTE_PHY_MEASURE_FFT_OUTPUT_ANT1             = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_FFT_SHIFTED_USEFUL_ANT0       0x0	0x26   0x20  "LG_LTE_PHY_MEASURE_FFT_SHIFTED_USEFUL_ANT0      = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_FFT_SHIFTED_USEFUL_ANT1       0x0	0x26   0x21  "LG_LTE_PHY_MEASURE_FFT_SHIFTED_USEFUL_ANT1      = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_RSSI_OUTPUT_ANT0              0x0	0x26   0x22  "LG_LTE_PHY_MEASURE_RSSI_OUTPUT_ANT0            = "		FlpNumQ15  		Title+Data     		""
+LG_LTE_PHY_MEASURE_RSSI_OUTPUT_ANT1              0x0	0x26   0x23  "LG_LTE_PHY_MEASURE_RSSI_OUTPUT_ANT1             = "		FlpNumQ15  		Title+Data     		""
+LG_LTE_PHY_MEASURE_CH_PROFILE_INPUT              0x0	0x26   0x24  "LG_LTE_PHY_MEASURE_CH_PROFILE_INPUT             = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_CH_PROFILE_OUTPUT             0x0	0x26   0x25  "LG_LTE_PHY_MEASURE_CH_PROFILE_OUTPUT           = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_RS_REF_GEN_A                  0x0	0x26   0x26  "LG_LTE_PHY_MEASURE_RS_REF_GEN_A                 = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_RS_REF_GEN_B                  0x0	0x26   0x27  "LG_LTE_PHY_MEASURE_RS_REF_GEN_B                 = "		DECFLP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_SCRATCH_ACC_CH_PROFILE_ANT0   0x0	0x26   0x28  "LG_LTE_PHY_MEASURE_SCRATCH_ACC_CH_PROFILE_ANT0 = "		HEX32  			Buffer_E       		""
+LG_LTE_PHY_MEASURE_SCRATCH_ACC_CH_PROFILE_ANT1   0x0	0x26   0x29  "LG_LTE_PHY_MEASURE_SCRATCH_ACC_CH_PROFILE_ANT1  = "		HEX32  			Buffer_E       		""
+LG_LTE_PHY_MEASURE_SHIFTED_ACC_CH_PROFILE_ANT0   0x0	0x26   0x2A  "LG_LTE_PHY_MEASURE_SHIFTED_ACC_CH_PROFILE_ANT0  = "		HEX32  			Buffer_E       		""
+LG_LTE_PHY_MEASURE_SHIFTED_ACC_CH_PROFILE_ANT1   0x0	0x26   0x2B  "LG_LTE_PHY_MEASURE_SHIFTED_ACC_CH_PROFILE_ANT1  = "		HEX32  			Buffer_E       		""
+LG_LTE_PHY_MEASURE_COLLECTED_RS_ANT0             0x0	0x26   0x2C  "LG_LTE_PHY_MEASURE_COLLECTED_RS_ANT0           = "		DECFLP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_COLLECTED_RS_ANT1             0x0	0x26   0x2D  "LG_LTE_PHY_MEASURE_COLLECTED_RS_ANT1            = "		DECFLP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_TRAPEZOID_FILTER_INPUT_ANT0   0x0	0x26   0x2E  "LG_LTE_PHY_MEASURE_TRAPEZOID_FILTER_INPUT_ANT0  = "		HEX32  			Buffer_E       		""
+LG_LTE_PHY_MEASURE_TRAPEZOID_FILTER_INPUT_ANT1   0x0	0x26   0x2F  "LG_LTE_PHY_MEASURE_TRAPEZOID_FILTER_INPUT_ANT1 = "		HEX32  			Buffer_E       		""
+LG_LTE_PHY_MEASURE_TRAPEZOID_FILTER_OUTPUT_ANT0  0x0	0x26   0x30  "LG_LTE_PHY_MEASURE_TRAPEZOID_FILTER_OUTPUT_ANT0 = "		HEX32  			Buffer_E       		""
+LG_LTE_PHY_MEASURE_TRAPEZOID_FILTER_OUTPUT_ANT1  0x0	0x26   0x31  "LG_LTE_PHY_MEASURE_TRAPEZOID_FILTER_OUTPUT_ANT1 = "		HEX32  			Buffer_E       		""
+LG_LTE_PHY_MEASURE_FFT_RSSI_INPUT_ANT0           0x0	0x26   0x32  "LG_LTE_PHY_MEASURE_FFT_RSSI_INPUT_ANT0         = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_FFT_RSSI_INPUT_ANT1           0x0	0x26   0x33  "LG_LTE_PHY_MEASURE_FFT_RSSI_INPUT_ANT1          = "		COMP16Q15  		Buffer_E       		""
+LG_LTE_PHY_MEASURE_FREQ_ROTATOR              	 0x0	0x26   0x36  "LG_LTE_PHY_MEASURE_RSSI_OUTPUT_ANT0            = "		FlpNumQ15  		Title+Data     		""
+
+
+// LTE Time Tracking
+LG_LTE_TIME_TRACKING_SAMPLES_EXTRUCT_DEBUG		0x0 	0x2A		0x4 	"Time Tracking Samples: "   						HEX32     		Buffer_E         ""
+LG_LTE_TIME_TRACKING_DEBUG_FOR_IML				0x0		0x2A		0x9		"Time Tracking memory parameters:"     				DEC16     		Buffer      	""
+LG_LTE_TIME_TRACKING_AVERAGE_SNR_ANT0			0x0 	0x2A		0x2 	"Time Tracking: Averaged Snr (Ant 0) = "   			FlpNumQ15 		Title+Data       ""
+LG_LTE_TIME_TRACKING_AVERAGE_SNR_ANT1			0x0 	0x2A		0x12 	"Time Tracking: Averaged Snr (Ant 1) = "   			FlpNumQ15 		Title+Data       ""
+LG_LTE_TIME_TRACKING_CURRENT_SNR_ANT0			0x0 	0x2A		0x13 	"Time Tracking: Current Averaged Snr (Ant 0) = "   			FlpNumQ15 		Title+Data       ""
+LG_LTE_TIME_TRACKING_CURRENT_SNR_ANT1			0x0 	0x2A		0x14 	"Time Tracking: Current Averaged Snr (Ant 1) = "   			FlpNumQ15 		Title+Data       ""
+LG_LTE_TIME_TRACKING_INSTANTANEOUS_SNR_ANT0		0x0 	0x2A		0x15 	"Time Tracking: Current Snr (Ant 0) = "   			FlpNumQ15 		Title+Data       ""
+LG_LTE_TIME_TRACKING_INSTANTANEOUS_SNR_ANT1		0x0 	0x2A		0x16 	"Time Tracking: Current Snr (Ant 1) = "   			FlpNumQ15 		Title+Data       ""
+//LTE Searcher
+LG_LTE_PHY_SEARCHER_BUFFER   	  0x0	0x17   0xB  "LG_LTE_PHY_SEARCHER_BUFFER = "     			HEX32 Buffer_E	""
+
+
+
+DUMMY                              0x0F    "DUMMY"                              DUMMY      DUMMY          ""
+// Do not erase or comment the line above!
+
+
+Lines can now be remarked using // at the begining of each line, for instance the line:
+// LG_NQ_OUT_SB                       0xFF    "LG_NQ_OUT_SB = "     		DEC16      Buffer_E         ""
+will be ignored.
+
+Beneath the line with the DUMMY Message, free text may be typed.
+
+MsgType can be the following:
+=============================
+Title+Data
+Buffer
+Buffer_E (When logged using FxpPrintUtils Functions)
+BufferCol (Will be printed vertically)
+BitByBitMSB
+BitByBitLSB
+
+DataType can be the following:
+==============================
+DEC8
+HEX8
+UDEC8
+DEC16
+HEX16
+UDEC16
+DEC32 (First high16 bits are logged, then low16bits)
+HEX32
+UDEC32
+COMP16
+FLP_ME // Requires LG_MES_2(ID, Mantisa, Exponent) and will print Mantisa*(2^Exponent)
+COMPFLP16 //will print {I,Q} in Mantisa style Mantisa*(2^Exponent) (works for Buffer_E)
+DECFLP16  //will print in Mantisa style Mantisa*(2^Exponent) (works for Buffer_E)
+
+* See "G:\Threepoint\Mdf_Extension\HSL Decoder DLL Extension.doc" for usage information.
+
+If there are mistypes such as no starting " or ending " characters, there will be
+an error parsing the file. In order to check if an error occured, check the file
+'GCMsgLog.txt' in the 'c:\tplgsm\mdf' directory
+
+
+For Any Questions:
+Asaf Ravid 7144
+Or
+Oren Bisno 7540
+Or (updated AUG10)
+Micheal Newman 7053209

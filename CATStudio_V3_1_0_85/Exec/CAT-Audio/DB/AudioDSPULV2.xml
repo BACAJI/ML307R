@@ -1,0 +1,2322 @@
+<?xml version="1.0"?>
+<root>
+	<opcode>
+		<value>0x40</value>
+		<name>VOICE_TX_PACKET</name>
+		<comments>The voice task sends the Tx packet every frame. </comments>
+		<data>
+			<word>
+				<unit>
+					<value>0x0</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type IF1_AMR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x1</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type RFC_AMR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x2</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type GSM_EFR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x3</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type GSM_FR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x4</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type GSM_HR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x5</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type IF2_AMR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x6</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type IF1_WB_AMR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>6.6 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>8.85 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>12.65 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>14.25 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>15.85 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>18.25 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>19.85 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>23.05 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x7</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type IF2_WB_AMR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>6.6 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>8.85 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>12.65 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>14.25 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>15.85 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>18.25 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>19.85 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>23.05 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x8</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type RFC_WB_AMR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>6.6 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>8.85 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>12.65 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>14.25 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>15.85 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>18.25 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>19.85 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>23.05 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+			</word>
+		</data>		
+	</opcode>
+	<opcode>
+		<value>0x41</value>
+		<name>VOICE_DRIFT_REPORT</name>
+		<comments>The voice task will send this message only if configured by bit 3 of the VoiceTestWord (Start Voice Path or Voice Test control). </comments>	
+		<data>
+			<word>
+				<unit>
+					<mask>0xFFFF</mask>
+					<name>size of codec read</name>
+					<format>HEX_0x%x</format>
+					<comments>159, 160, 161 </comments>
+				</unit>
+			</word>
+			<word>
+				<unit>
+					<mask>0xFFFF</mask>
+					<name>Drift between codec buffer pointers</name>
+					<format>HEX_0x%x</format>
+				</unit>
+			</word>
+		</data>
+	</opcode>
+	<opcode>
+		<value>0x42</value>
+		<name>End_CONV_ACK</name>
+		<comments>The voice command handler will send this message after having freed all its resources (OS and GPM resources). </comments>
+		<data>
+		</data>		
+	</opcode>
+	<opcode>
+		<value>0x43</value>
+		<name>PCM Stream Record</name>
+		<comments>Pointer to a ready record buffer on CPU memory </comments>
+		<data>
+			<word>
+				<unit>
+					<mask>0xFFFF</mask>
+					<name>Recorded Buffer Address (MSB)</name>
+					<format>HEX_0x%x</format>
+				</unit>
+			</word>
+			<word>
+				<unit>
+					<mask>0xFFFF</mask>
+					<name>Recorded Buffer Address (LSB)</name>
+					<format>HEX_0x%x</format>
+				</unit>
+			</word>
+		</data>		
+	</opcode>
+	<opcode>
+		<value>0x44</value>
+		<name>GET_PCM_FRAME</name>
+		<comments>Pointer to required next frame buffer (CPU should copy upon message the next PCM buffer to be played) </comments>
+		<data>
+			<word>
+				<unit>
+					<mask>0xFFFF</mask>
+					<name>Get Buffer Address(MSB)</name>
+					<format>HEX_0x%x</format>
+				</unit>
+			</word>
+			<word>
+				<unit>
+					<mask>0xFFFF</mask>
+					<name>Get Buffer Address(LSB)</name>
+					<format>HEX_0x%x</format>
+				</unit>
+			</word>
+		</data>		
+	</opcode>
+	<opcode>
+		<value>0x45</value>
+		<name>VOICE_DECODER_ACK</name>
+		<comments>Voice decoder output flag SID </comments>
+		<data>
+			<word>
+				<unit>
+					<mask>0xFFFF</mask>
+					<name>SID flag values</name>
+					<format>HEX_0x%x</format>
+					<comments><value>0x0</value><text>Good speech frame</text></comments>
+					<comments><value>0x1</value><text>Invalid SID frame</text></comments>
+					<comments><value>0x2</value><text>Valid SID frame</text></comments>
+				</unit>
+			</word>
+		</data>		
+	</opcode>
+	<opcode>
+		<value>0x46</value>
+		<name>START_CONV_ACK</name>
+		<comments>Start Conversation acknowledge</comments>
+		<data>
+		</data>		
+	</opcode>
+	<opcode>
+		<value>0x47</value>
+		<name>VOICE_PCM_ACK</name>
+		<comments>Voice PCM acknowledge</comments>
+		<data>
+		</data>		
+	</opcode>
+	<opcode>
+		<value>0x48</value>
+		<name>VOICE_DEBUG_RX_PACKET</name>
+		<comments>The voice task receives an Rx packet every frame. It takes the vocoder packet and add it the vocoder type as the first data. This is only a debug feature.</comments>
+		<data>
+			<word>
+				<unit>
+					<value>0x0</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type IF1_AMR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x1</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type RFC_AMR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x2</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type GSM_EFR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x3</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type GSM_FR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x4</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type GSM_HR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x5</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type IF2_AMR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x6</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type IF1_WB_AMR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>6.6 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>8.85 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>12.65 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>14.25 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>15.85 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>18.25 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>19.85 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>23.05 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x7</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type IF2_WB_AMR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>6.6 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>8.85 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>12.65 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>14.25 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>15.85 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>18.25 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>19.85 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>23.05 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<value>0x8</value>	
+					<mask>0xFFFF</mask>
+					<name>Vocoder Type RFC_WB_AMR</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>encoderMode </name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>6.6 Kbits/s</text></comments>
+								<comments><value>0x1</value><text>8.85 Kbits/s</text></comments>
+								<comments><value>0x2</value><text>12.65 Kbits/s</text></comments>
+								<comments><value>0x3</value><text>14.25 Kbits/s</text></comments>
+								<comments><value>0x4</value><text>15.85 Kbits/s</text></comments>
+								<comments><value>0x5</value><text>18.25 Kbits/s</text></comments>
+								<comments><value>0x6</value><text>19.85 Kbits/s</text></comments>
+								<comments><value>0x7</value><text>23.05 Kbits/s</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+			</word>
+		</data>		
+	</opcode>
+	<opcode>
+		<value>0x49</value>
+		<name>VOICE_MODULE_DEBUG_REPORT</name>
+		<comments>When set, Send the status of the voice control word and energy calculations for both paths.</comments>
+		<data>
+			<word>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0x0</value>
+					<name>EC_AND_RES</name>
+					<format>HEX_0x%x</format>
+					<data>
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+
+							</unit>		
+						</word>
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>VoiceSamplingRate</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>RATE_16K</text></comments>
+								<comments><value>0x0</value><text>RATE_8K</text></comments>
+							</unit>	
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>EcMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>ES</text></comments>
+								<comments><value>0x1</value><text>BT</text></comments>
+								<comments><value>0x2</value><text>SP</text></comments>
+								<comments><value>0x3</value><text>HS</text></comments>
+								<comments><value>0x4</value><text>ES_LOOP</text></comments>
+								<comments><value>0x5</value><text>BT_LOOP</text></comments>
+								<comments><value>0x6</value><text>SP_LOOP</text></comments>
+								<comments><value>0x7</value><text>HS_LOOP</text></comments>
+								<comments><value>0x8</value><text>ESDM</text></comments>
+								<comments><value>0x9</value><text>SPDM</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>sampleDelay</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>adaptSlowDown</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>numOfTaps</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>qFir</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+						</word>
+						<word>
+						</word>
+						<word>
+						</word>
+						<word>
+						</word>
+					</data> 	    
+				</unit>
+
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0x1</value>
+					<name>TX_NS_ID</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>VoiceSamplingRate</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>RATE_16K</text></comments>
+								<comments><value>0x0</value><text>RATE_8K</text></comments>
+							</unit>	
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MaxSupression</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MaxNoiseLevel</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>reserved0</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>NoiseLevelInc</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>NoiseLevelDec</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>reserved1</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>updateNoiseMatrix</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word> 
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>Refvadhang(tx only)</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>ResMode</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>nonLinearModel</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>betaFest</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>betaDT</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>gammaDT</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>vmThresDT</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>burst</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>hang</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>cnGain</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>cnFloor</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MinCnFloorGain</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>maxAdaptStep</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>slowAdatpWeight</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>initPeriod</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>AuditoryMaskFactory</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>pathChangeThres</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+
+					</data>
+
+				</unit>
+
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0x2</value>
+					<name>TX_EQ_ID</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>VoiceSamplingRate</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>RATE_16K</text></comments>
+								<comments><value>0x0</value><text>RATE_8K</text></comments>
+							</unit>
+						</word>
+						<loop>
+							<looptimes>0x1F</looptimes>														
+							<word>
+								<unit>
+									<mask>0xFFFF</mask>
+									<name>Filter</name>
+									<loopstr>%d</loopstr>
+									<format>HEX_0x%x</format>	 	     	     
+								</unit>									
+							</word>								
+						</loop>
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0x3</value>	
+					<name>TX_AGC_ID</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>VoiceSamplingRate</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>RATE_16K</text></comments>
+								<comments><value>0x0</value><text>RATE_8K</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>BoostMode</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>BoostGain</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>BoostRelease</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>BNoiseGain</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>level1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MaxAGCGain</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>		
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MinEnvelope</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MaxRMS</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>PeakIncrease</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>PeakDecrease</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>IncrementRms</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>AgcReserved0</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>AgcReserved1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>AgcReserved2</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>AgcReserved3</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>		
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0x4</value>
+					<name>TX_VOLUME_AND_MUTE_ID</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>Tx NB Volume</name>
+								<format>HEX_0x%x</format>       	     	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MuteOnOff</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>Off</text></comments>
+								<comments><value>0x1</value><text>On</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>Tx WB Volume</name>
+								<format>HEX_0x%x</format>       	     	 	     	     
+							</unit>
+						</word>
+
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0x5</value>
+					<name>RX_NS_ID</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>VoiceSamplingRate</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>RATE_16K</text></comments>
+								<comments><value>0x0</value><text>RATE_8K</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MaxSupression</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MaxNoiseLevel</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>reserved0</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>NoiseLevelInc</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>NoiseLevelDec</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>reserved1</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>updateNoiseMatrix</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word> 
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>Refvadhang(tx only)</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>ResMode</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>nonLinearModel</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>betaFest</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>betaDT</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>gammaDT</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>vmThresDT</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>burst</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>hang</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>cnGain</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>cnFloor</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MinCnFloorGain</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>maxAdaptStep</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>slowAdatpWeight</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>initPeriod</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>AuditoryMaskFactory</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>pathChangeThres</name>
+								<format>HEX_0x%x</format>	 	     	     
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0x6</value>
+					<name>RX_EQ_ID</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>VoiceSamplingRate</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>RATE_16K</text></comments>
+								<comments><value>0x0</value><text>RATE_8K</text></comments>
+							</unit>
+						</word>
+						<loop>
+							<looptimes>0x1F</looptimes>														
+							<word>
+								<unit>
+									<mask>0xFFFF</mask>
+									<name>Filter</name>
+									<loopstr>%d</loopstr>
+									<format>HEX_0x%x</format>	 	     	     
+								</unit>									
+							</word>								
+						</loop>
+
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0x7</value>
+					<name>RX_AVC_ID</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>VoiceSamplingRate</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>RATE_16K</text></comments>
+								<comments><value>0x0</value><text>RATE_8K</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>BoostMode</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>BoostGain</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>BoostRelease</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>BNoiseGain</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>level1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MaxAGCGain</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>		
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MinEnvelope</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MaxRMS</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>PeakIncrease</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>PeakDecrease</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>IncrementRms</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>AgcReserved0</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>AgcReserved1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>AgcReserved2</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>	
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>AgcReserved3</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>		
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0x8</value>
+					<name>RX_VOLUME_AND_MUTE_ID</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>Rx NB Volume Index</name>
+								<format>HEX_0x%x</format>       	     	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MuteOnOff</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x0</value><text>Off</text></comments>
+								<comments><value>0x1</value><text>On</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>SideTone Vol Gain</name>
+								<format>HEX_0x%x</format>       	     	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>Rx WB Volume Index</name>
+								<format>HEX_0x%x</format>       	     	 	     	     
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0x9</value>
+					<name>RX_TX_ENERGY</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>Tx energy</name>
+								<format>HEX_0x%x</format>       	     	 	     	     
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>Rx energy</name>
+								<format>HEX_0x%x</format>       	     	 	     	     
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0xA</value>
+					<name>VOICE_CONTROL_AND_VOCODER_CONTROL_ID</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+						<word>
+
+							<unit>
+								<mask>0x4</mask>
+								<name>TX volume enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+							<unit>
+								<mask>0x8</mask>
+								<name>RX volume enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+							<unit>
+								<mask>0x10</mask>
+								<name>SideTone enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+							<unit>
+								<mask>0x20</mask>
+								<name>Dither Noise Generator enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+
+							<unit>
+								<mask>0x40</mask>
+								<name>CTM enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+
+							<unit>
+								<mask>0x400</mask>
+								<name>TX HPF enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+
+							<unit>
+								<mask>0x800</mask>
+								<name>RX HPF enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+
+							<unit>
+								<mask>0x1000</mask>
+								<name>TX LPF enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+
+							<unit>
+								<mask>0x2000</mask>
+								<name>RX LPF enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+
+							<unit>
+								<mask>0x4000</mask>
+								<name>TX MISC enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+
+							<unit>
+								<mask>0x8000</mask>
+								<name>RX MISC enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0x1</mask>
+								<name>RX DIAMOND enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+
+							<unit>
+								<mask>0x8</mask>
+								<name>EC enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+							<unit>
+								<mask>0x10</mask>
+								<name>RES enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+
+							<unit>
+								<mask>0x40</mask>
+								<name>TX NS enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+							<unit>
+								<mask>0x80</mask>
+								<name>RX NS enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+
+							<unit>
+								<mask>0x400</mask>
+								<name>TX EQU enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+							<unit>
+								<mask>0x800</mask>
+								<name>RX EQU enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+
+							<unit>
+								<mask>0x4000</mask>
+								<name>TX AGC enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+							<unit>
+								<mask>0x8000</mask>
+								<name>RX AVC enable</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Enable</text></comments>
+								<comments><value>0x0</value><text>Disable</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>dtxFlag</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>DTX ON</text></comments>
+								<comments><value>0x0</value><text>No DTX</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<value>0x0</value>	
+								<mask>0xFFFF</mask>
+								<name>Vocoder Type IF1_AMR</name>
+								<format>HEX_0x%x</format>
+								<data>
+									<word>
+										<unit>
+											<mask>0xFFFF</mask>
+											<name>encoderMode </name>
+											<format>HEX_0x%x</format>
+											<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+											<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+											<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+											<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+											<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+											<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+											<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+											<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+										</unit>
+									</word>
+								</data>
+							</unit>
+							<unit>
+								<value>0x1</value>	
+								<mask>0xFFFF</mask>
+								<name>Vocoder Type RFC_AMR</name>
+								<format>HEX_0x%x</format>
+								<data>
+									<word>
+										<unit>
+											<mask>0xFFFF</mask>
+											<name>encoderMode </name>
+											<format>HEX_0x%x</format>
+											<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+											<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+											<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+											<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+											<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+											<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+											<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+											<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+										</unit>
+									</word>
+								</data>
+							</unit>
+							<unit>
+								<value>0x2</value>	
+								<mask>0xFFFF</mask>
+								<name>Vocoder Type GSM_EFR</name>
+								<format>HEX_0x%x</format>
+								<data>
+									<word>
+										<unit>
+											<mask>0xFFFF</mask>
+											<name>encoderMode </name>
+											<format>HEX_0x%x</format>
+											<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+											<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+											<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+											<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+											<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+											<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+											<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+											<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+										</unit>
+									</word>
+								</data>
+							</unit>
+							<unit>
+								<value>0x3</value>	
+								<mask>0xFFFF</mask>
+								<name>Vocoder Type GSM_FR</name>
+								<format>HEX_0x%x</format>
+								<data>
+									<word>
+										<unit>
+											<mask>0xFFFF</mask>
+											<name>encoderMode </name>
+											<format>HEX_0x%x</format>
+											<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+											<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+											<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+											<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+											<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+											<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+											<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+											<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+										</unit>
+									</word>
+								</data>
+							</unit>
+							<unit>
+								<value>0x4</value>	
+								<mask>0xFFFF</mask>
+								<name>Vocoder Type GSM_HR</name>
+								<format>HEX_0x%x</format>
+								<data>
+									<word>
+										<unit>
+											<mask>0xFFFF</mask>
+											<name>encoderMode </name>
+											<format>HEX_0x%x</format>
+											<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+											<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+											<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+											<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+											<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+											<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+											<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+											<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+										</unit>
+									</word>
+								</data>
+							</unit>
+							<unit>
+								<value>0x5</value>	
+								<mask>0xFFFF</mask>
+								<name>Vocoder Type IF2_AMR</name>
+								<format>HEX_0x%x</format>
+								<data>
+									<word>
+										<unit>
+											<mask>0xFFFF</mask>
+											<name>encoderMode </name>
+											<format>HEX_0x%x</format>
+											<comments><value>0x0</value><text>4.75 Kbits/s</text></comments>
+											<comments><value>0x1</value><text>5.15 Kbits/s</text></comments>
+											<comments><value>0x2</value><text>5.9 Kbits/s</text></comments>
+											<comments><value>0x3</value><text>6.7 Kbits/s</text></comments>
+											<comments><value>0x4</value><text>7.4 Kbits/s</text></comments>
+											<comments><value>0x5</value><text>7.95 Kbits/s</text></comments>
+											<comments><value>0x6</value><text>10.2 Kbits/s</text></comments>
+											<comments><value>0x7</value><text>12.2 Kbits/s</text></comments>
+										</unit>
+									</word>
+								</data>
+							</unit>
+							<unit>
+								<value>0x6</value>	
+								<mask>0xFFFF</mask>
+								<name>Vocoder Type IF1_WB_AMR</name>
+								<format>HEX_0x%x</format>
+								<data>
+									<word>
+										<unit>
+											<mask>0xFFFF</mask>
+											<name>encoderMode </name>
+											<format>HEX_0x%x</format>
+											<comments><value>0x0</value><text>6.6 Kbits/s</text></comments>
+											<comments><value>0x1</value><text>8.85 Kbits/s</text></comments>
+											<comments><value>0x2</value><text>12.65 Kbits/s</text></comments>
+											<comments><value>0x3</value><text>14.25 Kbits/s</text></comments>
+											<comments><value>0x4</value><text>15.85 Kbits/s</text></comments>
+											<comments><value>0x5</value><text>18.25 Kbits/s</text></comments>
+											<comments><value>0x6</value><text>19.85 Kbits/s</text></comments>
+											<comments><value>0x7</value><text>23.05 Kbits/s</text></comments>
+										</unit>
+									</word>
+								</data>
+							</unit>
+							<unit>
+								<value>0x7</value>	
+								<mask>0xFFFF</mask>
+								<name>Vocoder Type IF2_WB_AMR</name>
+								<format>HEX_0x%x</format>
+								<data>
+									<word>
+										<unit>
+											<mask>0xFFFF</mask>
+											<name>encoderMode </name>
+											<format>HEX_0x%x</format>
+											<comments><value>0x0</value><text>6.6 Kbits/s</text></comments>
+											<comments><value>0x1</value><text>8.85 Kbits/s</text></comments>
+											<comments><value>0x2</value><text>12.65 Kbits/s</text></comments>
+											<comments><value>0x3</value><text>14.25 Kbits/s</text></comments>
+											<comments><value>0x4</value><text>15.85 Kbits/s</text></comments>
+											<comments><value>0x5</value><text>18.25 Kbits/s</text></comments>
+											<comments><value>0x6</value><text>19.85 Kbits/s</text></comments>
+											<comments><value>0x7</value><text>23.05 Kbits/s</text></comments>
+										</unit>
+									</word>
+								</data>
+							</unit>
+							<unit>
+								<value>0x8</value>	
+								<mask>0xFFFF</mask>
+								<name>Vocoder Type RFC_WB_AMR</name>
+								<format>HEX_0x%x</format>
+								<data>
+									<word>
+										<unit>
+											<mask>0xFFFF</mask>
+											<name>encoderMode </name>
+											<format>HEX_0x%x</format>
+											<comments><value>0x0</value><text>6.6 Kbits/s</text></comments>
+											<comments><value>0x1</value><text>8.85 Kbits/s</text></comments>
+											<comments><value>0x2</value><text>12.65 Kbits/s</text></comments>
+											<comments><value>0x3</value><text>14.25 Kbits/s</text></comments>
+											<comments><value>0x4</value><text>15.85 Kbits/s</text></comments>
+											<comments><value>0x5</value><text>18.25 Kbits/s</text></comments>
+											<comments><value>0x6</value><text>19.85 Kbits/s</text></comments>
+											<comments><value>0x7</value><text>23.05 Kbits/s</text></comments>
+										</unit>
+									</word>
+								</data>
+							</unit>
+						</word>
+						<word>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>PcmRateInUse</name>
+								<format>HEX_0x%x</format>
+
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0xB</value>
+					<name>MODEM_INFO_ID</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0xC</value>
+					<name>TX_CTM_ID</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>VoiceModuleFrequentMsg</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>Path</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>RX</text></comments>
+								<comments><value>0x0</value><text>TX</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>param0</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>param1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0xD</value>
+					<name>RX_CTM_ID</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>VoiceModuleFrequentMsg</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>Path</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>RX</text></comments>
+								<comments><value>0x0</value><text>TX</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>param0</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>param1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0xE</value>
+					<name>DUAL_MIC</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>VoiceSamplingRate</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>RATE_16K</text></comments>
+								<comments><value>0x0</value><text>RATE_8K</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>PathDirection</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>RX</text></comments>
+								<comments><value>0x0</value><text>TX</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>DMConstant</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>DmNoiseVmOffset</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>DmVoiseVmThresh</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>DmVmSmoothRel</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>ResUnStaNoiseGain</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>InvDmVmThres</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>DmPeakVm</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>NoiseFactor</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>MicR_Gain</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>bottom_noise</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+					</data>
+				</unit>
+				<unit>
+					<mask>0xFFFF</mask>
+					<value>0xF</value>
+					<name>VOICE_FILTERS</name>
+					<format>HEX_0x%x</format>
+					<data>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>OneShotMode</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>Frequent Message</text></comments>
+								<comments><value>0x0</value><text>OneShot Message</text></comments>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>VoiceSamplingRate</name>
+								<format>HEX_0x%x</format>
+								<comments><value>0x1</value><text>RATE_16K</text></comments>
+								<comments><value>0x0</value><text>RATE_8K</text></comments>
+							</unit>
+						</word>
+
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>TxHPFA1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>TxHPFA2</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>TxHPFA3</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>TxHPFB1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>TxHPFB2</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>TxHPFB3</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+
+
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>TxLPFA1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>TxLPFA2</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>TxLPFA3</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>TxLPFB1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>TxLPFB2</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>TxLPFB3</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+
+
+
+
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>RxHPFA1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>RxHPFA2</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>RxHPFA3</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>RxHPFB1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>RxHPFB2</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>RxHPFB3</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+
+
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>RxLPFA1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>RxLPFA2</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>RxLPFA3</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>RxLPFB1</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>RxLPFB2</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+						<word>
+							<unit>
+								<mask>0xFFFF</mask>
+								<name>RxLPFB3</name>
+								<format>HEX_0x%x</format>
+							</unit>
+						</word>
+
+					</data>
+				</unit>
+			</word>
+		</data>		
+	</opcode>
+	<opcode>
+		<value>0x4A</value>
+		<name>VOICE_PCM_VIA_IPC</name>
+		<comments>The voice command handler will send this message containing rx before or after, tx before or after and one frame of reference mic signal via IPC. </comments>
+		<data>
+		</data>		
+	</opcode>
+	<opcode>
+		<value>0x4B</value>
+		<name>VOICE_CTM_MEGO_REPORT</name>
+		<comments> Reserved. </comments>
+		<data>
+		</data>		
+	</opcode>
+	<opcode>
+		<value>0x53</value>
+		<name>DIAMOND_PLUGIN_RX_INPUT_CMD</name>
+		<comments>Reserved. </comments>
+		<data>
+		</data>		
+	</opcode>
+</root>

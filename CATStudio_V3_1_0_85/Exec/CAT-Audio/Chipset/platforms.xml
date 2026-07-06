@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Platform identifier="PXA988DKB">
+<Chip identifier="88PM812" version="D0" bus="I2C2" desc="PMIC with audio codec" regwidth="8">
+	<Component identifier="ELBA" address="0x38"/>
+	<Component identifier="USTICA" address="0x30"/>
+	<Component identifier="88PM812_MISC" address="0x30"/>
+	<Component identifier="Power_Registers" address="0x31"/>
+</Chip>
+</Platform>
+<Platform identifier="PXA1920DKB">
+<Chip identifier="88PM820" version="D0" bus="I2C2" desc="PMIC with audio codec" regwidth="8">
+	<Component identifier="ELBA" address="0x38"/>
+	<Component identifier="LINOSA" address="0x30"/>
+	<Component identifier="88PM820_MISC" address="0x30"/>
+	<Component identifier="Power_Registers" address="0x31"/>
+</Chip>
+<Chip identifier="1920CP" version="A0" bus="BUSCP" desc="1920 CP " regwidth="32">
+	<Component identifier="CPUSubSystem" address="0xd4282c00"/>
+	<Component identifier="IO_Domains_Power_Control" address="0xD401E800"/>
+	<Component identifier="Multi_Function_Pin_Registers" address="0xD401E000"/>
+	<Component identifier="APB_Auxiliary" address="0xD4070000"/>
+	<Component identifier="APB_Clock_Unit" address="0xD4015000"/>
+	<Component identifier="APB_CP_Clock_Control_Registers" address="0xD403B000"/>
+	<Component identifier="APB_ECipher_Registers" address="0xD4034000"/>
+	<Component identifier="APB_SPARE_Registers" address="0xD4090000"/>
+	<Component identifier="ASPEC_ECipher_Registers" address="0xFFA00000"/>
+	<Component identifier="ASPEC_Equalizer_Registers" address="0xFFA02000"/>
+	<Component identifier="Communication_Secondary_Interrupt_Controllers" address="0xFFA03800"/>
+	<Component identifier="ASPEC_Viterbi_Registers" address="0xFFA01000"/>
+	<Component identifier="AXI_Fabric" address="0xD4200000"/>
+	<Component identifier="CMOS_Camera_Interface_Controller_Registers" address="0xD420A000"/>
+	<Component identifier="DigRF_Rx_On_ASPEC_Bus" address="0xFFAB0000"/>
+	<Component identifier="DigRF_Rx_On_GPB" address="0xF02A0000"/>
+	<Component identifier="DigRF_Tx_on_GPB" address="0xF0280000"/>	
+	<Component identifier="DigRF_Tx_on_ASPEC_Bus" address="0xFFAA0000"/>	
+	<Component identifier="DMA_Controller" address="0xD4000000"/>
+	<Component identifier="DSI" address="0xD420B800"/> 
+	<Component identifier="DRO" address="0xD4013200"/> 
+	<Component identifier="DSSP_Registers0" address="0xF0205000"/> 
+	<Component identifier="DSSP_Registers1" address="0xF0206000"/> 
+	<Component identifier="DSSP_Registers2" address="0xF0207000"/> 
+	<Component identifier="DSSP_Registers3" address="0xF0208000"/>
+	<Component identifier="Data_Transfer_And_Cipher" address="0xD4284000"/> 
+	<Component identifier="Generic_Counter" address="0xD4101000"/>
+	<Component identifier="Generic_Encryption_and_Fuse_Unit_Registers" address="0xD420_1000"/> 
+	<Component identifier="General_Purpose_I/O_Unit" address="0xD4019000"/> 
+	<Component identifier="General_Purpose_Input/Output_(GPIO)_Edge_Unit" address="0xD4019800c"/> 
+	<Component identifier="DigRF_GPB_Auxiliary" address="0xD4019800"/> 
+	<Component identifier="GPB_Modem_Registers" address="0xF0204000"/> 
+	<Component identifier="E-Cipher_GPB_Registers" address="0xF0202000"/> 
+	<Component identifier="GPB_Equalizer_Registers" address="0xF0200000"/> 
+	<Component identifier="Viterbi_GPB_Registers" address="0xF020100"/> 
+	<Component identifier="GSSP" address="0xF020A000"/> 
+	<Component identifier="Interrupt_Controller" address="0xD4282000c"/> 
+	<Component identifier="ISPDMA" address="0xD4282000"/> 
+	<Component identifier="Inter-Processor_Communication" address="0xD401_D800"/> 
+	<Component identifier="IRE" address="0xD420_C000"/> 
+	<Component identifier="JTAG_Software_Emulation_Module" address="0xD4013100"/> 
+	<Component identifier="Keypad_Controller" address="0xD4012000"/>
+	<Component identifier="Display_Controller" address="0xD420B000"/> 
+	<Component identifier="MSA_Subsystem" address="0xFFD06000"/> 
+	<Component identifier="MSA_Core_L1_Memory" address="0xFFE00000"/> 
+	<Component identifier="MSA_DMA_Controller1" address="0xFFD01000"/>
+	<Component identifier="MSA_DMA_Controller2" address="0xFFD02000"/>  
+	<Component identifier="EIC" address="0xFFD05000"/> 
+	<Component identifier="High_Speed_Logger_Registers" address="0xFFC0CD00"/> 
+	<Component identifier="Data_Flash_Controller" address="0xD4283000"/> 
+	<Component identifier="One-Wire_Bus_Master_Interface" address="0xD4011800"/> 
+	<Component identifier="PMU" address="0xD4282800"/> 
+	<Component identifier="CCU_and_CPMU_Programming_Model" address="0xF00E0000"/> 
+	<Component identifier="Dynamic_Voltage_Change_PMU" address="0xD4050000"/> 
+	<Component identifier="Main_PMU" address="0xD4050000"/>
+	<Component identifier="MSA_PMU" address="0xFFA80000"/> 
+	<Component identifier="PWM_Registers0" address="0xD401A000"/> 
+	<Component identifier="PWM_Registers1" address="0xD401A400"/> 
+	<Component identifier="PWM_Registers2" address="0xD401A800"/> 
+	<Component identifier="PWM_Registers3" address="0xD401AC00"/>
+	<Component identifier="Resource_IPC_(RIPC0)" address="0xD403D000"/> 
+	<Component identifier="Resource_IPC_(RIPC1)" address="0xD403D100"/>  
+	<Component identifier="Resource_IPC_(RIPC2)" address="0xD403D200"/>  
+	<Component identifier="Resource_IPC_(RIPC3)" address="0xD403D300"/> 
+	<Component identifier="RTC" address="0xD4010000"/> 
+	<Component identifier="SD_Host_Controller_Registers1" address="0xD4280000"/> 
+	<Component identifier="SD_Host_Controller_Registers2" address="0xD4280800"/> 
+	<Component identifier="SD_Host_Controller_Registers3" address="0xD4281000"/>
+	<Component identifier="AXI_Peripherals" address="0xC0400000"/> 
+	<Component identifier="Debug_Strap_and_Fuse_Override_Registers" address="0xD401EC00"/> 
+	<Component identifier="SLEEP_TIMER_Programming_Model" address="0xFFA60000"/> 
+	<Component identifier="Slow_Clock_GPB_Registers" address="0xD4038000"/> 
+	<Component identifier="Static_Memory_Controller_Registers" address="0xD4283800"/> 
+	<Component identifier="SQU_and_SQU_DMA_Controller" address="0xD42A0000"/> 
+	<Component identifier="SSP0_Registers" address="0xD401B000"/> 
+	<Component identifier="SSP1_Registers" address="0xD42A0C00"/>
+	<Component identifier="SSP2_Registers" address="0xD401C000"/>
+	<Component identifier="APB_TCU_Registers" address="0xD4030000"/> 
+	<Component identifier="Application_Subsystem_Timers0" address="0xD4014000"/> 
+	<Component identifier="Application_Subsystem_Timers1" address="0xD4016000"/> 
+	<Component identifier="Application_Subsystem_Timers2" address="0xD401F000"/> 
+	<Component identifier="TimersCP" address="0xD403A000"/> 
+	<Component identifier="Timing_Control_Registers" address="0xD401E000"/>
+	<Component identifier="High-Speed_TWSI_Bus_Interface_Unit" address="0xD4011000"/> 
+	<Component identifier="UART_Registers" address="0xD403_6000"/> 
+	<Component identifier="USB_Device_Registers" address="0xD4208000"/> 
+	<Component identifier="USB_OTG_Registers" address="0xD4208000"/> 
+	<Component identifier="UTMI_Registers_misc" address="0xD4207100"/> 
+	<Component identifier="USB_SPH_Miscellaneous_Registers" address="0xC0000000"/> 
+	<Component identifier="USIM1_Registers" address="0xD4032000"/> 
+	<Component identifier="USIM2_Registers" address="0xD4033000"/> 
+	<Component identifier="Communication_Secondary_Interrupt_Controllers_AIRQ" address="0xD4031000"/> 
+	<Component identifier="Communication_Secondary_Interrupt_Controllers_MIRQ" address="0xFFC0C000"/> 
+	<Component identifier="Memory_Controller" address="0xB0000000"/> 
+	<Component identifier="UTMI_Registers_phy" address="0xD4207000"/> 
+</Chip>
+</Platform>

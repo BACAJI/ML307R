@@ -1,0 +1,2 @@
+D:\CPDump\CPDump\Debug\miniXDB4CPDump\xdb\cp_dump.exe -i E:\testdata\CP_DUMP\test4cpdump\ -a E:\testdata\CP_DUMP\test4cpdump\NZ2_LTG_SL.axf -o E:\testdata\CP_DUMP\test4cpdump\NZ2_LTG_SL.log -task -global 1 
+ pause

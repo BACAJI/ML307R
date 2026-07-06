@@ -1,0 +1,10 @@
+# BiquidEnControl (bitmask), reserved0, MISC
+3 0 0
+# filtertype, f0, dBGain, Q  (5 lines)
+2 800 12 1.5
+2 4000 6 1
+0 0 0 0
+0 0 0 0
+0 0 0 0
+# N (sample count)
+1000

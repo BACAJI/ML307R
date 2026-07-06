@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+	
+  <head>
+    <title>Baidu Map</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map_canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+			.menu_casing{background: url(icon/zc.gif) repeat-y scroll 0 0 #FFFFFF;border: 1px solid #CCCCCC;margin: 0;overflow: hidden;padding:2px;width:100px;}
+			.menu_casing .menu_item{border: none;cursor: pointer;font-size: 12px;height: 22px;line-height: 22px;margin: 0;overflow: hidden;padding: 0;position: relative;}
+			.menu_casing .menu_item .menu_text{left: 2px;position: absolute;top: 0;}
+			.menu_casing .menu_item.item_active{background: #F0F0F0;border: 1px solid #7EABCD;height: 20px;line-height: 20px;border-radius: 3px 3px 3px 3px;} 
+			.menu_casing .menu_separator{background: url(icon/zc.gif) repeat-x; height:2px;font-size:2px; line-height: 2px;margin:3px 0 3px 24px}
+    </style>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=qwhfwDuybGKtVDvwPjrIAiIY"></script>
+    <script type="text/javascript" src="http://developer.baidu.com/map/jsdemo/demo/convertor.js"></script>
+    <script type="text/javascript" src="menu_v3.js" charset="utf-8"></script>
+  </head>
+  
+  <body>
+  	
+    <div id="map_canvas"></div>
+  </body>
+  
+</html>
+
+
+ <script>
+var map;
+var markers = new Array();
+var mfcmarkers = new Array();
+var identity = 0;
+var mfcidentity = 0;
+var flightPath = new Array();
+var PathIndex = 0;
+var GPSMsgIdx = 0;
+       
+         Array.prototype.remove = function(item) 
+         {
+					 for (var i = 0; i < this.length; i++) {
+					 if (this[i] == item) {
+					 this.splice(i, 1);
+					                 }
+					             }
+				         }
+ 
+         Array.prototype.getItem = function(id) 
+         {
+					 for (var i = 0; i < this.length; i++) {
+					 if (this[i].identity == id) {
+					 return this[i];
+					                 }
+					             }
+				         }
+ </script>
+ 
+ <script type="text/javascript">   
+  	
+   String.prototype.InStr = function(str)
+	{
+      if(str==null)
+      {
+              str = "";
+      }
+      
+      return this.indexOf(str);
+	}	
+	
+   </script>
+   
+     <script type="text/javascript">   
+	String.prototype.Right = function(len)
+	{
+		if(isNaN(len)||len==null)
+		{
+		        len = this.length;
+		}
+		else
+		{
+		        if(parseInt(len)<0||parseInt(len)>this.length)
+		        {
+		                len = this.length;
+		        }
+		}	
+		return this.substring(this.length-len,this.length);
+	}
+   </script>
+   
+        <script type="text/javascript">   
+	String.prototype.Left = function(len)
+	{
+		if(isNaN(len)||len==null)
+		{
+		        len = this.length;
+		}
+		else
+		{
+		        if(parseInt(len)<0||parseInt(len)>this.length)
+		        {
+		                len = this.length;
+		        }
+		}
+		
+		return this.substr(0,len);
+	}
+	
+   </script>
+   
+
+  
+<script type="text/javascript">  
+
+			var map = new BMap.Map("map_canvas");//在container容器中创建一个地图,参数container为div的id属性;
+			//var coor = new BMap.Point(116.397128, 39.916527);//定位
+			var coor = new BMap.Point(117.28560,31.86350);//定位
+
+			var marker = new BMap.Marker(coor ), px = map.pointToPixel(coor );
+			map.addOverlay(marker);
+
+
+			map.centerAndZoom(coor,14);				//将coor移到浏览器中心，并且地图大小调整为14;
+			map.addControl(new BMap.NavigationControl());
+			map.addControl(new BMap.MapTypeControl());
+			map.addControl(new BMap.ScaleControl());
+			map.addControl(new BMap.OverviewMapControl());
+			
+var contextMenu = new BMap.ContextMenu();
+var txtMenuItem = [
+  {
+   text:'Add Marker',
+   callback:function(p){
+	 		if (markers.length >= 10) {
+	 								alert(p.lng + ", " + p.lat);
+	                 } else {
+									    var marker = new BMap.Marker(p), px = map.pointToPixel(p);
+									    map.addOverlay(marker);
+									    marker.enableDragging(true);
+	                     marker.identity = identity++;
+   												}
+   										 }  
+  },
+  {
+   text:'Clear all Markers',
+   callback:function(){
+   	if (markers) {
+ 										for (var i = 0; i < markers.length; i++) {
+                         markers[i].setMap(null);
+                     }
+                     markers.length = 0;
+                 }
+                 
+ 		if (mfcmarkers){
+ 										for (var i = 0; i < mfcmarkers.length; i++) {
+                         mfcmarkers[i].setMap(null);
+                     }
+                     mfcmarkers.length = 0;
+                 }                 
+             }            
+  },
+  {
+   text:'Zoom In',
+   callback:function(){map.zoomIn()}
+  },
+  {
+   text:'Zoom Out',
+   callback:function(){map.zoomOut()}
+  }
+ ];
+
+
+ for(var i=0; i < txtMenuItem.length; i++){
+  contextMenu.addItem(new BMap.MenuItem(txtMenuItem[i].text,txtMenuItem[i].callback,100));
+  if(i==1 || i==3) {
+   contextMenu.addSeparator();
+  }
+ }
+ map.addContextMenu(contextMenu);
+</script> 
+
+
+<script type="text/javascript"> 
+function test_int()
+{
+    window.external.CB_CustomFunctionAdd(markers.length, 5);
+}
+</script>
+
+<script type="text/javascript">
+function jsfunctiontest()<!--此函数会被VC中代码调用-->
+{
+	alert("这是JS中的alert函数");
+	//map.panTo(new GLatLng(39.927,116.407));//跳转到指定坐标
+}
+</script>
+
+<script type="text/javascript">
+	function AddMarker(Point,nMsgIndex)
+	{
+	 var i=0;
+	 i = Point.InStr(","); 
+	var lat = Point.Left(i);
+	var lng = Point.Right(Point.length-(i+1));
+
+
+//BMap.Convertor.translate(gpsPoint,0,translateCallback);
+
+var destpoint = new BMap.Point(lng, lat);
+
+BMap.Convertor.translate(destpoint,0,translateCallback);     //真实经纬度转成百度坐标
+
+
+	GPSMsgIdx++;
+
+	if (mfcmarkers.length >= 1000000) {
+	                 alert("最多能添加1000000个标记！");
+	             } else {
+	             	if((GPSMsgIdx%100)==0)
+	             	{
+	             			//var i = parseInt(marker.title);
+										//window.external.CB_CustomFunctionAdd(markers.length, i);
+	             		//var marker = new google.maps.Marker({ position:new google.maps.LatLng(lat, lng), icon:img, shape: shape, map: map,title: nMsgIndex});   
+	             		
+								}
+	           		
+	           					//var point = new BMap.Point(lat, lng);
+	           					
+	           					// alert(lat);
+	           					 //alert(lng);
+	           					var point = new BMap.Point(lat, lng)
+	           					var marker = new BMap.Marker(point), px = map.pointToPixel(point);
+									    map.addOverlay(marker);
+	                     marker.identity = identity++;
+	
+									
+									
+	           			marker.identity = mfcidentity++;
+	                 mfcmarkers.push(marker);
+	 
+}
+}
+</script>
+
+ <script type="text/javascript">
+   function PolyLine(srcPoint,destPoint, strWidth, strColor)
+   {
+   		//var width;
+      var i=0;
+				i = srcPoint.InStr(","); 
+			var srclat = 	srcPoint.Left(i);
+			var srclng = 	srcPoint.Right(srcPoint.length-(i+1));
+			
+					i = destPoint.InStr(","); 
+			var destlat = 	destPoint.Left(i);
+			var destlng = 	destPoint.Right(destPoint.length-(i+1));
+
+
+var srcpoint = new BMap.Point(srclng, srclat);
+var destpoint = new BMap.Point(destlng, destlat);
+
+
+var gcj_srcpoint = wgs2gcj(srcpoint);
+var gcj_destpoint = wgs2gcj(destpoint);
+
+
+var bd_srcpoint = gcj2bd(gcj_srcpoint);
+var bd_destpoint = gcj2bd(gcj_destpoint);
+
+ //var polyline = new BMap.Polyline([       new BMap.Point(srcpoint.lng, srcpoint.lat),       new BMap.Point(destpoint.lng, destpoint.lat)     ],      {strokeColor: strColor, strokeWeight:6, strokeOpacity:0.5}   ); 
+	//map.addOverlay(polyline); 
+	
+ var polyline = new BMap.Polyline([       new BMap.Point(bd_srcpoint.lng, bd_srcpoint.lat),       new BMap.Point(bd_destpoint.lng, bd_destpoint.lat)     ],      {strokeColor: strColor, strokeWeight:6, strokeOpacity:0.5}   ); 
+	map.addOverlay(polyline); 
+
+//BMap.Convertor.translate(srcpoint,0,translateCallback);     //真实经纬度转成百度坐标
+
+//BMap.Convertor.translate(destpoint,0,translateCallback);     //真实经纬度转成百度坐标
+
+  //var flightPlanCoordinates = [
+   // new google.maps.LatLng(srclat,srclng),
+    //new google.maps.LatLng(destlat,destlng)
+  //];
+  
+    //flightPath[PathIndex] = new google.maps.Polyline({
+   // path: flightPlanCoordinates,
+   // geodesic: true,
+   // strokeColor: strColor,
+   // strokeOpacity: 1.0,
+   // strokeWeight: strWidth
+  //});
+ // flightPath[PathIndex].setMap(map);
+ // PathIndex++;
+ var color = "#ff0000";
+// var polyline = new BMap.Polyline([       new BMap.Point(srclng,srclat),       new BMap.Point(destlng,destlat)     ],      {strokeColor: strColor, strokeWeight:6, strokeOpacity:0.5}   ); 
+//	map.addOverlay(polyline);  
+
+//var marker1 = new BMap.Marker(destpoint);    
+	//map.addOverlay(marker1); 
+
+
+
+var maxX = map.getBounds().getNorthEast().lng;   
+var maxY = map.getBounds().getNorthEast().lat;   
+var minX = map.getBounds().getSouthWest().lng;   
+var minY = map.getBounds().getSouthWest().lat;   
+if((maxY < destlat)||(minY > destlat)||(maxX< destlng)||(minX > destlng))
+{
+	map.panTo(new BMap.Point(destlng,destlat));
+}
+    
+   }
+</script>
+
+
+
+<script type="text/javascript">
+function translateCallback(point1){
+    var marker1 = new BMap.Marker(point1);
+    map.addOverlay(marker1);
+    var label = new BMap.Label("转换后的百度坐标",{offset:new BMap.Size(20,-10)});
+    marker1.setLabel(label); //添加百度label
+    map.setCenter(point1);
+}
+</script>
+
+
+<script type="text/javascript">
+function Clear(){
+
+map.clearOverlays();
+
+//alert("这是JS中的alert函数");
+identity = 0;
+mfcidentity = 0;
+
+PathIndex = 0;
+GPSMsgIdx = 0;
+    
+}
+</script>
+
+
+
+<script type="text/javascript">
+var M_PI = 3.14159265358979324;  
+var a = 6378245.0;  
+var ee = 0.00669342162296594323;  
+var x_pi = M_PI * 3000.0 / 180.0;  
+function out_of_china(lat,  lon) {  
+    if (lon < 72.004 || lon > 137.8347)  
+        return true;  
+    if (lat < 0.8293 || lat > 55.8271)  
+        return true;  
+    return false;  
+}  
+  
+function wgs2gcj_lat(x, y) {  
+    var ret1 = -100.0 + 2.0 * x + 3.0 * y + 0.2 * y * y + 0.1 * x * y  
+            + 0.2 * Math.sqrt(Math.abs(x));  
+      
+    ret1 += (20.0 * Math.sin(6.0 * x * M_PI) + 20.0 * Math.sin(2.0 * x  
+            * M_PI)) * 2.0 / 3.0;  
+    ret1 += (20.0 * Math.sin(y * M_PI) + 40.0 * Math.sin(y / 3.0 * M_PI)) * 2.0 / 3.0;  
+    ret1 += (160.0 * Math.sin(y / 12.0 * M_PI) + 320 * Math.sin(y * M_PI  
+            / 30.0)) * 2.0 / 3.0;  
+    return ret1;  
+}  
+  
+function wgs2gcj_lng(x, y) {  
+    var ret2 = 300.0 + x + 2.0 * y + 0.1 * x * x + 0.1 * x * y + 0.1  
+            * Math.sqrt(Math.abs(x));  
+    ret2 += (20.0 * Math.sin(6.0 * x * M_PI) + 20.0 * Math.sin(2.0 * x  
+            * M_PI)) * 2.0 / 3.0;  
+    ret2 += (20.0 * Math.sin(x * M_PI) + 40.0 * Math.sin(x / 3.0 * M_PI)) * 2.0 / 3.0;  
+    ret2 += (150.0 * Math.sin(x / 12.0 * M_PI) + 300.0 * Math.sin(x / 30.0  
+            * M_PI)) * 2.0 / 3.0;  
+    return ret2;  
+}  
+  
+function wgs2gcj(poi) {  
+    if (out_of_china(poi.lat, poi.lng)) {  
+        return poi;  
+    }  
+    var poi2 = {};  
+    var dLat = wgs2gcj_lat(poi.lng - 105.0, poi.lat - 35.0);  
+    var dLon = wgs2gcj_lng(poi.lng - 105.0, poi.lat - 35.0);  
+    var radLat = poi.lat / 180.0 * M_PI;  
+    var magic = Math.sin(radLat);  
+    magic = 1 - ee * magic * magic;  
+    var sqrtMagic = Math.sqrt(magic);  
+    dLat = (dLat * 180.0) / ((a * (1 - ee)) / (magic * sqrtMagic) * M_PI);  
+    dLon = (dLon * 180.0) / (a / sqrtMagic * Math.cos(radLat) * M_PI);  
+    poi2.lat = poi.lat + dLat;  
+    poi2.lng = poi.lng + dLon;  
+    return poi2;  
+}  
+
+
+// 火星坐标系 (GCJ-02) 与百度坐标系 (BD-09) 的转换算法  
+function gcj2bd(poi) {  
+    var poi2 = {};  
+    var x = poi.lng, y = poi.lat;  
+    var z = Math.sqrt(x * x + y * y) + 0.00002 * Math.sin(y * x_pi);  
+    var theta = Math.atan2(y, x) + 0.000003 * Math.cos(x * x_pi);  
+    poi2.lng = z * Math.cos(theta) + 0.0065;  
+    poi2.lat = z * Math.sin(theta) + 0.006;  
+    return poi2;  
+}  
+  
+function bd2gcj(poi) {  
+    var poi2 = {};  
+    var x = poi.lng - 0.0065, y = poi.lat - 0.006;  
+    var z = Math.sqrt(x * x + y * y) - 0.00002 * Math.sin(y * x_pi);  
+    var theta = Math.atan2(y, x) - 0.000003 * Math.cos(x * x_pi);  
+    poi2.lng = z * Math.cos(theta);  
+    poi2.lat = z * Math.sin(theta);  
+    return poi2;  
+}  
+
+</script>

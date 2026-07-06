@@ -1,0 +1,18 @@
+Folder = /tmp/
+remote = com_EE_Hbuf.bin
+remote = com_MipsRam.bin
+remote = com_rti_tsk.bin
+remote = com_squ.bin
+remote = com_MEM.bin
+remote = com_L2_IML.bin
+remote = com_wdtKICK.bin
+remote = com_dvfmSpy.bin
+remote = com_aplpSpy.bin
+remote = com_GplcSpy.bin
+remote = com_GtcuSpy.bin
+remote = com_dtcSpy.bin
+remote = com_RlgAddr.bin
+remote = com_L1aSpy.bin
+
+Folder = /data/
+remote = com_DDR_RW.bin

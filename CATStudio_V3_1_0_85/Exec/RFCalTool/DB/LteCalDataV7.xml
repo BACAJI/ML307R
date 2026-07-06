@@ -1,0 +1,1087 @@
+<?xml version="1.0"?>
+<root>
+<opcode>
+<value>0x01</value>
+<name>LteCalNvmHeader</name>
+<data>
+	 <word>
+	 	     <unit >
+	 	           <mask>0xFFFF</mask>
+	 	           <name>ControlDb</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit >
+	 	           <mask>0xFFFF</mask>
+	 	           <name>HwInfo</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>CaliInfo</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>ApcTableOffset</name>
+	 	     	     <format>HEX_0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>ApcTableLength</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	  <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>AgcTableOffset</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>AgcTableLength</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>AfcTableOffset</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>AfcTableLength</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>TempCompTableOffset</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 	<word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>TempCompTableLength</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>FreqCompTableOffset</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>FreqCompTableLength</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>BandInd</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>GainZoneCompTableOffset</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>GainZoneCompTableLength</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>AfcInitialCode</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>PowerDetTempCompTableOffset</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 	<word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>PowerDetTempCompTableLength</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 	<word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>TempUpdatedPeriod</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>TddBandPaStateInd</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>FddBandPaStateInd</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>PowerDetVoltTableOffset</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>PowerDetVoltTableLength</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>VoltageCompTableOffset</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 	<word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>VoltageCompTableLength</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>TempValInCaliMode</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>VoltValInCaliMode</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>CarrierLeakageTableOffset</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>CarrierLeakageTableLength</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>CommonSectionOffset</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 	<word>
+	 	     <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>CommonSectionLength</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <loop>
+	 			<looptimes>0x8</looptimes>
+	 			<word>
+			 		<unit>
+	 	           		<mask>0x3F00</mask>
+	 	           		<name>Band</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>
+	 		 		<unit>
+	 	           		<mask>0x80</mask>
+	 	           		<name>Power Detector Available</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>	
+	 		 		<unit>
+	 	           		<mask>0x40</mask>
+	 	           		<name>ET available</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>					
+	 		 		<unit>
+	 	           		<mask>0x20</mask>
+	 	           		<name>APT available</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>
+	 		 		<unit>
+	 	           		<mask>0x10</mask>
+	 	           		<name>LO Cali Method</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>	
+	 		 		<unit>
+	 	           		<mask>0x8</mask>
+	 	           		<name>LO Cali Enable</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>		
+	 		 		<unit>
+	 	           		<mask>0x7</mask>
+	 	           		<name>Band Pa Mode</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>																
+		 		</word>
+	 </loop>
+</data>		
+</opcode>
+<opcode>
+<value>0x02</value>
+<name>LteAfcCaliTable</name>
+<data>
+	 <word>
+	 	     <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>AfcPointsNum</name>
+	 	     	     <format>0x%x</format>
+	 	     </unit>
+	 </word>
+	 <loop>
+				<looptimes>0x1E</looptimes>														
+				<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>AfcPoint</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>									
+		 		</word>								
+	 </loop>
+	 	 <loop>
+				<looptimes>0x1D</looptimes>														
+				<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>AfcBitPrecision</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>									
+		 		</word>								
+	 </loop>
+</data>
+</opcode>
+<opcode>
+<value>0x03</value>
+<name>LteApcCaliTable</name>
+<data>
+	 <loop>
+				<looptimes>0x8</looptimes>														
+				<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>BandXPointsNum</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>MaxPower</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>			
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>MaxPowerIndex</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>	
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>H2MHignSwitchPoint</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>		
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>H2MHignSwitchPointIndex</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>				
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>H2MMidSwitchPoint</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>		
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>H2MMidSwitchPointIndex</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>			
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>M2HHignSwitchPoint</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>	
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>M2HHignSwitchPointIndex</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>		
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>M2HMidSwitchPoint</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>		
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>M2HMidSwitchPointIndex</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>		
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>M2LMidSwitchPoint</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>		
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>M2LMidSwitchPointIndex</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>	
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>M2LLowSwitchPoint</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>
+				<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>M2LLowSwitchPointIndex</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>L2MMidSwitchPoint</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>L2MMidSwitchPointIndex</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>L2MLowSwitchPoint</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>L2MLowSwitchPointIndex</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>MinPower</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>
+		 		<word>
+			 		<unit offset="true">
+	 	           		<mask>0xFFFF</mask>
+	 	           		<name>MinPowerIndex</name>
+									<loopstr>[%d]</loopstr>
+	 	     	     		<format>0x%x</format>	 	     	     
+	 		 		</unit>										
+		 		</word>	
+		 		<group>
+						<name>ApcCaliPoints</name>
+						<loopstr>[%d]</loopstr>
+		 				<loop>
+						<looptimes>0x8C</looptimes>
+							<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PowerIndex</name>
+											<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>	
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PowerError</name>
+											<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>	
+						</loop>			
+				</group>
+	 </loop>
+</data>
+</opcode>
+<opcode>
+<value>0x04</value>
+<name>LteAgcCaliTable</name>
+<data>
+	 <loop>
+				<looptimes>0x8</looptimes>			
+	 			<word>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>EarfcnNumBandX</name>
+	 	           <loopstr>[%d]</loopstr>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 			</word>
+	 			<group>
+						<name>LteAgcCaliTableOneFreq</name>
+						<loopstr>[%d]</loopstr>
+		 				<loop>
+						<looptimes>0x14</looptimes>
+							<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>Earfcn</name>
+											<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>	
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PriFeLoss</name>
+											<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>	
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>SecFeLoss</name>
+											<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>	
+		 					<word>
+			 						<unit visible="false">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>Reserve1</name>
+											<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>	
+		 					<word>
+			 						<unit visible="false">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>Reserve2</name>
+											<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>	
+						</loop>			
+				</group>
+		</loop>
+</data>
+</opcode>
+<opcode>
+<value>0x05</value>
+<name>LteCarrierLeakageTable</name>
+<data>
+	 <loop>
+				<looptimes>0x8</looptimes>			
+	 			<word>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>PCodeNumBandX</name>
+	 	           <loopstr>[%d]</loopstr>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 			</word>
+	 			<group>
+						<name>PCodePointBandX</name>
+						<loopstr>[%d]</loopstr>
+		 				<loop>
+						<looptimes>0x14</looptimes>
+							<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PCodePointBand</name>
+											<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>	
+						</loop>			
+				</group>
+				<group>
+						<name>IqOffsetBandX</name>
+						<loopstr>[%d]</loopstr>
+		 				<loop>
+						<looptimes>0x14</looptimes>
+							<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>IqOffsetBand</name>
+											<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>	
+						</loop>			
+				</group>
+		</loop>
+</data>
+</opcode>
+<opcode>
+<value>0x06</value>
+<name>LteCaliTempCompTable</name>
+<data>
+	 <loop>
+				<looptimes>0x8</looptimes>			
+	 			<word>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>BandXTempCompNum</name>
+	 	           <loopstr>[%d]</loopstr>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 			</word>
+	 			<group>
+						<name>LteCaliTempCompTableOnePoint</name>
+						<loopstr>[%d]</loopstr>
+		 				<loop>
+						<looptimes>0xF</looptimes>
+							<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>Temperature</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PaHighGainPowerError</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>		
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PaMiddleGainPowerError</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>	
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PaLowGainPowerError</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>EtPaHighGainPowerError</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>EtPaMidGainPowerError</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>EtPaLowGainPowerError</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PwrDetHighGainErr</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+						</loop>			
+				</group>
+		</loop>
+</data>
+</opcode>
+<opcode>
+<value>0x07</value>
+<name>LteCaliFreqCompTable</name>
+<data>
+	 <loop>
+				<looptimes>0x8</looptimes>			
+	 			<word>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>BandXFreqNum</name>
+	 	           <loopstr>[%d]</loopstr>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 			</word>
+	 			<group>
+						<name>BandXEarfcnIndex</name>
+						<loopstr>[%d]</loopstr>
+		 				<loop>
+						<looptimes>0x14</looptimes>
+							<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>BandXEarfcnIndex</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+						</loop>			
+				</group>
+				<group>
+						<name>BandXPaError</name>
+						<loopstr>[%d]</loopstr>
+		 				<loop>
+						<looptimes>0x14</looptimes>
+							<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PaHignGainPowerError</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PaMiddleGainPowerError</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PaLowGainPowerError</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+						</loop>			
+				</group>
+				<group>
+						<name>EtBandXPaError</name>
+						<loopstr>[%d]</loopstr>
+		 				<loop>
+						<looptimes>0x14</looptimes>
+							<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PaHignGainPowerError</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PaMiddleGainPowerError</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PaLowGainPowerError</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+						</loop>			
+				</group>
+		</loop>
+</data>
+</opcode>
+<opcode>
+<value>0x08</value>
+<name>PwrDetTable</name>
+<data>
+	 <loop>
+				<looptimes>0x8</looptimes>			
+	 			<word>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>PDNumBandx</name>
+	 	           <loopstr>[%d]</loopstr>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 			</word>
+	 			<group>
+						<name>PDValueBandX</name>
+						<loopstr>[%d]</loopstr>
+		 				<loop>
+						<looptimes>0x14</looptimes>
+							<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>PDValueBandX</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+						</loop>			
+				</group>
+		</loop>
+</data>
+</opcode>
+<opcode>
+<value>0x09</value>
+<name>AptDacValueTable</name>
+<data>
+	 <loop>
+				<looptimes>0x8</looptimes>			
+	 			<word>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>PDNumBandx</name>
+	 	           <loopstr>[%d]</loopstr>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 			</word>
+	 			<group>
+						<name>AptDacValue</name>
+						<loopstr>[%d]</loopstr>
+		 				<loop>
+						<looptimes>0x8C</looptimes>
+							<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>AptDacValue</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+						</loop>			
+				</group>
+		</loop>
+</data>
+</opcode>
+<opcode>
+<value>0x0A</value>
+<name>EtTableOneBand</name>
+<data>
+	 <loop>
+				<looptimes>0x8</looptimes>			
+	 			<word>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>EtDly</name>
+	 	           <loopstr>[%d]</loopstr>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 			</word>
+	 			<word>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>EtAptSwtPoint</name>
+	 	           <loopstr>[%d]</loopstr>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 			</word>
+	 			<group visible="false">
+						<name>Rsv</name>
+						<loopstr>[%d]</loopstr>
+		 				<loop>
+						<looptimes>0x8</looptimes>
+							<word>
+			 					<unit visible="false">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>Rsv</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+						</loop>			
+				</group>
+	 			<group>
+						<name>EtPoints</name>
+						<loopstr>[%d]</loopstr>
+		 				<loop>
+						<looptimes>0x14</looptimes>
+							<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>Pcode</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+		 					<word>
+			 						<unit offset="true">
+	 	           				<mask>0xFFFF</mask>
+	 	           				<name>OffsetScale</name>
+	 	           				<loopstr>[%d]</loopstr>
+	 	     	     			<format>0x%x</format>	 	     	     
+	 		 						</unit>										
+		 					</word>
+						</loop>			
+				</group>
+		</loop>
+</data>
+</opcode>
+<opcode>
+<value>0x0B</value>
+<name>LteCaliAllTableValidFlag</name>
+<data>
+		<dword>
+	 	    		 <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>HeaderTableValid</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 		<dword>
+	 	    		 <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>AfcTableValid</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 		<dword>
+	 	    		 <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>ApcTableValid</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 		<dword>
+	 	    		 <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>AgcTableValid</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 	 		<dword>
+	 	    		 <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>CarrLeakageTableValid</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 	 	 		<dword>
+	 	    		 <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>TempCompTableValid</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 	 	 	 		<dword>
+	 	    		 <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>FreqCompTableValid</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 	 	 	 	 		<dword>
+	 	    		 <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>PwrDetTableValid</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 	 	 	 	 	 		<dword>
+	 	    		 <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>AptTableValid</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 	 	 	 	 	 	 		<dword>
+	 	    		 <unit>
+	 	           <mask>0xFFFF</mask>
+	 	           <name>EtTableValid</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+</data>
+</opcode>
+<opcode>
+<value>0x0C</value>
+<name>LteCaliAllTableChgFlag</name>
+<data>
+		<dword>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>HeaderTableChg</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 		<dword>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>AfcTableChg</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 		<dword>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>ApcTableChg</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 		<dword>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>AgcTableChg</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 	 		<dword>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>CarrLeakageTableChg</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 	 	 		<dword>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>TempCompTableChg</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 	 	 	 		<dword>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>FreqCompTableChg</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 	 	 	 	 		<dword>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>PwrDetTableChg</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 	 	 	 	 	 		<dword>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>AptTableChg</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+	 	 	 	 	 	 	 	 	 		<dword>
+	 	    		 <unit offset="true">
+	 	           <mask>0xFFFF</mask>
+	 	           <name>EtTableChg</name>
+	 	     	     <format>0x%x</format>
+	 	     		</unit>
+	 </dword>
+</data>
+</opcode>
+</root>

@@ -1,0 +1,5 @@
+activesetupdate,1
+message,1
+spare,1
+pagingtype1,1
+measurementcontrol,1

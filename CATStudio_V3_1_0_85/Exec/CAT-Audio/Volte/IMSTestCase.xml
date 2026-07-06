@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<ImsTestCase group="TC2 CP Audio Loopback">
+  <Case name="Verify AMR-NB  RTP Injection">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 200 --ez cp true --ei ct 155
+  </Case>
+  <Case name="Verify AMR-WB  RTP Injection">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 201 --ez cp true --ei ct 155
+  </Case>
+  <Case name="IPV4:Verify AMR-NB  BE Mode Audio in MO Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 5 --ez cp true
+  </Case>
+  <Case name="IPV4:Verify AMR-NB  OA Mode Audio in MO Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 6 --ez cp true 
+  </Case>
+   <Case name="IPV4:Verify AMR-NB  BE Mode Audio in MT Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 9 --ez cp true  
+  </Case>
+  <Case name="IPV4:Verify AMR-NB  OA Mode Audio in MT Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 10 --ez cp true   
+  </Case>
+  <Case name="IPV6:Verify AMR-NB  BE Mode Audio in MO Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 50 --ez cp true  
+  </Case>
+  <Case name="IPV6:Verify AMR-NB  OA Mode Audio in MO Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 51 --ez cp true
+  </Case>
+  <Case name="IPV6:Verify AMR-NB  BE Mode Audio in MT Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 54 --ez cp true
+  </Case>
+  <Case name="IPV6:Verify AMR-NB  OA Mode Audio in MT Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 55 --ez cp true 
+  </Case>
+  <Case name="IPV4:Verify AMR-WB  BE Mode Audio in MO Call"> 
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 7 --ez cp true 
+  </Case>
+  <Case name="IPV4:Verify AMR-WB  OA Mode Audio in MO Call">
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 8 --ez cp true
+  </Case>
+  <Case name="IPV4:Verify AMR-WB  BE Mode Audio in MT Call"> 
+  am broadcast-a com.marvell.imsservice.TEST -e m media --ei id 11 --ez cp true 
+  </Case>
+  <Case name="IPV4:Verify AMR-WB  OA Mode Audio in MT Call">
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 12 --ez cp true 
+  </Case>
+  <Case name="IPV6:Verify AMR-WB  BE Mode Audio in MO Call"> 
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 52 --ez cp true 
+  </Case>
+  <Case name="IPV6:Verify AMR-WB  OA Mode Audio in MO Call">
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 53 --ez cp true 
+  </Case>
+  <Case name="IPV6:Verify AMR-WB  BE Mode Audio in MT Call"> 
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 56 --ez cp true 
+  </Case>
+  <Case name="IPV6:Verify AMR-WB  OA Mode Audio in MT Call">
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 57 --ez cp true 
+  </Case>
+</ImsTestCase>
+<ImsTestCase group="TC3 Audio LTE">
+  <Case name="IPV4:Verify AMR-NB  BE Mode Audio in MO Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 5 --ez cp true -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+  <Case name="IPV4:Verify AMR-NB  OA Mode Audio in MO Call ">
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 6 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+   <Case name="IPV4:Verify AMR-NB  BE Mode Audio in MT Call">
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 9 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+  <Case name="IPV4:Verify AMR-NB  OA Mode Audio in MT Call">
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 10 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70  
+  </Case>
+  <Case name="IPV6:Verify AMR-NB  BE Mode Audio in MO Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 50 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+  <Case name="IPV6:Verify AMR-NB  OA Mode Audio in MO Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 51 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+  <Case name="IPV6:Verify AMR-NB  BE Mode Audio in MT Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 54 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+  <Case name="IPV6:Verify AMR-NB  OA Mode Audio in MT Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 55 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+  <Case name="IPV4:Verify AMR-WB  BE Mode Audio in MO Call"> 
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 7 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+  <Case name="IPV4:Verify AMR-WB  OA Mode Audio in MO Call">
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 8 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+  <Case name="IPV4:Verify AMR-WB  BE Mode Audio in MT Call"> 
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 11 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70 
+  </Case>
+  <Case name="IPV4:Verify AMR-WB  OA Mode Audio in MT Call">
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 12 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+  <Case name="IPV6:Verify AMR-WB  BE Mode Audio in MO Call"> 
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 52 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+  <Case name="IPV6:Verify AMR-WB  OA Mode Audio in MO Call">
+  am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 53 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+  <Case name="IPV6:Verify AMR-WB  BE Mode Audio in MT Call"> 
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 56 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+  <Case name="IPV6:Verify AMR-WB  OA Mode Audio in MT Call">
+		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 57 --ez cp true  -e ip1 192.168.9.1 -e ip2 192.168.0.70
+  </Case>
+</ImsTestCase>
+<ImsTestCase group="TC5 CP Audio LTE Press Test">
+  <Case name="IPV4:Verify AMR-NB  BE Mode Audio in MO Call">
+ 		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 5 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800 
+ 		</Case>
+  <Case name="IPV4:Verify AMR-NB  OA Mode Audio in MO Call ">
+		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 6 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800   
+		</Case>
+   <Case name="IPV4:Verify AMR-NB  BE Mode Audio in MT Call">
+		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 9 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800   
+		</Case>
+  <Case name="IPV4:Verify AMR-NB  OA Mode Audio in MT Call">
+ 		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 10 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800 
+  </Case>
+  <Case name="IPV6:Verify AMR-NB  BE Mode Audio in MO Call">
+ 		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 50 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800 
+ 	</Case>
+  <Case name="IPV6:Verify AMR-NB  OA Mode Audio in MO Call">
+		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 51 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800 
+	</Case>
+  <Case name="IPV6:Verify AMR-NB  BE Mode Audio in MT Call">
+  	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 54 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800
+  </Case>
+  <Case name="IPV6:Verify AMR-NB  OA Mode Audio in MT Call">
+		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 55 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800 
+  </Case>
+  <Case name="IPV4:Verify AMR-WB  BE Mode Audio in MO Call"> 
+		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 7 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800   
+	</Case>
+  <Case name="IPV4:Verify AMR-WB  OA Mode Audio in MO Call">
+		am broadcast-a com.marvell.imsservice.TEST -e m media --ei id 11  -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800 
+ </Case>
+  <Case name="IPV4:Verify AMR-WB  BE Mode Audio in MT Call"> 
+ 		am broadcast-a com.marvell.imsservice.TEST -e m media --ei id 11  -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800 
+  </Case>
+  <Case name="IPV4:Verify AMR-WB  OA Mode Audio in MT Call">
+ 		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 12 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800 
+ </Case>
+  <Case name="IPV6:Verify AMR-WB  BE Mode Audio in MO Call"> 
+ 		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 52 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800  
+ </Case>
+  <Case name="IPV6:Verify AMR-WB  OA Mode Audio in MO Call">
+ 		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 53 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800 
+  </Case>
+  <Case name="IPV6:Verify AMR-WB  BE Mode Audio in MT Call"> 
+ 		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 56 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800 
+  </Case>
+  <Case name="IPV6:Verify AMR-WB  OA Mode Audio in MT Call">
+		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 57 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 64800 
+ </Case> 
+   <Case name="IPV4:Verify AMR-NB BE Mode Audio in MO Call Setup"> 
+		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 5 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 3 --ei repeate 5000 
+	</Case>
+  <Case name="IPV4:Verify AMR-WB  BE Mode Audio in MO Call Setup">
+		am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 7 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct  3 --ei repeate 5000 
+ </Case>
+  <Case name="IPV6:Verify AMR-NB  BE Mode Audio in MO Call Setup"> 
+ 	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 5 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct 3 --ei repeate 5000 
+ </Case>
+  <Case name="IPV6:Verify AMR-WB  BE Mode Audio in MO Call Setup">
+	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 7 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct  3 --ei repeate 5000 
+</Case>
+ <Case name="IPV4:Verify AMR-NB BE Mode Audio in MT Call Setup"> 
+	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 9 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct  3 --ei repeate 5000 
+	</Case>
+ <Case name="IPV4:Verify AMR-WB  BE Mode Audio in MT Call Setup">
+	am broadcast-a com.marvell.imsservice.TEST -e m media --ei id 11  -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct  3 --ei repeate 5000 
+ </Case>
+  <Case name="IPV6:Verify AMR-NB  BE Mode Audio in MT Call Setup"> 
+	am broadcast -a com.marvell.imsservice.TEST -e m media --ei id 9 -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct  3 --ei repeate 5000
+</Case>
+  <Case name="IPV6:Verify AMR-WB  BE Mode Audio in MT Call Setup">
+	am broadcast-a com.marvell.imsservice.TEST -e m media --ei id 11  -e ip1 192.168.9.1 -e ip2 192.168.0.70 --ei ct  3 --ei repeate 5000 
+</Case>
+</ImsTestCase>
+
+
